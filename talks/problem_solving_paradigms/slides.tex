@@ -1,0 +1,456 @@
+\documentclass[article]{beamer}
+\usetheme{Warsaw}
+\setbeamertemplate{footline}[frame number]
+
+\usefonttheme[]{serif}
+\usepackage{amsmath, latexsym, color, graphicx, amssymb, bm, here}
+\usepackage{epsf, epsfig, pifont,tikz,subfigure}
+\usepackage{graphics, calrsfs}
+\usepackage{times}
+\usepackage{fancybox,calc}
+\usepackage{palatino,mathpazo}
+\usepackage{amsfonts}
+\usepackage{sidecap}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\title{Problem Solving Paradigms}
+\author{David Jacobo \\ \href{mailto:jguillen@cimat.mx}{jguillen@cimat.mx}}
+\date{\scriptsize{\today}}
+
+\AtBeginSection[]
+{
+  \begin{frame}{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%Frame 1
+\maketitle
+
+%%%%%%%%%%%%%frame 2
+\begin{frame}
+\begin{block}{Paradigm:}
+	Comes from Greek παράδειγμα (paradeigma), "pattern, example, sample"
+\end{block}
+
+\vspace{12mm}
+
+\begin{flushright} {\footnotesize
+	"If all you have is a hammer, everything looks like a nail" \newline Abraham Maslow, 1962.
+} \end{flushright} 
+\end{frame}
+
+%%%%%%%%%%%%%%Frame 3
+\section{Complete Search}
+\subsection{Idea}
+
+%%%%%%Frame 4
+\begin{frame}[fragile]
+\begin{block}{Complete search}
+Also called backtracking or brute force, tries all the possible combinations within the search space. A bug-free implementation ensures you will always get the correct answer! 
+\end{block}
+\end{frame}
+
+%%%%%%%Frame 5
+\begin{frame}[fragile]
+\begin{columns}
+\column{.5\textwidth}
+Pros
+\begin{itemize}
+	\item Easy to code.
+	\item Always gives the correct answer.
+	\item No complex data structures needed.
+	\item Should be your first option.
+\end{itemize}
+
+\column{.5\textwidth}
+Cons
+\begin{itemize}
+	\item Pretty bad complexity.
+	\item Cannot handle large inputs.
+	\item People tend to think your ki is low.
+\end{itemize}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Problem 1.- Coin change}
+
+\begin{frame}[fragile]
+	\frametitle{Coin change}
+	{\footnotesize
+	Having a known subset of coins (i.e. 1,3,4,10) and an infinite amount of each of those,
+	determine what is the minimum amount of coins used to form N. 
+	
+	{\tiny
+	\begin{lstlisting}
+  6 int coins[] = {1,3,4,10};
+  7 
+  8 int get_coins_complete_search(int N){
+  9     int min = MAX_N;
+ 10     
+ 11     for(int w=0;w < MAX_N;++w){
+ 12         for(int x=0;x < MAX_N;++x){
+ 13             for(int y=0;y < MAX_N;++y){
+ 14                 for(int z=0;z < MAX_N;++z){
+ 15                     if(w*coins[0] + x*coins[1] + y*coins[2] + z*coins[3] == N \
+ 16                         && w + x + y + z < min){
+ 17                         min = w + x + y + z;
+ 18                     }
+ 19                 }
+ 20             }
+ 21         }
+ 22     }
+ 23     
+ 24     return min;
+ 25 }
+	\end{lstlisting}
+	}
+	}
+\end{frame}
+
+%%%%%%%Frame 6
+\subsection{Problem 2.- E.T. calls 'homie'}
+
+\begin{frame}[fragile]
+	\frametitle{E.T. calls 'homie' 1/2}
+	{\footnotesize
+	Despite E.T. being part of a super advanced alien race... he has
+	serious troubles to call his friends to pick him up when drunk. 
+	\newline
+	
+	He can remember that his friend telephone number has 7 digits. 
+	As he starts getting lucid again, he remembers the sum of the digits in the number is 42. 
+	\newline
+	
+	You have to help E.T. printing a list of all the possible numbers for which
+	both restrictions are valid (not because you like E.T., but he is at your home 
+	and he is a real jackass in his current state). 
+	}
+\end{frame}
+
+%%%%%%%%%%%%%% Frame 7
+\begin{frame}[fragile]
+	\frametitle{E.T. calls 'homie' 2/2}
+	{\tiny
+	\begin{lstlisting}
+  8 void list_numbers(int state[],int k,int digits,int must_sum,int sum){
+  9     if(k==digits){
+ 10         if(valid(must_sum, sum)){
+ 11             for(int i=1;i<=digits;i++){
+ 12                 cout<<state[i];
+ 13             }   
+ 14             cout<<endl;
+ 15         }   
+ 16     } else {
+ 17         ++k;
+ 18         int temp_sum;
+ 19 
+ 20         for(int i=0;i<10;++i){
+ 21             state[k] = i;
+ 22             temp_sum = sum + i;
+ 23             if(temp_sum > must_sum) continue;
+ 24             list_numbers(state, k, digits, must_sum, temp_sum);
+ 25         }   
+ 26     }
+ 27 }
+	\end{lstlisting}
+	}
+	The complexity for this is $~O(n^{m})$ where n is the amount of different symbols [0-9] and m is the length of the telephone number.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\section{Divide and conquer}
+\subsection{Idea}
+
+\begin{frame}[fragile]
+	\begin{block}{Divide and conquer}
+	Based on three steps: \newline
+	1) Separate the problem in smaller cases \newline 
+	2) Solve those smaller cases \newline
+	3) Mix the solutions
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Frame 10
+\begin{frame}[fragile]
+	\begin{columns}
+		\column{.5\textwidth}
+		Pros
+		\begin{itemize}
+			\item Easy to code as a recursion.
+			\item A lot of efficient algorithms
+				are written this way!
+			\item Search space is reduced by half every time.
+		\end{itemize}
+		\column{.5\textwidth}
+		Cons
+		\begin{itemize}
+			\item You need to be careful about 
+				base cases (infinite loop).
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Frame 11
+\subsection{Problem 3.- RSQ}
+
+\begin{frame}[fragile]
+	\frametitle{Problem 3.- Range Sum Query 1/3}
+	{\footnotesize
+		Given an static array of N values A = $[2,3,5,1,3,7,3,8]$ you are asked to
+		respond to queries like "What is the sum from i to j?", where i and j
+		are between [0,N-1] and $i<=j$. \newline
+	}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+	\frametitle{Problem 3.- Range Sum Query 2/3}
+	In order to answer the queries it is necessary to build a segment tree first:	
+	{\tiny
+		\begin{lstlisting}
+  8 int build_tree(int ind,int p,int q){
+  9     if(p==q){
+ 10         return st[ind] = A[p];
+ 11     } else {
+ 12         int m = (p+q)>>1;
+ 13         int left = ind<<1;
+ 14         int right = left+1;
+ 15 
+ 16         int sum = build_tree(left  ,p  ,m);
+ 17         sum +=    build_tree(right ,m+1,q);
+ 18 
+ 19         return st[ind] = sum;
+ 20     }
+ 21 }	
+		\end{lstlisting}
+	}	
+		$O(n log_{2} n)$ is a great building complexity, but how do we make a query? ...
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+	\frametitle{Problem 3.- Range Sum Query 3/3}
+	The query code could look like this:
+	{\tiny
+		\begin{lstlisting}
+ 23 int query(int ind,int p,int q,int i,int j){
+ 24     if(p==i && q==j) return st[ind];
+ 25     
+ 26     int m = (p+q)>>1;
+ 27     int left = ind<<1;
+ 28     int right = left+1;
+ 29 
+ 30     if(i> m) {
+ 31         return query(right,  m+1, q, i, j);
+ 32     } else if(j<= m) {
+ 33         return query(left ,    p, m, i, j);
+ 34     } else {
+ 35         return query(right,  m+1, q, m+1, j)\
+ 36              + query(left ,    p, m,   i, m);
+ 37     }        
+ 38 }  
+		\end{lstlisting}
+	}
+	$O(log_{2} n)$ per query, isn't that cool enough? Well this data structure supports $O(log_{2} n)$ updates, for the case where A is a dynamic array.
+\end{frame}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Dynamic Programming}
+\subsection{Idea}
+
+\begin{frame}[fragile]
+	\begin{block}{Dynamic Programming}
+	Paradigm focused on constructing the answer of a problem by
+	solving the smaller instances first. Some people just call it memoization. 
+	\\
+	A problem needs to exhibit two properties to be approached this way: \textbf{optimal substructure and overlapping sub-problems}.
+	\end{block}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Frame 11
+
+\begin{frame}[fragile]
+	\begin{columns}
+		\column{.5\textwidth}
+		Pros
+		\begin{itemize}
+			\item Efficient, never computes the same case twice.
+			\item Correct, it evaluates all the possible solutions.
+			\item 2 flavours!, bottom-up and top-down.
+		\end{itemize}
+		\column{.5\textwidth}
+		Cons
+		\begin{itemize}
+			\item Memory costly, is it feasible to store the answers for the N-1 sub-problems?
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Recurrence formulas}
+\begin{frame}[fragile]
+	DP(Dynamic programming) based problems are frequently described in terms of a recurrence formula, the one for our coin change problem can be
+	written as:
+	\vspace{8mm}
+	
+	\begin{equation}
+  	f(N)=\begin{cases}
+  	0, & \text{if $N==0$}.\\
+    1 + min(f(N-coin_{i})) \forall coin_{i} \in \textbf{S}, & \text{otherwise}.
+ 	 \end{cases}
+	\end{equation} 
+	\begin{flushright}
+	{\footnotesize  where \textbf{S} is a set containing the different coins.}
+	\end{flushright}
+	\vspace{5mm}
+	
+	
+	\textbf{Base cases} are those for which you already know the answer, for this scenario, we know we need 0 coins to give 0 pesos back.
+	But it has a potential problem. What would happen if N is negative?
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Problem 4.- Coin change with bottom up}
+\begin{frame}[fragile]
+	This version uses 1 coin at a time, it builds the optimal solution for the
+	[0, N-1] cases before calculating N. 
+	
+	{\tiny
+		\begin{lstlisting}
+ 27 int get_coins_dp_bottom_up(int N){
+ 28     int  memo[N+1];
+ 29     int coin_types = sizeof(coins) / sizeof(int);
+ 30 
+ 31     for(int i=1;i <= N;++i) memo[i] = INF;
+ 32     memo[0] = 0;
+ 33 
+ 34     for(int i=0;i < coin_types;++i){
+ 35         for(int j=1;j <= N;++j){
+ 36             if(j>=coins[i]) {
+ 37                 memo[j] = min(memo[j] , memo[j-coins[i]]+1);
+ 38             }
+ 39         }
+ 40     }
+ 41 
+ 42     return memo[N];
+ 43 }
+		\end{lstlisting}
+	}
+	
+	Being N the amount of change to give, and M the different types of coins, $O(MN)$ describes the running time complexity and $O(N)$ the space complexity.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Problem 5.- Coin change with top down}
+\begin{frame}[fragile]
+	This version perfectly reflects the formula we described before, so 
+	its easier to implement if you are comfortable with recurrences.
+	{\tiny
+		\begin{lstlisting}
+ 45 int top_down(int N,int *memo,int coin_types){
+ 46     if(N<0) return INF;
+ 47     if(INF!=memo[N]) return memo[N];
+ 48 
+ 49     int min = INF;
+ 50     for(int i=0;i < coin_types;++i){
+ 51         int temp = top_down(N-coins[i], memo, coin_types)+1;
+ 52         if(temp < min)
+ 53             min = temp;
+ 54     }
+ 55 
+ 56    return memo[N] = min;
+ 57 }
+ 58 
+ 59 int get_coins_dp_top_down(int N){
+ 60     int coin_types = sizeof(coins) / sizeof(int);
+ 61     int memo[N+1];
+ 62 
+ 63     for(int i=0;i <= N;++i)
+ 64         memo[i] = INF;
+ 65     memo[0] = 0;
+ 66 
+ 67     top_down(N, memo, coin_types);
+ 68     return memo[N];
+ 69 } 
+		\end{lstlisting}
+	}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\section{Greedy algorithms}
+\subsection{Idea}
+
+\begin{frame}[fragile]
+	\begin{block}{Greedy algorithms}
+	Technique based on making the best local decision every time expecting to
+	obtain the optimal solution. A greedy algorithm need to exhibit an \textbf{optimal substructure} too. 
+	\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Frame 12
+\begin{frame}[fragile]
+	\begin{columns}
+		\column{.5\textwidth}
+		Pros
+		\begin{itemize}
+			\item Faster than DP.
+			\item Optimal, if the problem exhibits an optimal substructure.
+			\item Easier code most of the times.
+		\end{itemize}
+		\column{.5\textwidth}
+		Cons
+		\begin{itemize}
+			\item Not easy to prove (correctness proof).
+			\item Heuristics are needed sometimes.
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{Problem 6.- Coin change with greedy}
+\begin{frame}[fragile]
+	The code for the coin change problem could look like this:
+	{\tiny
+		\begin{lstlisting}
+ 71 int get_coins_greedy(int N){
+ 72     int coins_counter = 0;
+ 73     int coin_types = sizeof(coins) / sizeof(int);
+ 74 
+ 75     for(int i=--coin_types;i >= 0;--i){
+ 76         while(N >= coins[i]){
+ 77             ++coins_counter;
+ 78             N-= coins[i];
+ 79         }
+ 80     }
+ 81 
+ 82     return coins_counter;
+ 83 }
+		\end{lstlisting}
+	}
+	
+	As silly as it looks, this code runs in $O(N)$ and needs no extra saving space, but, does it really works for any coins set? 
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Frame 22
+\begin{frame}[plain]
+\frametitle{}
+\begin{center}
+\Huge{\color{blue}{Q \& A}}
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+	\textbf{References}
+	\begin{itemize}
+		\item \href{https://sites.google.com/site/stevenhalim/}{Competitive Programming site}
+		\item \href{https://github.com/davidjacobo/algorists/}{Algorists' repository}
+	\end{itemize}
+\end{frame}
+\end{document}
