@@ -1,0 +1,114 @@
+\documentclass[article]{beamer}
+\usetheme{Warsaw}
+\setbeamertemplate{footline}[frame number]
+
+\usefonttheme[]{serif}
+\usepackage{amsmath, latexsym, color, graphicx, amssymb, bm, here}
+\usepackage{epsf, epsfig, pifont,tikz,subfigure}
+\usepackage{graphics, calrsfs}
+\usepackage{times}
+\usepackage{fancybox,calc}
+\usepackage{palatino,mathpazo}
+\usepackage{amsfonts}
+\usepackage{sidecap}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\title{Dynamic Programming}
+\author{David Jacobo \\ \href{mailto:jguillen@cimat.mx}{jguillen@cimat.mx}}
+\date{\scriptsize{\today}}
+
+\AtBeginSection[]
+{
+  \begin{frame}{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{block}{Dynamic Programming (DP):}
+	Also called \textbf{'memoization'} is a paradigm focused on solving \textbf{optimization 
+	problems}. For a problem to be solved with DP, it must exhibit an \textbf{optimal substructure and
+	overlapping sub-problems}.
+	
+	\vspace{12mm}
+	
+	A critical part on designing DP solutions boils down to recognizing/defining the 
+	required \textbf{state and the transitions}. There are two typical ways to express a DP solution: \textbf{bottom up and top down}.
+\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Basics}
+
+\subsection{Motivation}
+\begin{frame}
+	\frametitle{Motivation: Fibonacci series}
+\end{frame}
+
+\subsection{Properties}
+\begin{frame}
+	\frametitle{Optimal substructure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Overlapping sub-problems}
+\end{frame}
+
+\section{Design and coding styles}
+
+\subsection{Bottom up}
+
+\subsection{Top down}
+
+\subsection{Fight!}
+
+\section{Algorithm analysis}
+
+\subsection{Time complexity}
+\begin{frame}
+	\frametitle{Time complexity}
+\end{frame}
+
+\subsection{Space complexity}
+\begin{frame}
+	\frametitle{Space complexity}
+\end{frame}
+
+\section{Classic problems}
+\begin{frame}
+	Counting problems, cost-gain problems (knapsack?)
+\end{frame}
+
+\section{Pro-tips}
+\begin{frame}
+	\frametitle{Pro-tips}
+	+ Be well-versed on the classic stuff
+	+ Sliding window trick in order to save space
+	+ Pick the right data structure to save intermediate states.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\frametitle{}
+\begin{center}
+\Huge{\color{blue}{Q \& A}}
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+	\textbf{References}
+	\begin{itemize}
+		\item \href{https://sites.google.com/site/stevenhalim/}{Competitive Programming site}
+		\item \href{https://github.com/davidjacobo/algorists/}{Algorists' repository}
+	\end{itemize}
+\end{frame}
+\end{document}
