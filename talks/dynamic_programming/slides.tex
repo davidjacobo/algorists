@@ -37,7 +37,7 @@
 	problems}. For a problem to be solved with DP, it must exhibit an \textbf{optimal substructure and
 	overlapping sub-problems}.
 	
-	\vspace{12mm}
+	\vspace{8mm}
 	
 	A critical part on designing DP solutions boils down to recognizing/defining the 
 	required \textbf{state and the transitions}. There are two typical ways to express a DP solution: \textbf{bottom up and top down}.
@@ -51,35 +51,84 @@
 \subsection{Motivation}
 \begin{frame}
 	\frametitle{Motivation: Fibonacci series}
+	Figure 1: Recursion tree with and without DP
 \end{frame}
 
 \subsection{Properties}
 \begin{frame}
 	\frametitle{Optimal substructure}
+	Refers to the fact that you need to know the optimal solution for smaller instances of the same problem in order to expand your solution to the required size.
+	
+	\vspace{8mm}
+	
+	Insert images of shortest paths	
 \end{frame}
 
 \begin{frame}
 	\frametitle{Overlapping sub-problems}
+	This property becomes evident when you are drawing a recurrence tree, whenever you are calling the exact instance of the problem 2 or more times it's clear than an overlap exists.
+	
+	\vspace{8mm}
+	
+	Insert fibonacci recurrence tree or the coin change one.	
+\end{frame}
+
+\begin{frame}
+	\begin{block}{State:}
+		A state is the list of parameters which represent each sub-problem in a unique way. Expand this !!!
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\begin{block}{Transition:}
+		A transition defines if two states have a direct relation or not. Pls expand !!
+	\end{block}
 \end{frame}
 
 \section{Design and coding styles}
 
 \subsection{Bottom up}
+\begin{frame}
+	\frametitle{Bottom up}
+	This variant solves and store the solutions for \textbf{all the smaller instances} before looking for the bigger instance (which is the one that matters for us).
+	
+	\vspace{8mm}
+	
+	Figure: Need a table where computation can be seen
+\end{frame}
 
 \subsection{Top down}
+\begin{frame}
+	\frametitle{Top down}
+	The top down approach relies in calling only the instances which are really needed for the given problem.
+\end{frame}
 
 \subsection{Fight!}
+\begin{frame}
+	\frametitle{So, which one is better?}
+	Remember that both are based on the same recurrence formula, thus they are correct.
+\end{frame}
 
 \section{Algorithm analysis}
 
 \subsection{Time complexity}
 \begin{frame}
 	\frametitle{Time complexity}
+	Time complexity refers to the amount of time it will take to your algorithm to finish in terms on a given input. 
+	
+	\vspace{8mm}	
+	
+	\textbf{O(number of different states * time to solve each state)}
 \end{frame}
 
 \subsection{Space complexity}
 \begin{frame}
 	\frametitle{Space complexity}
+	The space complexity refers to the amount of memory necessary to store all the answers. So basically express how many cells your array has.
+	
+	\vspace{8mm}
+	
+	\textbf{O(dimensions of the array)}
 \end{frame}
 
 \section{Classic problems}
@@ -90,9 +139,17 @@
 \section{Pro-tips}
 \begin{frame}
 	\frametitle{Pro-tips}
-	+ Be well-versed on the classic stuff
-	+ Sliding window trick in order to save space
-	+ Pick the right data structure to save intermediate states.
+	\begin{itemize}
+		\item Study the theory.
+		\item Write solutions for the classic problems.
+		\item Try out both variants.
+		\item ??
+		\item Profit.
+	\end{itemize}
+	
+	\vspace{5mm}
+	
+	It is also worthy to explore the \textbf{sliding window} trick in order to save memory, or selecting a \textbf{different data structure} for saving the intermediate states specially when using the top-down approach. \textbf{DP is a trade-off between space and time!}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
