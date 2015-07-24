@@ -40,7 +40,7 @@
 	\vspace{8mm}
 	
 	A critical part on designing DP solutions boils down to recognizing/defining the 
-	required \textbf{state and the transitions}. There are two typical ways to express a DP solution: \textbf{bottom up and top down}.
+	required \textbf{state and transitions}. There are two typical ways to express a DP solution: \textbf{bottom up and top down}.
 \end{block}
 \end{frame}
 
@@ -52,6 +52,7 @@
 \begin{frame}
 	\frametitle{Motivation: Fibonacci series}
 	Figure 1: Recursion tree with and without DP
+	\includegraphics[scale=0.5]{./figures/fib.eps}
 \end{frame}
 
 \subsection{Properties}
@@ -90,7 +91,7 @@
 \subsection{Bottom up}
 \begin{frame}
 	\frametitle{Bottom up}
-	This variant solves and store the solutions for \textbf{all the smaller instances} before looking for the bigger instance (which is the one that matters for us).
+	This variant solves and store the solutions for \textbf{all the smaller instances} before solving the bigger instance (which is the one that matters for us).
 	
 	\vspace{8mm}
 	
@@ -106,7 +107,7 @@
 \subsection{Fight!}
 \begin{frame}
 	\frametitle{So, which one is better?}
-	Remember that both are based on the same recurrence formula, thus they are correct.
+	Remember that both are based on the same recurrence formula, thus they are equaly correct.
 \end{frame}
 
 \section{Algorithm analysis}
@@ -114,7 +115,7 @@
 \subsection{Time complexity}
 \begin{frame}
 	\frametitle{Time complexity}
-	Time complexity refers to the amount of time it will take to your algorithm to finish in terms on a given input. 
+	Time complexity refers to the amount of time it will take to your algorithm to finish in terms of a given input. 
 	
 	\vspace{8mm}	
 	
@@ -124,7 +125,7 @@
 \subsection{Space complexity}
 \begin{frame}
 	\frametitle{Space complexity}
-	The space complexity refers to the amount of memory necessary to store all the answers. So basically express how many cells your array has.
+	The space complexity refers to the amount of memory necessary to store all the answers, so it basically express how many cells your array has.
 	
 	\vspace{8mm}
 	
