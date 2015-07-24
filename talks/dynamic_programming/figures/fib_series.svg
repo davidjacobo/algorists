@@ -1,0 +1,99 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="rectangle" id="id430223997">
+            <rect x="181.0" y="181.0" width="258.0" height="38.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#1d232e" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id1033078628">
+            <rect x="181.0" y="181.0" width="49.99999999999997"
+                height="38.0" latexdraw:borderPos="outer"
+                stroke-width="2.0" stroke="#1d232e" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id214648839">
+            <rect x="232.99999999999997" y="181.0"
+                width="49.99999999999997" height="38.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#1d232e" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id423000517">
+            <rect x="284.99999999999994" y="181.0"
+                width="50.00000000000006" height="38.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#1d232e" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id2000283325">
+            <rect x="337.0" y="181.0" width="49.999999999999886"
+                height="38.0" latexdraw:borderPos="outer"
+                stroke-width="2.0" stroke="#1d232e" fill="none"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id581832042">
+            <rect x="388.9999999999999" y="181.0"
+                width="50.000000000000114" height="38.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#1d232e" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id392834501" fill="black" latexdraw:position="r">
+            <text x="207.6068376068376" y="196.2962962962963"><![CDATA[1]]></text>
+        </g>
+        <g latexdraw:type="text" id="id1160946865" fill="black" latexdraw:position="r">
+            <text x="258.37606837606836" y="196.2962962962963"><![CDATA[1]]></text>
+        </g>
+        <g latexdraw:type="text" id="id577203511" fill="black" latexdraw:position="r">
+            <text x="304.52991452991455" y="196.2962962962963"><![CDATA[2]]></text>
+        </g>
+        <g latexdraw:type="text" id="id2046085046" fill="black" latexdraw:position="r">
+            <text x="410.68376068376074" y="196.2962962962963"><![CDATA[5]]></text>
+        </g>
+        <g latexdraw:type="text" id="id705968148" fill="black" latexdraw:position="r">
+            <text x="361.45299145299145" y="196.2962962962963"><![CDATA[3]]></text>
+        </g>
+        <g latexdraw:type="text" id="id1078400425" fill="black" latexdraw:position="bl">
+            <text x="179.99999999999991" y="169.99999999999991"><![CDATA[0]]></text>
+        </g>
+        <g latexdraw:type="text" id="id370352428" fill="black" latexdraw:position="bl">
+            <text x="239.9999999999999" y="169.99999999999991"><![CDATA[1]]></text>
+        </g>
+        <g latexdraw:type="text" id="id1138911569" fill="black" latexdraw:position="bl">
+            <text x="339.99999999999983" y="169.99999999999991"><![CDATA[3]]></text>
+        </g>
+        <g latexdraw:type="text" id="id887885595" fill="black" latexdraw:position="bl">
+            <text x="389.99999999999983" y="169.99999999999991"><![CDATA[4]]></text>
+        </g>
+        <g latexdraw:type="text" id="id375238176" fill="black" latexdraw:position="bl">
+            <text x="289.0" y="169.9999999999999"><![CDATA[2]]></text>
+        </g>
+        <g latexdraw:type="text" id="id1976538353" fill="#1d232e" latexdraw:position="bl">
+            <text x="89.99999999999994" y="169.99999999999991"><![CDATA[indexes = ]]></text>
+        </g>
+        <g latexdraw:type="text" id="id192973869" fill="#1d232e" latexdraw:position="bl">
+            <text x="89.99999999999994" y="209.99999999999991"><![CDATA[values = ]]></text>
+        </g>
+    </g>
+    <defs/>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes><![CDATA[
+]]></latexdraw:latexIncludes>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>2.000000000000001</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.1</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1920</latexdraw:width>
+                <latexdraw:height>1084</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>1920.0</latexdraw:x>
+                <latexdraw:y>-4.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

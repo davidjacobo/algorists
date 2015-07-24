@@ -1,0 +1,159 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw"
+    version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="ellipse" id="id1671928947">
+            <ellipse cx="310.0" cy="210.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1500988834" fill="black" latexdraw:position="bl">
+            <text x="280.0" y="220.0"><![CDATA[FIB ( 2 )]]></text>
+        </g>
+        <g latexdraw:type="ellipse" id="id116133627">
+            <ellipse cx="490.0" cy="110.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1442153055" fill="black" latexdraw:position="bl">
+            <text x="460.0" y="120.0"><![CDATA[FIB ( 4 )]]></text>
+        </g>
+        <g latexdraw:type="ellipse" id="id864601548">
+            <ellipse cx="210.0" cy="310.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1146755953" fill="black" latexdraw:position="bl">
+            <text x="180.0" y="320.0"><![CDATA[FIB ( 0 )]]></text>
+        </g>
+        <g latexdraw:type="ellipse" id="id822677651">
+            <ellipse cx="410.0" cy="310.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1609274353" fill="black" latexdraw:position="bl">
+            <text x="380.0" y="320.0"><![CDATA[FIB ( 1 )]]></text>
+        </g>
+        <g latexdraw:type="ellipse" id="id647990551">
+            <ellipse cx="670.0" cy="210.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id691062134" fill="black" latexdraw:position="bl">
+            <text x="640.0" y="220.0"><![CDATA[FIB ( 3 )]]></text>
+        </g>
+        <g latexdraw:type="ellipse" id="id1931285106">
+            <ellipse cx="570.0" cy="310.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1908403324" fill="black" latexdraw:position="bl">
+            <text x="540.0" y="320.0"><![CDATA[FIB ( 1 )]]></text>
+        </g>
+        <g latexdraw:type="ellipse" id="id1789591227">
+            <ellipse cx="770.0" cy="310.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id46903806" fill="black" latexdraw:position="bl">
+            <text x="740.0" y="320.0"><![CDATA[FIB ( 2 )]]></text>
+        </g>
+        <g latexdraw:type="ellipse" id="id1068091450">
+            <ellipse cx="670.0" cy="410.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1193655369" fill="black" latexdraw:position="bl">
+            <text x="640.0" y="420.0"><![CDATA[FIB ( 0 )]]></text>
+        </g>
+        <g latexdraw:type="ellipse" id="id918312079">
+            <ellipse cx="870.0" cy="410.0" rx="49.0" ry="29.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#0054f2" fill="none"/>
+        </g>
+        <g latexdraw:type="text" id="id1806673774" fill="black" latexdraw:position="bl">
+            <text x="840.0" y="420.0"><![CDATA[FIB ( 1 )]]></text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1071881912">
+            <polyline points="480.0,140.0 320.0,180.0 "
+                stroke-width="2.0" stroke="#1d232e" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1880784364">
+            <polyline points="500.0,140.0 660.0,180.0 "
+                stroke-width="2.0" stroke="#1d232e" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1168995427">
+            <polyline points="300.0,240.0 220.0,280.0 "
+                stroke-width="2.0" stroke="#1d232e" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1369934247">
+            <polyline points="320.0,240.0 400.0,280.0 "
+                stroke-width="2.0" stroke="#1d232e" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1480222089">
+            <polyline points="660.0,240.0 580.0,280.0 "
+                stroke-width="2.0" stroke="#1d232e" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1288505222">
+            <polyline points="680.0,240.0 760.0,280.0 "
+                stroke-width="2.0" stroke="#1d232e" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1629936008">
+            <polyline points="760.0,340.0 680.0,380.0 "
+                stroke-width="2.0" stroke="#1d232e" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id915377791">
+            <polyline points="780.0,340.0 860.0,380.0 "
+                stroke-width="2.0" stroke="#1d232e" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id258959737">
+            <rect x="621.5" y="281.5" width="297.0" height="157.0"
+                latexdraw:borderPos="outer" stroke-width="3.0"
+                stroke="#1d232e" fill="none" stroke-linecap="round" stroke-dasharray="1, 8.291666666666668"/>
+        </g>
+        <g latexdraw:type="rectangle" id="id688747994">
+            <rect x="161.0" y="181.0" width="298.0" height="158.0"
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#1d232e" fill="none"/>
+        </g>
+        <g latexdraw:type="arc" id="id30945195" transform="rotate(244.24913457649097) translate(-1044.815288592517 56.035847076181426)">
+            <path
+                d="M 537.5566630987803 160.02132267810524 A 140.0 140.0 0.0 0 0 401.0435387702149 282.93829192327934 "
+                latexdraw:borderPos="outer" stroke-width="2.0"
+                stroke="#1d232e" fill="none"
+                latexdraw:rotationAngle="4.262951593506493" marker-start="url(#arrow0-30945195)"/>
+        </g>
+        <g latexdraw:type="text" id="id81926372" fill="black" latexdraw:position="tr">
+            <text x="420.0" y="420.0"><![CDATA[Same subtree!!]]></text>
+        </g>
+    </g>
+    <defs>
+        <marker overflow="visible" orient="auto" id="arrow0-30945195">
+            <path
+                d="M 0.0 0.0 L 8.995729166666667 2.6614583333333335 L 8.6359 0.0 L 8.995729166666667 -2.6614583333333335 z "
+                latexdraw:arrSizeNum="4.0" fill="#1d232e"/>
+        </marker>
+    </defs>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes><![CDATA[]]></latexdraw:latexIncludes>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.1</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1920</latexdraw:width>
+                <latexdraw:height>1084</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>1920.0</latexdraw:x>
+                <latexdraw:y>0.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>
