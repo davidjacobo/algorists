@@ -1,0 +1,428 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{listings} % C++ code
+\lstset{language=C++,
+                basicstyle=\footnotesize\ttfamily,
+                keywordstyle=\footnotesize\color{blue}\ttfamily,
+}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Z algorithm]{Z algorithm} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Ulises M\'endez Mart\'{i}nez} % Your name
+\institute[UTM] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Algorist Weekly Talks \\ % Your institution for the title page
+\medskip
+\textit{ulisesmdzmtz@gmail.com} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+%---------------------------------------------
+%\begin{frame}
+%\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+%\onslide<2->
+%\begin{figure}
+%\includegraphics[width=0.45\linewidth]{z_image.png}
+%\end{figure}
+
+
+%\end{frame}
+%--------------------------------------------
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use 
+\end{frame}
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Motivation} 
+
+\begin{frame}
+
+\frametitle{ At the end of the day we will be able to solve... }
+
+\subsection{Exact string matching}
+\begin{block}{Exact string matching}
+Given a (long) string \textbf{S} of length \textbf{n} and a shorter string pattern \textbf{P} of length \textbf{m} find all occurrences of \textbf{P} in \textbf{S}.
+\\Occurrences of \textbf{P} are allowed to overlap.
+\end{block}
+
+\subsection{Prefix, suffix problem} 
+
+\begin{block}{CF Beta Round 93. Problem B. Password}
+Given a string \textbf{S} find the longest substring which is both prefix and suffix of \textbf{S} and also appears inside \textbf{S}.
+\end{block}
+
+\end{frame}
+
+%------------------------------------------------
+\section{Two Pointers}
+\subsection{With two list }
+\begin{frame}[fragile]
+\frametitle{Two Pointer Technique}
+
+\onslide <1-> The 2 pointer technique is mostly applicable in sorted arrays where we try to perform a search in $\mathbf{O(N)}$.
+
+\onslide <2-> \begin{block}{With two list }
+Given two arrays $\mathbf{(A}$ and $\mathbf{B)}$ sorted in ascending order and an integer $\mathbf{X}$, we need to find $\mathbf{i}$ and $\mathbf{j}$, such that $\mathbf{a[i] + b[j]}$ is equal to $\mathbf{X}$.
+\end{block}
+
+\onslide <3->
+\begin{block}{Solution}
+\begin{lstlisting}
+i = 0; j = b.size() - 1;
+while( i < a.size() )
+{
+  while(a[i]+b[j]>X && j>0) j--;
+  if(a[i]+b[j]==X) processAnswer(i,j);
+  ++i;
+}
+\end{lstlisting}
+\end{block}
+
+\end{frame}
+%------------------------------------------------
+
+\subsection{In a single list}
+\begin{frame}[fragile]
+\onslide <1-> \begin{block}{In a single list}
+Given a list of $\mathbf{N}$ integers, your task is to select $\mathbf{K}$ integers from the list such that its unfairness is minimized. 
+\\~\\
+If $(\mathbf{x_1,x_2,x_3,...,x_k})$ are $\mathbf{K}$ numbers selected from the list $\mathbf{N}$, the unfairness is defined as $ \mathbf{max(x_1,x_2,...,x_k) - min(x_1,x_2,...,x_k)}$ where max denotes the largest integer among the elements of $\mathbf{K}$, and min denotes the smallest integer among the elements of $\mathbf{K}$.
+\end{block}
+
+\onslide <2->\begin{block}{Solution}
+\begin{lstlisting}
+mn = INT_MAX;
+sort(a,a+n);
+for(i=0;i<=n-k;i++)
+{
+  mn = min(mn , a[i+k-1]-a[i]);
+}
+cout<<mn<<endl;
+\end{lstlisting}
+\end{block}
+\end{frame}
+%------------------------------------------------
+\section{Z algorithm}
+\subsection{Definition}
+%------------------------------------------------
+\begin{frame}
+\frametitle{Z function}
+\begin{block}{Definition}
+Given a string $\mathbf{S}$ of length $\mathbf{n}$, the $\mathbf{Z}$ \textbf{Algorithm} produces an array $\mathbf{Z}$ where $\mathbf{Z[i]}$ is the length of the longest substring starting from $\mathbf{S[i]}$ which is also a \textbf{prefix} of $\mathbf{S}$, i.e. the maximum $\mathbf{k}$ such that $\mathbf{S[j] = S[i + j]}$ for all $\mathbf{0 \le j < k}$. Note that $\mathbf{Z[i] = 0}$ means that $\mathbf{S[0] \ne S[i]}$. 
+\end{block}
+\end{frame}
+%-------------------
+\begin{frame}
+\frametitle{Strings with their $Z$ values}
+\begin{table}
+\begin{tabular}{|c|c|c|}
+\toprule
+\textbf{aaaaa} & \textbf{aaabaab} & \textbf{abacaba}\\
+\midrule
+$z[0]=0$ & $z[0]=0$ & $z[0]=0$ \\
+$z[1]=4$ & $z[1]=2$ & $z[1]=0$ \\
+$z[2]=3$ & $z[2]=1$ & $z[2]=1$ \\
+$z[3]=2$ & $z[3]=0$ & $z[3]=0$ \\
+$z[4]=1$ & $z[4]=2$ & $z[4]=3$ \\
+         & $z[5]=1$ & $z[5]=0$ \\
+         & $z[6]=0$ & $z[6]=1$ \\
+
+\bottomrule
+\end{tabular}
+\caption{Example of $Z$ function}
+\end{table}
+\end{frame}
+
+%------------------------------------------------
+\subsection{Algorithm}
+
+\begin{frame}
+\frametitle{Algorithm}
+\begin{block}{Z-Box}
+The algorithm relies on a single, crucial invariant. As we iterate over the letters in the string (index $\mathbf{i}$ from $\mathbf{1}$ to $\mathbf{n-1}$), we maintain an interval $\mathbf{[L, R]}$ which is the interval with \textbf{maximum R} such that $\mathbf{1 \le L \le i \le R}$ and $\mathbf{S[L...R]}$ is a \textbf{prefix-substring}.
+\end{block} 
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Procedure}
+\onslide <1-> Now suppose we have the correct interval $\mathbf{[L, R]}$ for $\mathbf{i-1}$ and all of the $\mathbf{Z}$ values up to $\mathbf{i-1}$. We will compute $\mathbf{Z[i]}$ and the new $\mathbf{[L, R]}$ by the following steps:
+\onslide <2->
+\begin{block}{If $\mathbf{i > R}$}
+Then there does not exist a prefix-substring of $\mathbf{S}$ that starts before $\mathbf{i}$ and ends at or after $\mathbf{i}$. If such a substring existed, $\mathbf{[L, R]}$ would have been the interval for that substring rather than its current value. Thus we \textbf{``reset''} and compute a new $\mathbf{[L, R]}$ by comparing $\mathbf{S[0...]}$ to $\mathbf{S[i...]}$ and get $\mathbf{Z[i]}$ at the same time $(\mathbf{Z[i] = R - L + 1})$.
+\end{block}
+
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\onslide <1->
+Otherwise, $\mathbf{i \le R}$, so the current $\mathbf{[L, R]}$ extends at least to $\mathbf{i}$. Let $\mathbf{k = i - L}$. We \textbf{know that} $\mathbf{Z[i] \ge min(Z[k], R - i + 1)}$ because $\mathbf{S[i...]}$ matches $\mathbf{S[k...]}$ for at least $\mathbf{R - i + 1}$ characters (they are in the $\mathbf{[L, R]}$ interval which we know to be a prefix-substring).\\~\\
+
+Now we have a few more cases to consider.
+\onslide <2-> 
+\begin{block}{If $\mathbf{Z[k] < R - i + 1}$}
+Then there is no longer prefix-substring starting at $\mathbf{S[i]}$ (or else $\mathbf{Z[k]}$ would be larger), meaning $\mathbf{Z[i] = Z[k]}$ and $\mathbf{[L, R]}$ stays the same. The latter is \textbf{true} because $\mathbf{[L, R]}$ only changes if there is a prefix-substring starting at $\mathbf{S[i]}$ that extends beyond $\mathbf{R}$, which we know is not the case here.
+\end{block}
+\end{frame}
+%------------------------------------------
+\begin{frame}
+
+\begin{block}{$\mathbf{Z[k] \ge R - i + 1}$}
+Then it is possible for $\mathbf{S[i...]}$ to match $\mathbf{S[0...]}$ for more than $\mathbf{R - i + 1}$ characters (i.e. past position $\mathbf{R}$). Thus we need to update $\mathbf{[L, R]}$ by setting $\mathbf{L = i}$ and matching from $\mathbf{S[R + 1]}$ forward to obtain the new $\mathbf{R}$. Again, we get $\mathbf{Z[i]}$ during this.
+\end{block}
+
+\begin{itemize}
+\item The process computes all of the $\mathbf{Z}$ values in a single pass over the string, so we are done.
+\item Correctness is inherent in the algorithm and is pretty intuitively clear.
+\end{itemize}
+\end{frame}
+%------------------------------------------------------------
+\subsection{Sample}
+\begin{frame}
+\frametitle{Example $\mathbf{S=aabcaabxaaaz}$}
+\begin{table}
+\begin{tabular}{| c | c | c | c | c | c | c | c | c | c | c | c | c |}
+\toprule
+\textbf{v \textbackslash  i } & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8}  & \textbf{9} & \textbf{10}  & \textbf{11} \\
+\midrule
+$S_i$ &a  & a &  b & c  &  a  & a  &  b  &  x  &  a  &  a  &  a  & z  \\ %\hline
+\midrule
+$ L $      &  0  & 1  & 2  & 3  &  4  & 4  &  4  &  7  &  8  &  9  &  9  & 11  \\
+$ R $      &  0  & 1  & 1  & 2  &  6  & 6  &  6  &  6  &  9  & 10 & 10 & 11 \\
+$ k $      &  -  &  -  &  -  & -   &  -   & 1  &  2  &  -   &  -  &  -   &  1  &  -  \\
+$ Z[ k ] $ &  -  &  -  &  -  & -   &  -   & 1  &  0  &  -  &  -   &  -   &  1  &  -  \\
+\midrule
+$ Z[ i ] $ &  0 &  1 &  0  & 0  & 3   & 1  &  0  &  0  &  2  &  2  &  1 & 0 \\
+\bottomrule
+\end{tabular}
+\caption{Example of $Z$ algorithm}
+\end{table}
+See algorithm running step by step in the following \href{http://www.utdallas.edu/~besp/demo/John2010/z-algorithm.htm}{\beamergotobutton{Link}}
+\end{frame}
+
+%-------------------------------------------------
+\subsection{Implementation}
+\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+\frametitle{Algorithm Code}
+\begin{example}[ C++ Implementation ]
+%\begin{columns}[T]
+%\begin{column}{0.64\textwidth}
+\begin{lstlisting}
+int L = 0, R = 0;
+for (int i = 1; i < n; i++) {
+  if (i > R) {
+    L = R = i;
+    while (R < n && s[R-L] == s[R]) R++;
+    z[i] = R-L; R--;
+  } else {
+    int k = i-L;
+    if (z[k] < R-i+1) z[i] = z[k];
+    else {
+      L = i;
+      while (R < n && s[R-L] == s[R]) R++;
+      z[i] = R-L; R--;
+    }
+  }
+}
+\end{lstlisting}
+\end{example}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Solution to our original problems}
+\begin{block}{String matching}
+We can do this in $\mathbf{O(n + m)}$ time by using the $\mathbf{Z}$ Algorithm on the string $\mathbf{P \$ S}$ (that is, concatenating $\mathbf{P}$, $\mathbf{\$}$, and $\mathbf{S}$) where $\mathbf{\$}$ is a character that matches nothing. The indices $\mathbf{i}$ with $\mathbf{Z[i] = m}$ correspond to matches of $\mathbf{P}$ in $\mathbf{S}$.
+\end{block}
+
+\begin{block}{Problem B}
+We simply compute $\mathbf{Z}$ for the given string $\mathbf{S}$, then iterate from $\mathbf{i}$ to $\mathbf{n-1}$. If $\mathbf{Z[i] = n - i}$ then we know the suffix from $\mathbf{S[i]}$ is a prefix, and if the largest $\mathbf{Z}$ value we've seen so far is at least $\mathbf{n - i}$, then we know some string inside also matches that prefix.
+\begin{lstlisting}
+for (int i = 1; i < n; i++){
+  if (z[i] == n-i && maxz >= n-i) { res = n-i; break; }
+  maxz = max(maxz, z[i]);
+}
+\end{lstlisting}
+\end{block}
+
+\end{frame}
+%------------------------------------------------
+\begin{frame}
+\Huge{\centerline{ Q \& A }}
+
+\normalsize
+{
+\begin{block}{References}
+\begin{itemize}
+\item \url{http://codeforces.com/blog/entry/3107}
+\item \url{https://www.hackerrank.com/challenges/pairs/topics/two-pointer-technique}
+\item \url{http://e-maxx-eng.github.io/string/z-function.html}
+\end{itemize}
+\end{block}
+}
+\end{frame}
+%------------------------------------------------
+%\begin{frame}
+%\frametitle{Figure}
+%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+%\begin{figure}
+%\includegraphics[width=0.4\linewidth]{z_image.png}
+%\end{figure}
+%\end{frame}
+
+%------------------------------------------------
+
+%\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+%\frametitle{Citation}
+%An example of the \verb|\cite| command to cite within the presentation:\\~
+
+%This statement requires citation \cite{p1}.
+%\end{frame}
+
+%------------------------------------------------
+
+%\begin{frame}
+%\frametitle{References}
+%\footnotesize{
+%\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+%\bibitem[Smith, 2012]{p1} John Smith (2012)
+%\newblock Title of the publication
+%\newblock \emph{Journal Name} 12(3), 45 -- 678.
+%\end{thebibliography}
+%}
+%\end{frame}
+
+%\begin{frame}
+%\frametitle{Theorem}
+%\begin{theorem}[Mass--energy equivalence]
+%$E = mc^2$
+%\end{theorem}
+%\end{frame}
+%------------------------------------------------
+%\begin{frame}
+%\frametitle{Bullet Points}
+%\begin{itemize}
+%\item Lorem ipsum 45 \(45\) \textbf{45} \(\textbf{45}\) dolor sit amet, consectetur adipiscing elit
+%\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
+%\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
+%\item Nam cursus est eget velit posuere pellentesque
+%\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+%\end{itemize}
+%\end{frame}
+
+
+%\begin{frame}
+%\frametitle{Multiple Columns}
+%\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+%\column{.45\textwidth} % Left column and width
+%\textbf{Heading}
+%\begin{enumerate}
+%\item Statement
+%\item Explanation
+%\item Example
+%\end{enumerate}
+
+%\column{.5\textwidth} % Right column and width
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+
+%\end{columns}
+%\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
