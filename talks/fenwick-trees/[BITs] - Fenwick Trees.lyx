@@ -1,0 +1,2633 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\usetheme[language=spanish,oldstylearrows,nologo,numbers]{Zatarain}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\usepackage[euler-digits]{eulervm}
+\usefonttheme{professionalfonts}
+\usepackage{dsfont}
+%\usepackage[table]{xcolor}
+%\usepackage{booktabs}
+
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins,fitting}
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\DeclareMathOperator{\cov}{cov}
+\renewcommand{\mathbf}{\boldsymbol}
+\DeclareMathOperator{\idv}{div}
+\DeclareMathOperator{\diag}{diag}
+
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\SetKwInOut{Data}{input}
+\SetKwInOut{Result}{output}
+\SetKw{KwTo}{to}
+\SetKw{KwRet}{return}
+\SetKw{Return}{return}
+\SetKwProg{Function}{function}{begin}{end}
+\SetKwBlock{Begin}{begin}{end}
+\SetKwRepeat{Repeat}{repeat}{until}
+\SetKwIF{If}{ElseIf}{Else}{if}{then:}{else if}{else:}{end}
+\SetKwSwitch{Switch}{Case}{Other}{select}{for}{case}{otherwise}{end}{end}
+\usepackage{algpseudocode}
+\SetKwFor{For}{for}{do}{end}
+\SetKwFor{ForPar}{parallel for}{do}{end}
+\SetKwFor{ForEach}{for each}{do}{end}
+\SetKwFor{ForAll}{for all}{do}{end}
+\SetKwFor{While}{while}{do}{end}
+\SetKwFunction{getvalue}{get}
+\SetKwFunction{setvalue}{set}
+\SetKwFunction{writevalue}{write}
+\SetKwFunction{readvalue}{read}
+\SetKwFunction{addvalue}{add}
+\SetSideCommentRight
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\tcbset{smallvalues/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
+colback=zorange!10!white,colframe=zorange!90!black,colbacktitle=zorange!90!white,
+coltitle=white,center title}}
+\end_preamble
+\use_default_options false
+\begin_modules
+algorithm2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Binary Indexed Trees (Fenwick Trees)
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Binary Indexed Trees [BITs]
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, use only with long paper titles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Ulises
+\begin_inset space ~
+\end_inset
+
+Tirado Zatarain 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Ulises Tirado Zatarain
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex InstituteMark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(ulises.tirado@cimat.mx) 
+\end_layout
+
+\begin_layout Institute
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Algorists Group
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Intel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+August, 2015
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Either use conference name or its abbreviation.
+ 
+\end_layout
+
+\begin_layout Itemize
+Not really informative to the audience, more for people (including yourself)
+ who are reading the slides online
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Aug, 2015
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, should be abbreviation of conference name
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you have a file called "institution-logo-filename.xxx", where xxx is a
+ graphic format that can be processed by latex or pdflatex, resp., then you
+ can add a logo by uncommenting the following:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=0.75cm]{institution-logo}{cimatlogo.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The following causes the table of contents to be shown at the beginning
+ of every subsection.
+ Delete this, if you do not want it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+AtBeginSubsection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%  }
+\end_layout
+
+\begin_layout Plain Layout
+
+%}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Structuring a talk is a difficult task and the following structure may not
+ be suitable.
+ Here are some rules that apply for this solution: 
+\end_layout
+
+\begin_layout Itemize
+Exactly two or three sections (other than the summary).
+ 
+\end_layout
+
+\begin_layout Itemize
+At *most* three subsections per section.
+ 
+\end_layout
+
+\begin_layout Itemize
+Talk about 30s to 2min per frame.
+ So there should be between about 15 and 30 frames, all told.
+\end_layout
+
+\begin_layout Itemize
+A conference audience is likely to know very little of what you are going
+ to talk about.
+ So *simplify*! 
+\end_layout
+
+\begin_layout Itemize
+In a 20min talk, getting the main ideas across is hard enough.
+ Leave out details, even if it means being less precise than you think necessary.
+ 
+\end_layout
+
+\begin_layout Itemize
+If you omit details that are vital to the proof/implementation, just say
+ so once.
+ Everybody will be happy with that.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Basic Problem
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Basic problem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Introduction - Basic problem
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We have 
+\begin_inset Formula $n$
+\end_inset
+
+ boxes and we need to perform two operations:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Add marbles to box 
+\begin_inset Formula $k$
+\end_inset
+
+: 
+\begin_inset Formula $\mathcal{O}\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Sum marbles from box 
+\begin_inset Formula $i$
+\end_inset
+
+ to 
+\begin_inset Formula $j$
+\end_inset
+
+: 
+\begin_inset Formula $\mathcal{O}\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Suppose we make 
+\begin_inset Formula $q$
+\end_inset
+
+ queries.
+ The worst case has time complexity 
+\begin_inset Formula ${\cal O}\left(qn\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Using Segment Trees/RMQ: 
+\begin_inset Formula ${\cal O}\left(q\lg n\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Basic Idea 
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Basic idea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Introduction - Basic idea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Taking the binary representation of an integer 
+\begin_inset Formula $k$
+\end_inset
+
+, we can compute the sum of elements from 
+\begin_inset Formula $1$
+\end_inset
+
+ to 
+\begin_inset Formula $k$
+\end_inset
+
+ as sum of set of sums.
+\end_layout
+
+\begin_layout Itemize
+Each set contains son successive number of non-overlapping sums.
+ Then, we can build a data structure indexed by the binary representation:
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Binary Indexed Tree
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $k$
+\end_inset
+
+ is an index of our BIT and 
+\begin_inset Formula $r$
+\end_inset
+
+ is the position in 
+\begin_inset Formula $k$
+\end_inset
+
+ of the last bit 
+\begin_inset Formula $1$
+\end_inset
+
+, then 
+\begin_inset Formula $t_{k}$
+\end_inset
+
+ is sum of boxes from index 
+\begin_inset Formula $k-2^{r}+1$
+\end_inset
+
+ to index 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ In other words, we mean that 
+\begin_inset Formula $k$
+\end_inset
+
+ is responsible for indexes in 
+\begin_inset Formula $\left[k-2^{r}+1,k\right]\cap\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Introduction - Basic idea
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tcolorbox}[smallvalues,fit basedim=10pt,tabularx={X|YYYYYYYYYYYYYYYY},titl
+e=Responsibility table,boxrule=0.5pt,width=27pc]
+\end_layout
+
+\begin_layout Plain Layout
+
+$k$		  & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ & $7$ & $8$ & $9$ & $10$ & $11$
+ & $12$ & $13$ & $14$ & $15$ & $16$ 
+\backslash
+
+\backslash
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+R		&
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}1}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}1..2}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}3}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}1..4}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}5}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}5..6}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}7}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}1..8}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}9}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}9..10}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}11}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}9..12}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}13}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}13..14}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}15}{
+\backslash
+tiny 
+\backslash
+par} &
+\end_layout
+
+\begin_layout Plain Layout
+
+		{
+\backslash
+tiny{}1..16}{
+\backslash
+tiny 
+\backslash
+par} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$v_k$		& $1$ & $0$ & $2$ & $1$ & $1$ & $3$ & $0$ & $4$ & $2$ & $5$ & $2$
+ & $2$ & $3$ & $1$ & $0$ & $2$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$t_k$		& $1$ & $1$ & $2$ & $4$ & $1$ & $4$ & $0$ & $12$ & $2$ & $7$ & $2$
+ & $11$ & $3$ & $4$ & $0$ & $29$ 
+\backslash
+
+\backslash
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Sigma_k$   & $1$ & $1$ & $3$ & $4$ & $5$ & $8$ & $8$ & $12$ & $14$ & $19$
+ & $21$ & $23$ & $26$ & $27$ & $27$ & $29$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tcolorbox}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For example, if we are looking the sum of the first 
+\begin_inset Formula $13$
+\end_inset
+
+ elements, 
+\begin_inset Formula $13$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $1101_{2}$
+\end_inset
+
+.
+ Then, we will compute:
+\begin_inset Formula 
+\[
+\Sigma_{1101_{2}}=t_{1101_{2}}+t_{1100_{2}}+t_{1000_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Operations
+\end_layout
+
+\begin_layout Subsection
+The last bit
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Isolating last bit 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Isolating the last bit 
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let 
+\begin_inset Formula $x\in\mathbb{Z}$
+\end_inset
+
+, then we can write 
+\begin_inset Formula $x$
+\end_inset
+
+ in binary representation as 
+\begin_inset Formula $\left[x\right]_{2}=y1z$
+\end_inset
+
+, where 
+\begin_inset Formula $z$
+\end_inset
+
+ consists of all zeros, so 
+\begin_inset Formula $\tilde{z}$
+\end_inset
+
+ consists of al ones.
+ Then, we have:
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}\left[-x\right]_{2}= & \widetilde{y1z}+1\\
+= & \tilde{y}0\tilde{z}+1\\
+= & \tilde{y}01\ldots1+1\\
+= & \tilde{y}10\ldots0\\
+= & \tilde{y}1z
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Using bitwise operator AND between 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $-x$
+\end_inset
+
+, we can get: 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\&$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\ldots0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\ldots0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Reading 
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Reading
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Reading 
+\begin_inset Formula $\Sigma_{k}$
+\end_inset
+
+: 
+\begin_inset Formula ${\cal O}\left(\lg n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If we need the sum for some integer 
+\begin_inset Formula $k$
+\end_inset
+
+, we add to sum 
+\begin_inset Formula $t_{k}$
+\end_inset
+
+, substractnlas bit 
+\begin_inset Formula $k$
+\end_inset
+
+ from itself and repeat this until 
+\begin_inset Formula $k\leq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+readvalue{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\in\mathbb{Z}^{+}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}} {
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $sum\longleftarrow0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k>0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $sum\longleftarrow sum+t_{k}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\longleftarrow k-\left(k\mbox{ }\&\mbox{ }-k\right)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Return{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $sum$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Writing 
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Writing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Writing 
+\begin_inset Formula $t_{k}$
+\end_inset
+
+: 
+\begin_inset Formula ${\cal O}\left(\lg n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+When we want to update the 
+\begin_inset Formula $k$
+\end_inset
+
+-th element we need to update all indexes whose responsible for the element
+ 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+addvalue{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\in\mathbb{Z}^{+}$
+\end_inset
+
+,
+\begin_inset Formula $value\in\mathbb{Z}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}} {
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\leq n$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $t_{k}\longleftarrow t_{k}+value$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\longleftarrow k+\left(k\mbox{ }\&\mbox{ }-k\right)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Get single 
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Get single
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Get single 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+: 
+\begin_inset Formula ${\cal O}\left(\lg n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+getvalue{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\in\mathbb{Z}^{+}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}} {
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $sum\longleftarrow t_{k}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+If{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k>0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $z\longleftarrow k-\left(k\mbox{ }\&\mbox{ }-k\right)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+While{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\neq z$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $sum\longleftarrow sum-t_{k}$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+			
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\longleftarrow k-\left(k\mbox{ }\&\mbox{ }-k\right)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Return{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $sum$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Problems
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Problems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+There is an array of n cards.
+ Each card is putted face down on table.
+ You have two queries:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $T\left(i,j\right)$
+\end_inset
+
+ turn cards from index i to index j, include i-th and j-th card – card which
+ was face down will be face up; card which was face up will be face down
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q\left(i\right)$
+\end_inset
+
+ answer 0 if i-th card is face down else answer 1
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Floating Median"
+target "http://community.topcoder.com/stat?c=problem_statement&pm=6551&rd=9990"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Multidimensional BITs
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+2D BITs 
+\begin_inset Formula ${\cal O}\left(q\lg m\lg n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+addvalue{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x,y\in\mathbb{Z}^{+}$
+\end_inset
+
+,
+\begin_inset Formula $value\in\mathbb{Z}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}} {
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $sum\longleftarrow0$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\leq n$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\hat{y}\longleftarrow y$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\backslash
+While{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\hat{y}\leq m$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+				
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $t_{x,\hat{y}}\longleftarrow t_{x,\hat{y}}+value$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+				
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\hat{y}\longleftarrow\hat{y}+\left(\hat{y}\mbox{ }\&\mbox{ }-\hat{y}\right)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x\longleftarrow x+\left(x\mbox{ }\&\mbox{ }-x\right)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\start_of_appendix
+Appendix
+\end_layout
+
+\begin_layout Subsection*
+References
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+References
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatebookbibitems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "TopCoder"
+target "https://www.topcoder.com/community/data-science/data-science-tutorials/binary-indexed-trees/#prob"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Math Porn @ tumblr"
+target "http://math-porn.tumblr.com/post/93129714459/range-queries-and-fenwick-trees"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Multidimensional BITs"
+target "http://arxiv.org/pdf/1311.6093v4.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
