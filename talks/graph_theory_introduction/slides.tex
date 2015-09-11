@@ -1,0 +1,109 @@
+\documentclass[article]{beamer}
+\usetheme{Warsaw}
+\setbeamertemplate{footline}[frame number]
+
+\usefonttheme[]{serif}
+\usepackage{amsmath, latexsym, color, graphicx, amssymb, bm, here}
+\usepackage{epsf, epsfig, pifont,tikz,subfigure}
+\usepackage{graphics, calrsfs}
+\usepackage{times}
+\usepackage{fancybox,calc}
+\usepackage{palatino,mathpazo}
+\usepackage{amsfonts}
+\usepackage{sidecap}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\title{Graph Theory: Introduction}
+\author{David Jacobo \\ \href{mailto:jguillen@cimat.mx}{jguillen@cimat.mx}}
+\date{\scriptsize{\today}}
+
+\AtBeginSection[]
+{
+  \begin{frame}{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+			
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Definition}
+\begin{center}
+\huge
+	G = (V, E)
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Motivation}
+
+\subsection{Seven Bridges of Konigsberg}
+\begin{frame}
+	\frametitle{Seven Bridges of Koninsberg}
+	Little history...
+	
+\end{frame}
+
+\subsection{Six degrees of separation theory}
+\begin{frame}
+	\frametitle{Six degrees of separation theory}
+	"Six degrees of separation is the theory that everyone and everything is six or fewer steps away, by way of introduction, from any other person in the world ... It was originally set out by Frigyes Karinthy in 1929..." - Wikipedia
+\end{frame}
+
+\section{Graph theory basics}
+
+\subsection{Jargon}
+\begin{frame}
+\end{frame}
+
+\subsection{Graph representation}
+\begin{frame}
+	\frametitle{Adjacency Matrix}
+	Having a \textbf{VxV matrix}, the space complexity for this is \textbf{O($V^2$)}. Preferred for dense graphs or for using with algorithms which constantly require to check if a particular edge exists.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Adjacency List}
+	List which contains the direct neighbours per each of the vertices, the memory space usage is \textbf{O(V + E)}. Preferred when our graph is sparse or the algorithm need to list the outgoing edges efficiently. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Edges List}
+	The graph is stored as triplets of data (x,y,w) where w represents some distance/cost. This is particular useful for very specific tasks as in Kruskal's Minimum Spanning Tree algorithm. \textbf{O(E)} represents the space complexity.
+\end{frame}
+
+\section{Graph traversal}
+
+\subsection{Deep First Search (DFS)}
+\begin{frame}
+	\frametitle{DFS Algorithm}
+\end{frame}
+
+\subsection{Breadth First Search (BFS)}
+\begin{frame}
+	\frametitle{BFS Algorithm}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\frametitle{}
+\begin{center}
+\Huge{\color{blue}{Q \& A}}
+\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+	\textbf{References}
+	\begin{itemize}
+		\item \href{https://sites.google.com/site/stevenhalim/}{Competitive Programming site}
+		\item \href{https://github.com/davidjacobo/algorists/}{Algorists' repository}
+	\end{itemize}
+\end{frame}
+\end{document}
