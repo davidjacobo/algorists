@@ -55,12 +55,16 @@
 	\vspace{5mm}
 	
 	%insert image here
-	
+	\begin{columns}
+	\column{.5\textwidth}
 	Usage:
 	\begin{itemize}
 		\item Component labeling
 		\item Reachability test
 	\end{itemize}
+	\column{.5\textwidth}
+	\includegraphics[scale=0.3]{./figures/forest.eps}
+	\end{columns}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,10 +121,15 @@
 	\vspace{5mm}
 	%insert image here
 	
+	\begin{columns}
+	\column{.6\textwidth}
 	Usage:
 	\begin{itemize}
 		\item Bipartite matching is based on this algorithm as pre-processing in the case the 2 groups are not given in beforehand.
 	\end{itemize}
+	\column{.4\textwidth}
+	\includegraphics[scale=0.2]{./figures/bipartite.eps}
+	\end{columns}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -168,10 +177,12 @@
 \subsection{Intuition}
 \begin{frame}
 	\frametitle{Cycle detection}
-	Remember a cycle could be described as: \textbf{$v_{0}, v_{1}, v_{2} ... v_{n}, v_{0}$}. Could you detect a cycle on the graph, if present?
+	A cycle could be described as: \textbf{$v_{0}, v_{1}, v_{2} ... v_{n}, v_{0}$}. Could you detect a cycle on the graph, if present?
 	
 	\vspace{5mm}
 	
+	\begin{columns}
+	\column{.5\textwidth}
 	Usage:
 	\begin{itemize}
 		\item Topological sorting
@@ -180,6 +191,9 @@
 		\item Bridges detection 
 		\item Articulation point detection
 	\end{itemize}
+	\column{.5\textwidth}
+	\includegraphics[scale=0.4]{./figures/path_cycle.eps}
+	\end{columns}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
