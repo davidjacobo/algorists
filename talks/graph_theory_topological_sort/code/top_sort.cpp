@@ -63,7 +63,7 @@ public:
 	}
 
 	~Graph() {
-		delete graph;
+		delete[] graph;
 	}
 private:
 	int V,E;
