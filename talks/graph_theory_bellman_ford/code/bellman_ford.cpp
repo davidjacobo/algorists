@@ -38,7 +38,9 @@ int cycle_present(const vii (&graph)[MAX_V], int* distances,int v) {
 			int total_dist = distances[j] + w;
 			if(total_dist < distances[y]) {
 				//There shouldn't be another relaxation in here
-				return y;
+				//we have an edge (j -> y) to update, so j is propagating
+				//a new minimal distance, report j as part of the cycle
+				return j;
 			}
 		}
 	}
