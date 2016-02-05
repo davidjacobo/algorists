@@ -1,0 +1,2392 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\usetheme[language=spanish,oldstylearrows,nologo,numbers]{Zatarain}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\usepackage[euler-digits]{eulervm}
+\usefonttheme{professionalfonts}
+\usepackage{dsfont}
+%\usepackage[table]{xcolor}
+%\usepackage{booktabs}
+
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins,fitting}
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\DeclareMathOperator{\posdef}{+def}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\cov}{cov}
+\renewcommand{\mathbf}{\boldsymbol}
+\DeclareMathOperator{\idv}{div}
+\DeclareMathOperator{\diag}{diag}
+
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\SetKwInOut{Data}{Parameters}
+\SetKwInOut{Result}{output}
+\SetKw{struct}{struct}
+\SetKw{KwTo}{to}
+\SetKw{KwRet}{return}
+\SetKw{Return}{return}
+\SetKwProg{Function}{function}{begin}{end}
+\SetKwBlock{Begin}{begin}{end}
+\SetKwRepeat{Repeat}{repeat}{until}
+\SetKwIF{If}{ElseIf}{Else}{if}{then:}{else if}{else:}{end}
+\SetKwSwitch{Switch}{Case}{Other}{select}{for}{case}{otherwise}{end}{end}
+\usepackage{algpseudocode}
+\SetKwFor{For}{for}{do}{end}
+\SetKwFor{ForPar}{parallel for}{do}{end}
+\SetKwFor{ForEach}{for each}{do}{end}
+\SetKwFor{ForAll}{for all}{do}{end}
+\SetKwFor{While}{while}{do}{end}
+
+\SetKw{Static}{static}
+\SetKw{Const}{const}
+\SetKw{Struct}{struct}
+\SetKw{Class}{class}
+\SetKw{New}{new}
+
+
+\SetKwFunction{spectralclustering}{spectral-clustering}
+\SetKwFunction{imagesegmentation}{image-segmentation}
+\SetKwFunction{entry}{matrix::entry}
+\SetKwFunction{matrix}{matrix}
+\SetKwFunction{addvalue}{add}
+\SetSideCommentRight
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\tcbset{smallvalues/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
+colback=zorange!10!white,colframe=zorange!90!black,colbacktitle=zorange!90!white,
+coltitle=white,center title}}
+\end_preamble
+\use_default_options false
+\begin_modules
+algorithm2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Linear Algebra and Graphs Applications
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Spectral Graph Theory
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, use only with long paper titles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Ulises
+\begin_inset space ~
+\end_inset
+
+Tirado Zatarain 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Ulises Tirado Zatarain
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex InstituteMark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(ulises.tirado@cimat.mx) 
+\end_layout
+
+\begin_layout Institute
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Algorists Group
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Algorists
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+October, 2015
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Either use conference name or its abbreviation.
+ 
+\end_layout
+
+\begin_layout Itemize
+Not really informative to the audience, more for people (including yourself)
+ who are reading the slides online
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Oct, 2015
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, should be abbreviation of conference name
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you have a file called "institution-logo-filename.xxx", where xxx is a
+ graphic format that can be processed by latex or pdflatex, resp., then you
+ can add a logo by uncommenting the following:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=0.75cm]{institution-logo}{cimatlogo.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The following causes the table of contents to be shown at the beginning
+ of every subsection.
+ Delete this, if you do not want it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+AtBeginSubsection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%  }
+\end_layout
+
+\begin_layout Plain Layout
+
+%}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Structuring a talk is a difficult task and the following structure may not
+ be suitable.
+ Here are some rules that apply for this solution: 
+\end_layout
+
+\begin_layout Itemize
+Exactly two or three sections (other than the summary).
+ 
+\end_layout
+
+\begin_layout Itemize
+At *most* three subsections per section.
+ 
+\end_layout
+
+\begin_layout Itemize
+Talk about 30s to 2min per frame.
+ So there should be between about 15 and 30 frames, all told.
+\end_layout
+
+\begin_layout Itemize
+A conference audience is likely to know very little of what you are going
+ to talk about.
+ So *simplify*! 
+\end_layout
+
+\begin_layout Itemize
+In a 20min talk, getting the main ideas across is hard enough.
+ Leave out details, even if it means being less precise than you think necessary.
+ 
+\end_layout
+
+\begin_layout Itemize
+If you omit details that are vital to the proof/implementation, just say
+ so once.
+ Everybody will be happy with that.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Basic concepts
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Basics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Basics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Simple graph
+\end_layout
+
+\end_inset
+
+Is a pair 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $V$
+\end_inset
+
+ is a finite set of vertices and 
+\begin_inset Formula $E\subseteq V\times V$
+\end_inset
+
+ is a symetric and antireflexive relation.
+ In a directed graph 
+\begin_inset Formula $E$
+\end_inset
+
+ isn't necessarily symetric.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/ulises/Documents/tesis/book/img/graph-sample.png
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Basics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The adjacency matrix 
+\begin_inset Formula $\mathbf{A}=\left[a_{ij}\right]\in\left\{ 0,1\right\} ^{\left|V\right|\times\left|V\right|}$
+\end_inset
+
+ is defined as:
+\begin_inset Formula 
+\[
+a_{ij}=\begin{cases}
+1 & \mbox{if }\left(i,j\right)\in E\\
+0 & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The incidence matrix 
+\begin_inset Formula $\mathbf{B}=\left[b_{ij}\right]\in\left\{ 0,1\right\} ^{\left|V\right|\times\left|E\right|}$
+\end_inset
+
+ is defined as:
+\begin_inset Formula 
+\[
+b_{ij}=\begin{cases}
+1 & \mbox{if }i\in V\mbox{ is incident on \ensuremath{j\in E}}\\
+0 & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can denote with 
+\begin_inset Formula $\mathbf{1}$
+\end_inset
+
+ a vector/matrix with all-ones entries such that the operations are defined.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Basics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Degree of a vertex
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $v\in V$
+\end_inset
+
+, its degree is the number of edges incident from/to the vertex and is denoted
+ as 
+\begin_inset Formula $\deg\left(v\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The degree of vertex 
+\begin_inset Formula $k$
+\end_inset
+
+ is the 
+\begin_inset Formula $k$
+\end_inset
+
+-th entry of vector 
+\begin_inset Formula $\mathbf{d}\in\mathbb{R}^{\left|V\right|}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\mathbf{d}=\mathbf{A}\mathbf{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+In a directed graph, we have two kinds of vertex degrees:
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}\mathbf{d}_{\mbox{in}}^{\top} & =\mathbf{1}^{\top}\mathbf{A}\\
+\mathbf{d}_{\mbox{out}} & =\mathbf{A}\mathbf{1}
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can write the average degree as:
+\begin_inset Formula 
+\[
+\bar{d}=\frac{1}{\left|V\right|}\mathbf{1}^{\top}\mathbf{d}=\frac{1}{\left|V\right|}\sum_{v\in V}\deg\left(v\right)=2\frac{\left|E\right|}{\left|V\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Adjacency relations
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Adjacency relations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Relations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+There is one relation between 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{D}=\diag\left(\mathbf{d}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\mathbf{A}=\mathbf{B}\mathbf{B}^{\top}-\mathbf{D}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The link matrix 
+\begin_inset Formula $\mathbf{E}=\left[e_{ij}\right]\in\left\{ 0,1\right\} ^{\left|E\right|\times\left|E\right|}$
+\end_inset
+
+ is defined as:
+\begin_inset Formula 
+\[
+e_{ij}=\begin{cases}
+1 & \mbox{if }i,j\in E\mbox{ have a common vertex}\\
+0 & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The relation between 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ is:
+\begin_inset Formula 
+\[
+\mathbf{E}=\mathbf{B}^{\top}\mathbf{B}-\mathbf{I}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Relations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Edges have degree too as vertex:
+\begin_inset Formula 
+\[
+\boldsymbol{\delta}=\mathbf{E}\mathbf{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+It's easy verify that if edge 
+\begin_inset Formula $k=\left(i,j\right)$
+\end_inset
+
+ then:
+\begin_inset Formula 
+\[
+\delta_{k}=d_{i}+d_{j}-2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Also, if 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ is the number of 
+\begin_inset Formula $2$
+\end_inset
+
+-paths, then:
+\begin_inset Formula 
+\[
+\mathbf{1}^{\top}\mathbf{E}\mathbf{1}=\mathbf{1}^{\top}\boldsymbol{\delta}=2p_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Shapes, structures and spectrum
+\end_layout
+
+\begin_layout Subsection
+Shapes
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Shapes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Shapes and structures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ with adjacency matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, then entry 
+\begin_inset Formula $i,j$
+\end_inset
+
+ of 
+\begin_inset Formula $\mathbf{A}^{n}$
+\end_inset
+
+ is the number of 
+\begin_inset Formula $n$
+\end_inset
+
+-walks from 
+\begin_inset Formula $i$
+\end_inset
+
+ to 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ a bipartite simple graph, such that 
+\begin_inset Formula $V=S\cup T$
+\end_inset
+
+ and 
+\begin_inset Formula $S\cap T=\emptyset$
+\end_inset
+
+, we can write adjacency matrix of 
+\begin_inset Formula $G$
+\end_inset
+
+ as:
+\begin_inset Formula 
+\[
+\mathbf{A}=\left[\begin{array}{cc}
+\mathbf{0} & \tilde{\mathbf{A}}^{\top}\\
+\tilde{\mathbf{A}} & \mathbf{0}
+\end{array}\right]
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\tilde{A}\in\left\{ 0,1\right\} ^{\left|S\right|\times\left|T\right|}$
+\end_inset
+
+ contains adjacency relations betwen vertex in 
+\begin_inset Formula $S$
+\end_inset
+
+ and 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $K_{\ensuremath{\left|V\right|}}$
+\end_inset
+
+ is a complete graph of orden 
+\begin_inset Formula $\left|V\right|$
+\end_inset
+
+, then its adjacency matrix is 
+\begin_inset Formula $\mathbf{A}=\mathbf{1}-\mathbf{I}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Spectrum
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Spectrum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Spectrum (Eigenvalues & Eigenvectors)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let a simple graph 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ with adjacency matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ and let
+\begin_inset Formula $\boldsymbol{\Lambda}=\diag\left(\left[\begin{array}{ccc}
+\lambda_{1} & \cdots & \lambda_{\left|V\right|}\end{array}\right]\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\lambda_{1}\geq\lambda_{2}\geq\cdots\geq\lambda_{\left|V\right|}$
+\end_inset
+
+ are the eigenvalues of 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+, then:
+\begin_inset Formula 
+\[
+\sum_{i=1}^{\left|V\right|}\lambda_{i}=\mathbf{1}^{\top}\boldsymbol{\Lambda}\mathbf{1}=\tr\left(A\right)=\sum_{i=1}^{\left|V\right|}a_{ii}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Moreover, the dominant eigenvalue 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ is bounded as follow:
+\begin_inset Formula 
+\[
+\delta\leq\bar{d}\leq\lambda_{1}\leq\Delta
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ are the minimun and the maximun vertex degree respectively.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Spectrum (Eigenvalues & Eigenvectors)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Since 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ is symetric, we can write 
+\begin_inset Formula $\mathbf{A}=\boldsymbol{\Phi}\boldsymbol{\Lambda}\boldsymbol{\Phi}^{\top}$
+\end_inset
+
+ where 
+\begin_inset Formula $\boldsymbol{\Phi}$
+\end_inset
+
+ is an orthonormal matrix its columns are the eigenvectors of 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ and then 
+\begin_inset Formula $\mathbf{A}^{n}=\boldsymbol{\Phi}\boldsymbol{\Lambda}^{n}\boldsymbol{\Phi}^{\top}$
+\end_inset
+
+, we mean: 
+\begin_inset Formula 
+\[
+\left[\mathbf{A}^{n}\right]_{ij}=\sum_{k=1}^{\left|V\right|}\left[\boldsymbol{\varphi_{k}}_{i}\boldsymbol{\varphi_{k}}_{j}\lambda_{k}^{n}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Suppose two graphs 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ with adjacency matrices 
+\begin_inset Formula $\mathbf{A}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{A}_{2}$
+\end_inset
+
+, then there exists a permutation matrix 
+\begin_inset Formula $\mathbf{P}$
+\end_inset
+
+ such that:
+\begin_inset Formula 
+\[
+\mathbf{A}_{1}=\mathbf{P}\mathbf{A}_{2}\mathbf{P}^{-1}
+\]
+
+\end_inset
+
+if and only if 
+\begin_inset Formula $G_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $G_{2}$
+\end_inset
+
+ are isomorphic and 
+\begin_inset Formula $\mathbf{A}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{A}_{2}$
+\end_inset
+
+ have the same spectrum.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Spectrum (Eigenvalues & Eigenvectors)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If 
+\begin_inset Formula $G$
+\end_inset
+
+ is a bipartite graph, then its spectrum is symetric about 
+\begin_inset Formula $0$
+\end_inset
+
+, we mean:
+\begin_inset Formula 
+\[
+\lambda_{k}=-\lambda_{\left|V\right|-k+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $K_{\ensuremath{\left|V\right|}}$
+\end_inset
+
+ is a complete graph of orden 
+\begin_inset Formula $\left|V\right|$
+\end_inset
+
+, then its adjacency matrix 
+\begin_inset Formula $\mathbf{A}=\mathbf{1}-\mathbf{I}$
+\end_inset
+
+ has the spectrum is:
+\begin_inset Formula 
+\[
+\lambda_{1}=\left|V\right|-1,\lambda_{2}=\cdots=\lambda_{\left|V\right|}=-1
+\]
+
+\end_inset
+
+Also, the eigenvalue 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ has 
+\begin_inset Formula $\mathbf{1}$
+\end_inset
+
+ as its respective eigenvector.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Structures 
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Structures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Structures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+To work with large and sparse graphs we need an structure to represent adjacency
+ matrix:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Class 
+\backslash
+matrix{int V} 
+\backslash
+Begin{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Struct {
+\backslash
+entry *rows[V]
+\backslash
+;}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Struct {
+\backslash
+entry *columns[V]
+\backslash
+;}
+\end_layout
+
+\begin_layout Plain Layout
+
+	int verteces = V
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Static 
+\backslash
+Const 
+\backslash
+Struct 
+\backslash
+entry z
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Structures
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+And the entries are defined as follow:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Struct 
+\backslash
+entry{int i,int j,float info} 
+\backslash
+Begin{
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Struct 
+\backslash
+entry *up = 
+\backslash
+&z
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Struct 
+\backslash
+entry *left = 
+\backslash
+&z
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+Struct 
+\backslash
+entry *right = 
+\backslash
+&z
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Struct 
+\backslash
+entry *down = 
+\backslash
+&z
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    int row = i, column = j
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+    float data = info
+\backslash
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\lang spanish-mexico
+With these structures when we need to compute the product of two sparce
+ matrices we can get this in 
+\begin_inset Formula $\mathcal{O}\left(\left|E\right|\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Other advanced matrices
+\end_layout
+
+\begin_layout Subsection
+Discrete laplacian operator
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Laplacian operator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The laplacian matrix 
+\begin_inset Formula $\boldsymbol{\nabla}=\left[\nabla_{ij}\right]\in\mathbb{R}^{\left|V\right|\times\left|V\right|}$
+\end_inset
+
+ of a simple graph 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ is defined as:
+\begin_inset Formula 
+\[
+\nabla_{ij}=\begin{cases}
+-1 & \mbox{if }\left(i,j\right)\in E\\
+d_{i} & \mbox{if \ensuremath{i=j}}\\
+0 & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can write this matrix simply as:
+\begin_inset Formula 
+\[
+\boldsymbol{\nabla}=\mathbf{D}-\mathbf{A}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This matrix is always semi
+\begin_inset Formula $\posdef$
+\end_inset
+
+, then 
+\begin_inset Formula $\lambda_{\left|V\right|}=0$
+\end_inset
+
+ and its eigenvector is 
+\begin_inset Formula $\boldsymbol{\varphi}_{\left|V\right|}=\left[\begin{array}{ccc}
+1 & \cdots & 1\end{array}\right]^{\top}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Normalized laplacian
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The laplacian matrix 
+\begin_inset Formula $\tilde{\boldsymbol{\nabla}}=\left[\tilde{\nabla}_{ij}\right]\in\mathbb{R}^{\left|V\right|\times\left|V\right|}$
+\end_inset
+
+ of a simple graph 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ is defined as:
+\begin_inset Formula 
+\[
+\tilde{\nabla}_{ij}=\begin{cases}
+1 & \mbox{if }i=j\\
+-\frac{1}{\sqrt{d_{i}d_{j}}} & \mbox{if \ensuremath{\left(i,j\right)\in E}}\\
+0 & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can write this matrix simply as:
+\begin_inset Formula 
+\[
+\tilde{\boldsymbol{\nabla}}=\mathbf{D}^{-\frac{1}{2}}\boldsymbol{\nabla}\mathbf{D}^{-\frac{1}{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Multiplicity of eigenvalue 
+\begin_inset Formula $\lambda_{\left|V\right|}=0$
+\end_inset
+
+ indicates the number of connected components in 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Exponential and sociability matrices
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Exponential and sociability matrices
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Exponential matrix:
+\begin_inset Formula 
+\[
+e^{\mathbf{A}}=\sum_{k=1}^{\infty}\frac{1}{k\text{!}}\mathbf{A}^{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sociability matrix of degree 
+\begin_inset Formula $r$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\mathbf{S}^{r}=\left[\tilde{\mathbf{A}}\mathbf{1}|\tilde{\mathbf{A}}^{2}\mathbf{1}|\cdots|\tilde{\mathbf{A}}^{r}\mathbf{1}\right]
+\]
+
+\end_inset
+
+
+\lang spanish-mexico
+where 
+\begin_inset Formula $\tilde{\mathbf{A}}^{j}=\left[\diag\left(\mathbf{1}^{\top}\mathbf{A}^{j}\right)\right]^{-1}\mathbf{A}^{j}$
+\end_inset
+
+ with 
+\begin_inset Formula $j\in\left[r\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Applications
+\end_layout
+
+\begin_layout Subsection
+Spectral Clustering
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Spectral Clustering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+spectralclustering{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}\in\left\{ 0,1\right\} ^{n\times n}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}} {
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Data{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $m\in\left[n\right]$
+\end_inset
+
+, 
+\begin_inset Formula $K\in\left\{ 2,\ldots,n\right\} $
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang spanish-mexico
+Compute the singular value decomposition 
+\begin_inset Formula $\mathbf{A}=\mathbf{U}\boldsymbol{\Sigma}\mathbf{V}^{\top}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang spanish-mexico
+Let 
+\begin_inset Formula $\tilde{\mathbf{U}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tilde{\mathbf{V}}$
+\end_inset
+
+ be the first 
+\begin_inset Formula $m$
+\end_inset
+
+ columns of 
+\begin_inset Formula $\mathbf{U}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{V}$
+\end_inset
+
+ respectively and let 
+\begin_inset Formula $\tilde{\boldsymbol{\Sigma}}$
+\end_inset
+
+ be the submatrix of 
+\begin_inset Formula $\boldsymbol{\Sigma}$
+\end_inset
+
+ given by the first 
+\begin_inset Formula $m$
+\end_inset
+
+ rows and columns.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang spanish-mexico
+Define 
+\begin_inset Formula $\tilde{\mathbf{Z}}=[\mathbf{\tilde{U}}\tilde{\boldsymbol{\Sigma}}^{\frac{1}{2}}|\tilde{\mathbf{V}}\tilde{\boldsymbol{\Sigma}}^{\frac{1}{2}}]\in\mathbb{R}^{n\times2m}$
+\end_inset
+
+ to be the concatenation of the coordinate-scaled singular vector matrices.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang spanish-mexico
+Let 
+\begin_inset Formula $\left(\hat{\boldsymbol{\psi}},\hat{\tau}\right)=\arg\min_{\boldsymbol{\psi},\tau}\sum_{i=1}^{n}\left\Vert \tilde{\mathbf{z}}_{i}-\boldsymbol{\psi}\right\Vert _{2}^{2}$
+\end_inset
+
+ give the centroids and block assignments, where 
+\begin_inset Formula $\tilde{\mathbf{z}}_{i}$
+\end_inset
+
+ is the 
+\begin_inset Formula $i$
+\end_inset
+
+-th row of 
+\begin_inset Formula $\tilde{\mathbf{Z}}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\boldsymbol{\psi}}\in\mathbb{R}^{2m}$
+\end_inset
+
+ are the centroids and 
+\begin_inset Formula $\hat{\tau}:\left[n\right]\mapsto\left[K\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Return{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\hat{\tau}$
+\end_inset
+
+ , the block assignment function.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Image segmentation
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Image segmentation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+imagesegmentation{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{I}:\mathbb{Z}^{2}\mapsto\mathbb{Z}^{3}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}} {
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Data{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $w,h\in\mathbb{Z}$
+\end_inset
+
+
+, 
+\begin_inset Formula $\beta\in\mathbb{R}$
+\end_inset
+
+
+\lang spanish-mexico
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang spanish-mexico
+Define a simple graph with the pixels of image 
+\begin_inset Formula $\mathbf{I}$
+\end_inset
+
+, where the adjacency matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ defines relations between the pixel 
+\begin_inset Formula $\left(i,j\right)\in\left[w\right]\times\left[h\right]$
+\end_inset
+
+ and the pixel 
+\begin_inset Formula $\left(u,v\right)=\left(i,j\right)+\mathbf{s}$
+\end_inset
+
+ as follow:
+\begin_inset Formula 
+\[
+A_{\left(i,j\right),\left(u,v\right)}=\begin{cases}
+1 & \left\Vert \mathbf{I}\left(i,j\right)-\mathbf{I}\left(u,v\right)\right\Vert _{2}\leq\beta\\
+0 & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{s}\in\left\{ \left(0,1\right),\left(1,0\right),\left(-1,0\right),\left(0,-1\right)\right\} $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+spectralclustering{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+; 
+\begin_inset Formula $m,K$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+More applications
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+More applications
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang spanish-mexico
+Page rank
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Visualizations
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Random walk modelign
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Biometrics
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Stable matching
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Social networks
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish-mexico
+Trading analysis
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\start_of_appendix
+Appendix
+\end_layout
+
+\begin_layout Subsection*
+References
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+References
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatebookbibitems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "A consistent adjacency spectral embedding for stochastic blockmodel graphs"
+target "http://arxiv.org/pdf/1108.2228v3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Ernesto Estrada - The Structure of Complex Networks"
+target "#"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Christopher Bishop - Pattern Recognition"
+target "#"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia: Adjacency matrix"
+target "https://en.wikipedia.org/wiki/Adjacency_matrix"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "More of wikipedia: Spectral graph theory"
+target "https://en.wikipedia.org/wiki/Spectral_graph_theory"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "More yet on wikipedia: Sigular Value Decomposition"
+target "https://en.wikipedia.org/wiki/Singular_value_decomposition"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Berkeley University"
+target "http://www.eecs.berkeley.edu/~luca/cs359g/lecture02.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "American Mathematical Society"
+target "http://www.ams.org/bookstore/pspdf/cbms-115-prev.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Ulises Tirado Zatarain - Spectral Graph Analysis: Biometrics Applications"
+target "#"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
