@@ -1,0 +1,2671 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\usetheme[language=spanish,oldstylearrows,nologo,numbers]{Zatarain}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\usepackage[euler-digits]{eulervm}
+\usefonttheme{professionalfonts}
+\usepackage{dsfont}
+%\usepackage[table]{xcolor}
+%\usepackage{booktabs}
+
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins,fitting}
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\DeclareMathOperator{\posdef}{+def}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\variance}{var}
+\renewcommand{\mathbf}{\boldsymbol}
+\DeclareMathOperator{\idv}{div}
+\DeclareMathOperator{\diag}{diag}
+
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\SetKwInOut{Data}{Parameters}
+\SetKwInOut{Result}{output}
+\SetKw{struct}{struct}
+\SetKw{KwTo}{to}
+\SetKw{True}{true}
+\SetKw{KwRet}{return}
+\SetKw{Return}{return}
+\SetKw{Break}{break}
+\SetKwProg{Function}{function}{begin}{end}
+\SetKwBlock{Begin}{begin}{end}
+\SetKwRepeat{Repeat}{repeat}{until}
+\SetKwIF{If}{ElseIf}{Else}{if}{then:}{else if}{else:}{end}
+\SetKwSwitch{Switch}{Case}{Other}{select}{for}{case}{otherwise}{end}{end}
+\usepackage{algpseudocode}
+\SetKwFor{For}{for}{do}{end}
+\SetKwFor{ForPar}{parallel for}{do}{end}
+\SetKwFor{ForEach}{for each}{do}{end}
+\SetKwFor{ForAll}{for all}{do}{end}
+\SetKwFor{While}{while}{do}{end}
+
+\SetKw{Static}{static}
+\SetKw{Const}{const}
+\SetKw{Struct}{struct}
+\SetKw{Class}{class}
+\SetKw{New}{new}
+
+
+\SetKwFunction{median}{median}
+\SetKwFunction{random}{random}
+\SetKwFunction{quicksort}{quicksort}
+\SetKwFunction{swap}{swap}
+
+\SetSideCommentRight
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\tcbset{smallvalues/.style={enhanced,fonttitle=\bfseries,fontupper=\normalsize\sffamily,
+colback=zorange!10!white,colframe=zorange!90!black,colbacktitle=zorange!90!white,
+coltitle=white,center title}}
+\end_preamble
+\use_default_options false
+\begin_modules
+algorithm2e
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman times
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Probabilistic Approach of Algorithms Analysis and Randomized Algorithms
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Probabilistic Approach of Algorithms Analysis and Randomized Algorithms
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, use only with long paper titles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Ulises
+\begin_inset space ~
+\end_inset
+
+Tirado Zatarain 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Ulises Tirado Zatarain
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex InstituteMark
+status open
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(ulises.tirado@cimat.mx) 
+\end_layout
+
+\begin_layout Institute
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+Algorists Group
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Algorists
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+February, 2016
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+Either use conference name or its abbreviation.
+ 
+\end_layout
+
+\begin_layout Itemize
+Not really informative to the audience, more for people (including yourself)
+ who are reading the slides online
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Feb, 2016
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+optional, should be abbreviation of conference name
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you have a file called "institution-logo-filename.xxx", where xxx is a
+ graphic format that can be processed by latex or pdflatex, resp., then you
+ can add a logo by uncommenting the following:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=0.75cm]{institution-logo}{cimatlogo.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The following causes the table of contents to be shown at the beginning
+ of every subsection.
+ Delete this, if you do not want it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+AtBeginSubsection[]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%  
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+frametitle{Outline}   
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+tableofcontents[currentsection,currentsubsection] 
+\end_layout
+
+\begin_layout Plain Layout
+
+%  }
+\end_layout
+
+\begin_layout Plain Layout
+
+%}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+If you wish to uncover everything in a step-wise fashion, uncomment the
+ following command:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Structuring a talk is a difficult task and the following structure may not
+ be suitable.
+ Here are some rules that apply for this solution: 
+\end_layout
+
+\begin_layout Itemize
+Exactly two or three sections (other than the summary).
+ 
+\end_layout
+
+\begin_layout Itemize
+At *most* three subsections per section.
+ 
+\end_layout
+
+\begin_layout Itemize
+Talk about 30s to 2min per frame.
+ So there should be between about 15 and 30 frames, all told.
+\end_layout
+
+\begin_layout Itemize
+A conference audience is likely to know very little of what you are going
+ to talk about.
+ So *simplify*! 
+\end_layout
+
+\begin_layout Itemize
+In a 20min talk, getting the main ideas across is hard enough.
+ Leave out details, even if it means being less precise than you think necessary.
+ 
+\end_layout
+
+\begin_layout Itemize
+If you omit details that are vital to the proof/implementation, just say
+ so once.
+ Everybody will be happy with that.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Notation flashback
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Flashback
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Notation Flashback
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Given 
+\begin_inset Formula $A$
+\end_inset
+
+ an algoritm, let 
+\begin_inset Formula $n\in\mathbb{Z}^{+}$
+\end_inset
+
+ be the size of it input and 
+\begin_inset Formula $T\left(n\right)$
+\end_inset
+
+ it run time:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Big 
+\begin_inset Formula $\mathcal{O}\left(\cdot\right)$
+\end_inset
+
+: we say that 
+\begin_inset Formula $A\in\mathcal{O}\left(f\left(n\right)\right)$
+\end_inset
+
+ iff 
+\begin_inset Formula $\exists k\in\mathbb{R}^{+},n_{0}\in\mathbb{Z}^{+}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\forall n>n_{0}$
+\end_inset
+
+ then 
+\begin_inset Formula $T\left(n\right)\leq kf\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ is an upper bound of 
+\begin_inset Formula $T\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Big 
+\begin_inset Formula $\Omega\left(\cdot\right)$
+\end_inset
+
+: we say that 
+\begin_inset Formula $A\in\Omega\left(f\left(n\right)\right)$
+\end_inset
+
+ iff 
+\begin_inset Formula $\exists k\in\mathbb{R}^{+},n_{0}\in\mathbb{Z}^{+}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\forall n>n_{0}$
+\end_inset
+
+ then 
+\begin_inset Formula $T\left(n\right)\geq kf\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ is a lower bound of 
+\begin_inset Formula $T\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Big 
+\begin_inset Formula $\Theta\left(\cdot\right)$
+\end_inset
+
+: 
+\begin_inset Formula $A\in\Theta\left(f\left(n\right)\right)$
+\end_inset
+
+ iff 
+\begin_inset Formula $A\in\mathcal{O}\left(f\left(n\right)\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $A\in\Omega\left(f\left(n\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Best, worst and average cases
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Best case: usually trivial.
+\end_layout
+
+\begin_layout Itemize
+Worst case: usually trivial.
+\end_layout
+
+\begin_layout Itemize
+Average case: usually 
+\series bold
+NOT
+\series default
+ trivial.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Definitions
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Definitions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Definitions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Randomized Algorithm
+\end_layout
+
+\end_inset
+
+Is an algorithm that employs a degree of randomness as part of its logic.
+ The algorithm typically uses uniformly random bits as an auxiliary input
+ to guide its behavior, in the hope of achieving good performance in the
+ 
+\begin_inset Quotes eld
+\end_inset
+
+average case
+\begin_inset Quotes erd
+\end_inset
+
+ over all possible choices of random bits.
+\end_layout
+
+\begin_layout Itemize
+We can use randomized algorithms to remove the worst case.
+\end_layout
+
+\begin_layout Itemize
+Average case will be similar to the best case.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Example: Linear median
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+median{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x}\in\mathbb{R}^{n}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Data{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $k\in\left[n\right]$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Formula $p\leftarrow\random\left(n\right)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Split 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ into subarrays 
+\begin_inset Formula $\mathbf{l}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{g}$
+\end_inset
+
+ by comparing each element to 
+\begin_inset Formula $p$
+\end_inset
+
+-th elemnent.
+ While we are at it, count the number 
+\begin_inset Formula $K$
+\end_inset
+
+ of elements going in to 
+\begin_inset Formula $\mathbf{l}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+uIf{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $K=k-1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Return{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x_{p}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+uElseIf{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $K>k-1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Return{
+\backslash
+median{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{l},k$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+Else{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+Return{
+\backslash
+median{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{g},k-K-1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Deterministic vs Randomized
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Many times exists a big gap in between complexity of deterministic algorithms
+ in the worst case and average case.
+\end_layout
+
+\begin_layout Itemize
+The run time of many randomized algorithms can be infinite, specially if
+ they have a bad design.
+\end_layout
+
+\begin_layout Itemize
+The design of randomized algorithms isn't trivial as deterministic.
+\end_layout
+
+\begin_layout Itemize
+Usually a randomized algorithms has a deterministic version.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Section
+Analysing average cases
+\end_layout
+
+\begin_layout Subsection
+How to...?
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+How to...?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+How to...? Answer: probability
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Given 
+\begin_inset Formula $A$
+\end_inset
+
+ an deterministic algorithm:
+\end_layout
+
+\begin_layout Enumerate
+Chose a sample 
+\begin_inset Formula $S$
+\end_inset
+
+ and probability distribution 
+\begin_inset Formula $p$
+\end_inset
+
+ from which inputs are drawn, then the input 
+\begin_inset Formula $\mathbf{X}\in S$
+\end_inset
+
+ is a random variable for the distribution.
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\mathbf{x}\in S$
+\end_inset
+
+, let 
+\begin_inset Formula $t\left(\mathbf{x}\right)$
+\end_inset
+
+ be the time taken by 
+\begin_inset Formula $A$
+\end_inset
+
+ for input 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Compute, as function of the 
+\begin_inset Quotes eld
+\end_inset
+
+size
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ of inputs:
+\begin_inset Formula 
+\[
+T\left(n\right)=\mathbb{E}\left[t\left(\mathbf{x}\right)\right]=\sum_{\mathbf{x}\in S}\left[t\left(\mathbf{x}\right)p\left(\mathbf{X}=\mathbf{x}\right)\right]
+\]
+
+\end_inset
+
+which is the expected or average run time of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+Example
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example: quicksort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+quicksort{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x}\in\mathbb{F}^{n},l,h\in\mathbb{Z}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lIf{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $l\geq h$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\backslash
+Return}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Formula $p\leftarrow l$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Formula $i\leftarrow l-1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Formula $j\leftarrow h+1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+While{
+\backslash
+True
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+lWhile{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x}_{i+1}<\mathbf{x}_{p}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i\leftarrow i+1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+lWhile{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x}_{j-1}>\mathbf{x}_{p}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $j\leftarrow j-1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+lIf{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i\geq j$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\backslash
+Break}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+swap{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x},i,j$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+quicksort{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x},l,p$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+quicksort{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x},p+1,h$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Example: quicksort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Taking a pivote and compare this with all elements:
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}c_{n}= & n+1+\sum_{k=1}^{n}\left[\left(c_{k-1}+c_{n-k}\right)\frac{1}{n}\right]\\
+c_{n}= & n+1+\frac{2}{n}\sum_{k=1}^{n}c_{k-1}
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+Multiplying by 
+\begin_inset Formula $n$
+\end_inset
+
+ both sides:
+\begin_inset Formula 
+\begin{equation}
+\begin{alignedat}{1}nc_{n}= & n\left(n+1\right)+2\sum_{k=1}^{n}c_{k-1}\end{alignedat}
+\label{eq:qs-mult-by-n}
+\end{equation}
+
+\end_inset
+
+By induction, we can do same for 
+\begin_inset Formula $n-1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\begin{equation}
+\left(n-1\right)c_{n-1}=n\left(n-1\right)+2\sum_{k=1}^{n-1}c_{k-1}\label{eq:qs-myl-by-n-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Example: quicksort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Substracting equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:qs-myl-by-n-1"
+
+\end_inset
+
+ from equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:qs-mult-by-n"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}nc_{n}-\left(n-1\right)c_{n-1}= & n\left(n+1\right)-n\left(n-1\right)+2c_{n-1}\\
+nc_{n}= & \left(n+1\right)c_{n-1}+2n
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Dividing by 
+\begin_inset Formula $n\left(n+1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}\frac{c_{n}}{n+1}= & \frac{c_{n-1}}{n}+\frac{2}{n+1}\\
+= & \frac{c_{n-2}}{n-1}+\frac{2}{n}+\frac{2}{n+1}\\
+ & \vdots\\
+= & c_{0}+c_{1}+\sum_{k=2}^{n}\frac{2}{k+1}
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish-mexico
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+Example: quicksort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Since 
+\begin_inset Formula $c_{0}=c_{1}=0$
+\end_inset
+
+ then, we can aproximate by:
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}\frac{c_{n}}{n+1}=2 & \sum_{k=1}^{n-1}\frac{1}{k}\approx2\int_{1}^{n}\frac{1}{x}dx\\
+\approx & 2\log n\\
+c_{n}\approx & 2\left(n+1\right)\log n\\
+\approx & 2\left(n\log n+\log n\right)
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+Finally, quicksort is 
+\begin_inset Formula $T\left(n\right)=\mathbb{E}\left[t\left(\mathbf{x}\right)\right]\in\Theta\left(n\log n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Subsection
+For randomized algorithms
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+For randomized algorithms
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+For randomized algorithms
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Given 
+\begin_inset Formula $R$
+\end_inset
+
+ an randomized algorithm:
+\end_layout
+
+\begin_layout Enumerate
+The input 
+\begin_inset Formula $\mathbf{X}\in\mathbf{I}$
+\end_inset
+
+ is fixed, as usual, 
+\begin_inset Formula $\mathbf{I}$
+\end_inset
+
+ is only the source space of the possible input, but the algorithm may draw
+ (and use) random samples 
+\begin_inset Formula $Y\in\left\{ y_{1},y_{2},\ldots\right\} $
+\end_inset
+
+ from given sample space and probability distribution 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For any 
+\begin_inset Formula $\mathbf{x}\in\mathbf{I}$
+\end_inset
+
+ and any 
+\series bold
+
+\begin_inset Formula $y\in S$
+\end_inset
+
+
+\series default
+, let 
+\begin_inset Formula $t\left(\mathbf{x},y\right)$
+\end_inset
+
+ be the time taken by 
+\begin_inset Formula $R$
+\end_inset
+
+ on input 
+\begin_inset Formula $\mathbf{X}=\mathbf{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y=y$
+\end_inset
+
+ from 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Compute, as function of the 
+\begin_inset Quotes eld
+\end_inset
+
+size
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ of inputs:
+\begin_inset Formula 
+\[
+T\left(n\right)=\mathbb{E}\left[t\left(\mathbf{x},y\right)\right]=\max_{\mathbf{x}\in\mathbf{I}}\sum_{y\in S}\left[t\left(\mathbf{x},y\right)p\left(Y=y|\mathbf{X}=\mathbf{x}\right)\right]
+\]
+
+\end_inset
+
+since 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are independents and 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ is fixed:
+\begin_inset Formula 
+\[
+T\left(n\right)=\mathbb{E}\left[t\left(\mathbf{x},y\right)\right]=\max_{\mathbf{x}\in\mathbf{I}}\sum_{y\in S}\left[t\left(\mathbf{x},y\right)p\left(Y=y\right)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Randomized quicksort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish-mexico
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Function{
+\backslash
+quicksort{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x}\in\mathbb{F}^{n},l,h\in\mathbb{Z}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lIf{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $l\geq h$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\backslash
+Return}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Formula $p\leftarrow$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+random{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $l,h$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Formula $i\leftarrow l-1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset Formula $j\leftarrow h+1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+While{
+\backslash
+True
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+lWhile{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x}_{i+1}<\mathbf{x}_{p}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i\leftarrow i+1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+lWhile{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x}_{j-1}>\mathbf{x}_{p}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $j\leftarrow j-1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+lIf{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i\geq j$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\backslash
+Break}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+    
+\backslash
+swap{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x},i,j$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+quicksort{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x},l,p$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+quicksort{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\mathbf{x},p+1,h$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish-mexico
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\start_of_appendix
+Appendix
+\end_layout
+
+\begin_layout Subsection*
+References
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status collapsed
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+References
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatebookbibitems
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Johan van Horebeek - Métodos Estocásticos en Computación"
+target "#"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Jean-Bernard Hayet - Programación Avanazada"
+target "#"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Algorithms in C++ - Robert Sedgewick"
+target "#"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia"
+target "https://en.wikipedia.org/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "College of Computing - Georgia Tech"
+target "http://www.cc.gatech.edu/~mihail/medianCMU.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Computer Science - Washington University"
+target "https://courses.cs.washington.edu/courses/cse312/11wi/slides/08sort.pdf"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
