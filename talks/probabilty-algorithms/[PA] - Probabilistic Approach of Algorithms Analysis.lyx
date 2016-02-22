@@ -1572,12 +1572,9 @@ lIf{
 \end_inset
 
 
-
 \begin_inset Formula $i\geq j$
 \end_inset
 
-
-\lang spanish-mexico
 
 \begin_inset ERT
 status open
@@ -1976,7 +1973,7 @@ The input
 \begin_inset Formula $\mathbf{I}$
 \end_inset
 
- is only the space source of the possible input, but the algorithm may draw
+ is only the source space of the possible input, but the algorithm may draw
  (and use) random samples 
 \begin_inset Formula $Y\in\left\{ y_{1},y_{2},\ldots\right\} $
 \end_inset
@@ -2392,12 +2389,9 @@ lIf{
 \end_inset
 
 
-
 \begin_inset Formula $i\geq j$
 \end_inset
 
-
-\lang spanish-mexico
 
 \begin_inset ERT
 status open
@@ -2621,6 +2615,17 @@ target "#"
 \begin_inset CommandInset href
 LatexCommand href
 name "Jean-Bernard Hayet - Programación Avanazada"
+target "#"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+name "Algorithms in C++ - Robert Sedgewick"
 target "#"
 
 \end_inset
