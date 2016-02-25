@@ -56,7 +56,7 @@
 % changes the colors of your current slide theme.
 
 %\usecolortheme{albatross}
-\usecolortheme{beaver}
+%\usecolortheme{beaver}
 %\usecolortheme{beetle}
 %\usecolortheme{crane}
 %\usecolortheme{dolphin}
@@ -64,11 +64,11 @@
 %\usecolortheme{fly}
 %\usecolortheme{lily}
 %\usecolortheme{orchid}
-%\usecolortheme{rose}
-%\usecolortheme{seagull}
-%\usecolortheme{seahorse}
+\usecolortheme{rose}
+%%\usecolortheme{seagull}
+%%%\usecolortheme{seahorse}
 %\usecolortheme{whale}
-%\usecolortheme{wolverine}
+%%\usecolortheme{wolverine}
 
 %\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
 %\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
@@ -77,16 +77,30 @@
 }
 
 \usepackage{graphicx} % Allows including images
+\usepackage{ragged2e} % Jusitfy
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{lmodern}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{hyperref}
 \usepackage{mathtools}
 \usepackage{listings} % C++ code
+
+
+% -------------
+%   CONFIG
+% -------------
 \lstset{language=C++,
                 basicstyle=\footnotesize\ttfamily,
                 keywordstyle=\footnotesize\color{blue}\ttfamily,
 }
+\addtobeamertemplate{block begin}{}{\justifying} %Justify
+\hypersetup{
+  colorlinks, linkcolor=red
+}
+%----------------------------
+
+
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -120,10 +134,10 @@ Algorist Weekly Talks \\ % Your institution for the title page
 	\frametitle{Online Judges}
 	\begin{figure}[!htb]
 	 \minipage{0.23\textwidth}
-	  \includegraphics[width=\linewidth]{images/judges/usaco}~%
+	  \includegraphics[width=\linewidth]{images/judges/usaco}%
      \endminipage\hfill
      \minipage{0.23\textwidth}
-      \includegraphics[width=\linewidth]{images/judges/uva}~%
+      \includegraphics[width=\linewidth]{images/judges/uva}%
      \endminipage\hfill
      \minipage{0.23\textwidth}
       \includegraphics[width=\linewidth]{images/judges/spoj}%
@@ -161,6 +175,133 @@ Algorist Weekly Talks \\ % Your institution for the title page
      \endminipage\hfill
 	\end{figure}
 \end{frame}
+
+%--------------------
+%      INTRO
+%--------------------
+\begin{frame}
+	\frametitle{Competitive programming}
+		\begin{block}{From wikipedia}
+		A programming competition generally involves the host presenting a set of logical or 		mathematical problems to the contestants, and contestants are required to write computer programs capable of solving each problem. \newline \\
+		\textbf{Judging is based mostly upon number of problems solved and time spent for 			writing successful solutions, but may also include other factors (quality of output 			produced, execution time, program size, etc.)}
+		\end{block}
+\end{frame}
+
+%------------------
+%      VEREDICTS
+%-----------------
+\begin{frame}
+	\frametitle {Common Veredicts I}
+	\begin{block}{Submissions}
+	Your program will be compiled and run in our system, and the automatic judge will test 		it with some inputs and outputs, or perhaps with a specific judge tool. After some 			seconds	or minutes, you'll receive by e-mail (or you'll see in the web) one of these 			answers:
+	\end{block}
+	
+	\begin{block}{In Queue (QU):}
+	The judge is busy and can't attend your submission. It will be judged as soon as possible.
+	\end{block}
+
+	\begin{block}{Accepted (AC):}
+	OK! Your program is correct! It produced the right answer in reasoneable time and within the limit memory usage. Congratulations!
+	\end{block}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle {Common Veredicts II}
+	\begin{block}{Presentation Error (PE):}
+	Your program outputs are correct but are not presented in the correct way. Check for spaces, justify, line feeds...
+	\end{block}
+	
+	\begin{block}{Wrong Answer (WA):}
+	Correct solution not reached for the inputs. The inputs and outputs that we use to test the programs are not public so you'll have to spot the bug by yourself (it is recomendable to get accustomed to a true contest dynamic ;-)). If you truly think your code is correct, you can contact us using the link on the left. Judge's ouputs are not always correct...
+	\end{block}
+	
+	\begin{block}{Compile Error (CE):}
+	The compiler could not compile your program. Of course, warning messages are not error messages. The compiler output messages are reported you by e-mail.
+	\end{block}
+	
+\end{frame}
+	
+\begin{frame}
+	\frametitle {Common Veredicts III}
+	
+	\begin{block}{Runtime Error (RE):}
+	Your program failed during the execution (segmentation fault, floating point exception...). The exact cause is not reported to the user to avoid hacking. Be sure that your program returns a 0 code to the shell. If you're using Java, please follow all the submission specifications.
+	\end{block}
+	
+	\begin{block}{Time Limit Exceeded (TL):}
+	Your program tried to run during too much time; this error doesn't allow you to know if your program would reach the correct solution to the problem or not.
+	\end{block}
+
+	\begin{block}{Memory Limit Exceeded (ML):}
+	Your program tried to use more memory than the judge allows. If you are sure that such problem needs more memory, please contact us.
+	\end{block}	
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle {Common Veredicts IV}
+	\begin{block}{Output Limit Exceeded (OL):}
+	Your program tried to write too much information. This usually occurs if it goes into a infinite loop.
+	\end{block}
+	
+	\begin{block}{Restricted Function (RF):}
+	Your program is trying to use a function that we considered harmful to the system. If you get this verdict you probably know why...
+	\end{block}
+	
+	\begin{block}{Can't Be Judged (CJ):}
+	The judge doesn't have test input and outputs for the selected problem. While choosing a problem be careful to ensure that the judge will be able to judge it!
+	\end{block}
+
+	And so on...	
+	
+\end{frame}
+
+%--------------------
+%      JUDGES
+%--------------------
+
+\begin{frame}
+	\frametitle{Universidad of Valladolid Online Judge}
+	\begin{figure}[t]
+		\href{https://uva.onlinejudge.org/}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/uva}}
+	\end{figure}
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\column{.45\textwidth} % Left column and width
+		\textbf{Pros}
+		\begin{enumerate}
+			\item Vast quantity of problems 
+			\item Many online references 
+			\item Good Analityc's Tools 
+			\item CP Book is based completely on it
+		\end{enumerate}
+		\column{.5\textwidth} % Right column and width
+		\textbf{Cons}
+		\begin{enumerate}
+			\item Poor Online Connections
+			\item No code backup
+			\item No feedback
+			\item Heavy traffic of users (delays in response)
+		\end{enumerate}
+	\end{columns}
+	\begin{block}{Tools}
+	\center
+	\href{http://uhunt.felix-halim.net/}						{\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvahunting}}
+\href{https://www.udebug.com/}						{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/udebug}}
+\href{http://uvatoolkit.com/problemssolve.php}						{\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvatoolkit}}
+	\end{block}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
 
 %\begin{frame}
 %\frametitle{Overview} % Table of contents slide, comment this block out to remove it
