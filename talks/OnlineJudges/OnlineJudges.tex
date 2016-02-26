@@ -96,7 +96,7 @@
 }
 \addtobeamertemplate{block begin}{}{\justifying} %Justify
 \hypersetup{
-  colorlinks, linkcolor=green
+  colorlinks, linkcolor=green, pdfnewwindow=true
 }
 %----------------------------
 
@@ -171,7 +171,7 @@ Algorist Weekly Talks \\ % Your institution for the title page
      \href{https://omegaup.com/}{ \includegraphics[width=\linewidth]{images/judges/omegaup}}
      \endminipage\hfill
      \minipage{0.23\textwidth}
-     \href{https://icpcarchive.ecs.baylor.edu/}{ \includegraphics[width=\linewidth]{images/judges/livearchive}}
+     \href{https://www.kaggle.com/}{ \includegraphics[width=\linewidth]{images/judges/kaggle}}%livearchive}}
      \endminipage\hfill
 	\end{figure}
 \end{frame}
@@ -180,18 +180,25 @@ Algorist Weekly Talks \\ % Your institution for the title page
 %      INTRO
 %--------------------
 \begin{frame}
-	\frametitle{Competitive programming}
-		\begin{block}{From wikipedia}
-		A programming competition generally involves the host presenting a set of logical or 	mathematical problems to the contestants, and contestants are required to write computer programs capable of solving each problem. \newline \\
-		\textbf{Judging is based mostly upon number of problems solved and time spent for 	writing successful solutions, but may also include other factors (quality of output produced, execution time, program size, etc.)}
+	\frametitle{Introduction}
+		\begin{block}{Competitive programming}
+Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications.
 		\end{block}
+
+		\begin{block}{Online judge}
+		An online judge is an online system to test programs in programming contests.They are also used to practice for such contests.\\
+		The system can compile and execute code, and test them with pre-constructed data. Submitted code may be run with restrictions, including time limit, memory limit, security restriction and so on. The output of the code will be captured by the system, and compared with the standard output. The system will then return the result. 
+		\end{block}
+
 \end{frame}
 
 %---------------------------
 %      VEREDICTS
 %---------------------------
 \begin{frame}
-	\frametitle {Common Veredicts I}
+	\frametitle {Common Veredicts}
+	Source: \href{https://uva.onlinejudge.org/index.php?option=com_content&task=view&id=16&Itemid=31}{https://uva.onlinejudge.org/}
+
 	\begin{block}{Submissions}
 	Your program will be compiled and run in judge system, and the automatic judge will test 	it with some inputs and outputs, or perhaps with a specific judge tool. After some seconds or minutes, you'll receive by e-mail (or you'll see in the web) one of these answers:
 	\end{block}
@@ -209,11 +216,11 @@ Algorist Weekly Talks \\ % Your institution for the title page
 \end{frame}
 
 \begin{frame}
-	\frametitle {Common Veredicts II}
+	\frametitle {Common Veredicts (cont)}
 	
 	\begin{block}{Wrong Answer (WA):}
 	Correct solution not reached for the inputs. 
-	The inputs and outputs that we use to test the programs are not public so you'll have to spot the bug by yourself (it is recomendable to get accustomed to a true contest dynamic ;-)). 
+	The inputs and outputs that we use to test the programs are not public so you'll have to spot the bug by yourself.
 	\end{block}
 	
 	\begin{block}{Runtime Error (RE):}
@@ -434,11 +441,12 @@ Algorist Weekly Talks \\ % Your institution for the title page
 			\item Excellence as referemce
 		\end{enumerate}
 		\column{.5\textwidth} % Right column and width
-		\textbf{Cons}
+		\textbf{Cons?}
 		\begin{enumerate}
 			%\item \href{#/u/practiceProblemList}{}
 			\item \href{https://arena.topcoder.com/index.html}{Contest Platform: BETA?}
 			\item Only 3 problems by contest
+			\item Ranking based on contests
 		\end{enumerate}
 	\end{columns}
 	%\begin{block}{Tools}
@@ -477,6 +485,7 @@ Algorist Weekly Talks \\ % Your institution for the title page
 		\begin{enumerate}
 			\item Unavailable during large contests
 			\item Rare Div.1 contests
+			\item Ranking based on contests
 			\item Its running over windows
 		\end{enumerate}
 	\end{columns}
@@ -515,84 +524,7 @@ Algorist Weekly Talks \\ % Your institution for the title page
 
 \begin{frame}
 	\frametitle{Q \& A}
-	\center \huge		Q \& A
+	\Huge \center \href{https://www.quora.com/Online-Judges/What-is-the-best-online-judge-for-hosting-programming-contests}{\centerline{ Q \& A}}
 \end{frame}
-
-%\begin{frame}
-%\frametitle{Overview} % Table of contents slide, comment this block out to remove it
-%\tableofcontents % Throughout your presentation, if you choose to use 
-%\end{frame}
-
-%------------------------------------------------
-
-%------------------------------------------------
-%\begin{frame}
-%\frametitle{Figure}
-%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.4\linewidth]{z_image.png}
-%\end{figure}
-%\end{frame}
-
-%------------------------------------------------
-
-%\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-%\frametitle{Citation}
-%An example of the \verb|\cite| command to cite within the presentation:\\~
-
-%This statement requires citation \cite{p1}.
-%\end{frame}
-
-%------------------------------------------------
-
-%\begin{frame}
-%\frametitle{References}
-%\footnotesize{
-%\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-%\bibitem[Smith, 2012]{p1} John Smith (2012)
-%\newblock Title of the publication
-%\newblock \emph{Journal Name} 12(3), 45 -- 678.
-%\end{thebibliography}
-%}
-%\end{frame}
-
-%\begin{frame}
-%\frametitle{Theorem}
-%\begin{theorem}[Mass--energy equivalence]
-%$E = mc^2$
-%\end{theorem}
-%\end{frame}
-%------------------------------------------------
-%\begin{frame}
-%\frametitle{Bullet Points}
-%\begin{itemize}
-%\item Lorem ipsum 45 \(45\) \textbf{45} \(\textbf{45}\) dolor sit amet, consectetur adipiscing elit
-%\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-%\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-%\item Nam cursus est eget velit posuere pellentesque
-%\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-%\end{itemize}
-%\end{frame}
-
-
-%\begin{frame}
-%\frametitle{Multiple Columns}
-%\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-%\column{.45\textwidth} % Left column and width
-%\textbf{Heading}
-%\begin{enumerate}
-%\item Statement
-%\item Explanation
-%\item Example
-%\end{enumerate}
-
-%\column{.5\textwidth} % Right column and width
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-%\end{columns}
-%\end{frame}
-
-%----------------------------------------------------------------------------------------
 
 \end{document} 
