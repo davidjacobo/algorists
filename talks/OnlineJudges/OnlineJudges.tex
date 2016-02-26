@@ -127,9 +127,9 @@ Algorist Weekly Talks \\ % Your institution for the title page
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
 
-%--------------------
-%      LOGOS
-%--------------------
+%-----------------------------
+%      LOGOS & LINKS
+%----------------------------
 \begin{frame}
 	\frametitle{Online Judges}
 	\begin{figure}[!htb]
@@ -182,8 +182,8 @@ Algorist Weekly Talks \\ % Your institution for the title page
 \begin{frame}
 	\frametitle{Competitive programming}
 		\begin{block}{From wikipedia}
-		A programming competition generally involves the host presenting a set of logical or 		mathematical problems to the contestants, and contestants are required to write computer programs capable of solving each problem. \newline \\
-		\textbf{Judging is based mostly upon number of problems solved and time spent for 			writing successful solutions, but may also include other factors (quality of output 			produced, execution time, program size, etc.)}
+		A programming competition generally involves the host presenting a set of logical or 	mathematical problems to the contestants, and contestants are required to write computer programs capable of solving each problem. \newline \\
+		\textbf{Judging is based mostly upon number of problems solved and time spent for 	writing successful solutions, but may also include other factors (quality of output produced, execution time, program size, etc.)}
 		\end{block}
 \end{frame}
 
@@ -193,7 +193,7 @@ Algorist Weekly Talks \\ % Your institution for the title page
 \begin{frame}
 	\frametitle {Common Veredicts I}
 	\begin{block}{Submissions}
-	Your program will be compiled and run in our system, and the automatic judge will test 		it with some inputs and outputs, or perhaps with a specific judge tool. After some 			seconds	or minutes, you'll receive by e-mail (or you'll see in the web) one of these 			answers:
+	Your program will be compiled and run in judge system, and the automatic judge will test 	it with some inputs and outputs, or perhaps with a specific judge tool. After some seconds or minutes, you'll receive by e-mail (or you'll see in the web) one of these answers:
 	\end{block}
 	
 	\begin{block}{Compile Error (CE):}
@@ -201,7 +201,7 @@ Algorist Weekly Talks \\ % Your institution for the title page
 	\end{block}
 	
 	\begin{block}{Accepted (AC):}
-	OK! Your program is correct! It produced the right answer in reasoneable time and within the limit memory usage. Congratulations!
+	OK! Your program is correct! It produced the right answer in reasonable time and within the limit memory usage. Congratulations!
 	\end{block}
 	
 	
@@ -213,15 +213,14 @@ Algorist Weekly Talks \\ % Your institution for the title page
 	
 	\begin{block}{Wrong Answer (WA):}
 	Correct solution not reached for the inputs. 
-	%The inputs and outputs that we use to test the programs are not public so you'll have to spot the bug by yourself (it is recomendable to get accustomed to a true contest dynamic ;-)). 
-	If you truly think your code is correct, you can contact us using the link on the left. Judge's outputs are not always correct...
+	The inputs and outputs that we use to test the programs are not public so you'll have to spot the bug by yourself (it is recomendable to get accustomed to a true contest dynamic ;-)). 
 	\end{block}
 	
 	\begin{block}{Runtime Error (RE):}
 	Your program failed during the execution (segmentation fault, floating point exception...). The exact cause is not reported to the user to avoid hacking. Be sure that your program returns a 0 code to the shell. If you're using Java, please follow all the submission specifications.
 	\end{block}
 	
-	\begin{block}{Time Limit Exceeded (TL):}
+	\begin{block}{Time Limit Exceeded (TLE):}
 	Your program tried to run during too much time; this error doesn't allow you to know if your program would reach the correct solution to the problem or not.
 	\end{block}
 	
@@ -318,7 +317,8 @@ Algorist Weekly Talks \\ % Your institution for the title page
 		\begin{enumerate}
 			\item Vast quantity of problems 
 			\item Many online references 
-			\item Good Analityc's Tools 
+			\item ICPC Related contests
+			\item Good Analytic's Tools 
 			\item CP Book is based completely on it
 		\end{enumerate}
 		\column{.5\textwidth} % Right column and width
@@ -378,13 +378,48 @@ Algorist Weekly Talks \\ % Your institution for the title page
 \end{frame}
 
 %------------------------------
+%       HACKERRANK
+%------------------------------
+
+\begin{frame}
+	\frametitle{HackerRank}
+	\begin{figure}[t]
+		\href{https://www.hackerrank.com}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/hackerrank}}
+	\end{figure}
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\column{.45\textwidth} % Left column and width
+		\textbf{Pros}
+		\begin{enumerate}
+			\item Visited by many recruiters
+			\item Frequently contests 
+			\item Code Backup \& OC 
+			\item Editorial if AC
+			\href{https://www.hackerrank.com/domains}{\item More than Algorithmic Challenges}
+		\end{enumerate}
+		\column{.5\textwidth} % Right column and width
+		\textbf{Cons}
+		\begin{enumerate}
+			\item No much resources to learn
+			\item Few sense of community
+		\end{enumerate}
+	\end{columns}
+	\begin{block}{Tools}
+	\center
+	\href{https://www.hackerrank.com/jobs} {\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/jobs}}
+	\end{block}
+
+\end{frame}
+
+
+%------------------------------
 %       TOP CODER
 %------------------------------
 
 \begin{frame}
-	\frametitle{Universidad of Valladolid Online Judge}
+	\frametitle{TopCoder}
 	\begin{figure}[t]
-		\href{https://uva.onlinejudge.org/}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/uva}}
+		\href{https://arena.topcoder.com/index.html}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/topcoder}}
 	\end{figure}
 	
 	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
@@ -393,62 +428,24 @@ Algorist Weekly Talks \\ % Your institution for the title page
 		\begin{enumerate}
 			\item Profitable 
 			\item Class vs Complete Program 
-			\item High Level Discussions / Problems
 			\item Rank \& Prizes \& Achievements
+			\item More than Algorithmic Challenges
+			\item Time to compete \& Hack :)
 		\end{enumerate}
 		\column{.5\textwidth} % Right column and width
 		\textbf{Cons}
 		\begin{enumerate}
-			\item Contest Platforms
-			\item No code backup
-			\item No feedback
-			\item Heavy traffic of users (delays in response)
+			%\item \href{#/u/practiceProblemList}{}
+			\item \href{https://arena.topcoder.com/index.html}{Contest Platform: BETA?}
+			\item Only 3 problems by contest
 		\end{enumerate}
 	\end{columns}
-	\begin{block}{Tools}
-	\center
-	\href{http://uhunt.felix-halim.net/} {\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvahunting}}
-	\href{https://www.udebug.com/}	{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/udebug}}
-	\href{http://uvatoolkit.com/problemssolve.php}{\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvatoolkit}}
-	\end{block}
-
-\end{frame}
-
-
-%------------------------------
-%       HACKERRANK
-%------------------------------
-
-\begin{frame}
-	\frametitle{Universidad of Valladolid Online Judge}
-	\begin{figure}[t]
-		\href{https://uva.onlinejudge.org/}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/uva}}
-	\end{figure}
-	
-	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-		\column{.45\textwidth} % Left column and width
-		\textbf{Pros}
-		\begin{enumerate}
-			\item Vast quantity of problems 
-			\item Many online references 
-			\item Good Analityc's Tools 
-			\item CP Book is based completely on it
-		\end{enumerate}
-		\column{.5\textwidth} % Right column and width
-		\textbf{Cons}
-		\begin{enumerate}
-			\item Poor Online Connections
-			\item No code backup
-			\item No feedback
-			\item Heavy traffic of users (delays in response)
-		\end{enumerate}
-	\end{columns}
-	\begin{block}{Tools}
-	\center
-	\href{http://uhunt.felix-halim.net/} {\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvahunting}}
-	\href{https://www.udebug.com/}	{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/udebug}}
-	\href{http://uvatoolkit.com/problemssolve.php}{\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvatoolkit}}
-	\end{block}
+	%\begin{block}{Tools}
+	%\center
+	%\href{http://uhunt.felix-halim.net/} {\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvahunting}}
+	%\href{https://www.udebug.com/}	{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/udebug}}
+	%\href{http://uvatoolkit.com/problemssolve.php}{\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvatoolkit}}
+	%\end{block}
 
 \end{frame}
 
@@ -458,9 +455,9 @@ Algorist Weekly Talks \\ % Your institution for the title page
 %------------------------------
 
 \begin{frame}
-	\frametitle{Universidad of Valladolid Online Judge}
+	\frametitle{Codeforces}
 	\begin{figure}[t]
-		\href{https://uva.onlinejudge.org/}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/uva}}
+		\href{http://codeforces.com/help}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/codeforces}}
 	\end{figure}
 	
 	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
@@ -490,7 +487,34 @@ Algorist Weekly Talks \\ % Your institution for the title page
 
 \end{frame}
 
+%------------------------------
+%       OTHERS
+%------------------------------
 
+\begin{frame}
+	\frametitle{Math , Games \& Fight}
+	
+	\begin{figure}
+	\center
+	\href{https://projecteuler.net/archives} {\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/projecteuler}}
+	\href{http://ideone.com/}{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/ideone}}
+	\end{figure}
+	\begin{figure}
+	\center
+	\href{https://codefights.com/}{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/judges/codefights}}
+	\href{https://www.codingame.com/start}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/codingame}}
+	\end{figure}
+
+\end{frame}
+
+%------------------------------
+%       Q & A
+%------------------------------
+
+\begin{frame}
+	\frametitle{Q \& A}
+	\center \huge		Q \& A
+\end{frame}
 
 %\begin{frame}
 %\frametitle{Overview} % Table of contents slide, comment this block out to remove it
