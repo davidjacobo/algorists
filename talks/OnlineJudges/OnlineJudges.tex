@@ -1,0 +1,530 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+\usecolortheme{rose}
+%%\usecolortheme{seagull}
+%%%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{ragged2e} % Jusitfy
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{listings} % C++ code
+
+
+% -------------
+%   CONFIG
+% -------------
+\lstset{language=C++,
+                basicstyle=\footnotesize\ttfamily,
+                keywordstyle=\footnotesize\color{blue}\ttfamily,
+}
+\addtobeamertemplate{block begin}{}{\justifying} %Justify
+\hypersetup{
+  colorlinks, linkcolor=green, pdfnewwindow=true
+}
+%----------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Online Judges]{Online Judges} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Ulises M\'endez Mart\'{i}nez} % Your name
+
+\institute[UTM] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Algorist Weekly Talks \\ % Your institution for the title page
+\medskip
+\textit{ulisesmdzmtz@gmail.com} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%-----------------------------
+%      LOGOS & LINKS
+%----------------------------
+\begin{frame}
+	\frametitle{Online Judges}
+	\begin{figure}[!htb]
+	 \minipage{0.23\textwidth}
+	  \href{http://www.usaco.org/}{\includegraphics[width=\linewidth]{images/judges/usaco}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+      \href{https://uva.onlinejudge.org/}{\includegraphics[width=\linewidth]{images/judges/uva}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+      \href{http://www.spoj.com/}{\includegraphics[width=\linewidth]{images/judges/spoj}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+      \href{https://projecteuler.net/}{\includegraphics[width=\linewidth]{images/judges/projecteuler}}
+     \endminipage\hfill
+	\end{figure}
+	\begin{figure}[!htb]
+ 	 \minipage{0.23\textwidth}
+      \href{https://www.hackerrank.com/}{\includegraphics[width=\linewidth]{images/judges/hackerrank}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+      \href{http://codeforces.com/}{\includegraphics[width=\linewidth]{images/judges/codeforces}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+      \href{https://www.codechef.com/}{\includegraphics[width=\linewidth]{images/judges/codechef}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+      \href{https://www.topcoder.com/}{\includegraphics[width=\linewidth]{images/judges/topcoder}}
+     \endminipage\hfill
+	\end{figure}
+    \begin{figure}[!htb]
+     \minipage{0.23\textwidth}
+      \href{http://coj.uci.cu/index.xhtml}{\includegraphics[width=\linewidth]{images/judges/coj}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+     \href{https://www.hackerearth.com/}{ \includegraphics[width=\linewidth]{images/judges/hackerearth}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+     \href{https://omegaup.com/}{ \includegraphics[width=\linewidth]{images/judges/omegaup}}
+     \endminipage\hfill
+     \minipage{0.23\textwidth}
+     \href{https://www.kaggle.com/}{ \includegraphics[width=\linewidth]{images/judges/kaggle}}%livearchive}}
+     \endminipage\hfill
+	\end{figure}
+\end{frame}
+
+%--------------------
+%      INTRO
+%--------------------
+\begin{frame}
+	\frametitle{Introduction}
+		\begin{block}{Competitive programming}
+Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications.
+		\end{block}
+
+		\begin{block}{Online judge}
+		An online judge is an online system to test programs in programming contests.They are also used to practice for such contests.\\
+		The system can compile and execute code, and test them with pre-constructed data. Submitted code may be run with restrictions, including time limit, memory limit, security restriction and so on. The output of the code will be captured by the system, and compared with the standard output. The system will then return the result. 
+		\end{block}
+
+\end{frame}
+
+%---------------------------
+%      VEREDICTS
+%---------------------------
+\begin{frame}
+	\frametitle {Common Veredicts}
+	Source: \href{https://uva.onlinejudge.org/index.php?option=com_content&task=view&id=16&Itemid=31}{https://uva.onlinejudge.org/}
+
+	\begin{block}{Submissions}
+	Your program will be compiled and run in judge system, and the automatic judge will test 	it with some inputs and outputs, or perhaps with a specific judge tool. After some seconds or minutes, you'll receive by e-mail (or you'll see in the web) one of these answers:
+	\end{block}
+	
+	\begin{block}{Compile Error (CE):}
+	The compiler could not compile your program. Of course, warning messages are not error messages. The compiler output messages are reported you by e-mail.
+	\end{block}
+	
+	\begin{block}{Accepted (AC):}
+	OK! Your program is correct! It produced the right answer in reasonable time and within the limit memory usage. Congratulations!
+	\end{block}
+	
+	
+
+\end{frame}
+
+\begin{frame}
+	\frametitle {Common Veredicts (cont)}
+	
+	\begin{block}{Wrong Answer (WA):}
+	Correct solution not reached for the inputs. 
+	The inputs and outputs that we use to test the programs are not public so you'll have to spot the bug by yourself.
+	\end{block}
+	
+	\begin{block}{Runtime Error (RE):}
+	Your program failed during the execution (segmentation fault, floating point exception...). The exact cause is not reported to the user to avoid hacking. Be sure that your program returns a 0 code to the shell. If you're using Java, please follow all the submission specifications.
+	\end{block}
+	
+	\begin{block}{Time Limit Exceeded (TLE):}
+	Your program tried to run during too much time; this error doesn't allow you to know if your program would reach the correct solution to the problem or not.
+	\end{block}
+	
+\end{frame}
+	
+%\begin{frame}
+%	\frametitle {Common Veredicts III}
+	
+%	\begin{block}{Presentation Error (PE):}
+%	Your program outputs are correct but are not presented in the correct way. Check for spaces, justify, line feeds...
+%	\end{block}
+	
+%	\begin{block}{In Queue (QU):}
+%	The judge is busy and can't attend your submission. It will be judged as soon as possible.
+%	\end{block}
+	
+%	\begin{block}{Memory Limit Exceeded (ML):}
+%	Your program tried to use more memory than the judge allows. If you are sure that such problem needs more memory, please contact us.
+%	\end{block}	
+	
+%\end{frame}
+
+%\begin{frame}
+%	\frametitle {Common Veredicts IV}
+%	\begin{block}{Output Limit Exceeded (OL):}
+%	Your program tried to write too much information. This usually occurs if it goes into a infinite loop.
+%	\end{block}
+%	
+%	\begin{block}{Restricted Function (RF):}
+%	Your program is trying to use a function that we considered harmful to the system. If you get this verdict you probably know why...
+%	\end{block}
+	
+%	\begin{block}{Can't Be Judged (CJ):}
+%	The judge doesn't have test input and outputs for the selected problem. While choosing a problem be careful to ensure that the judge will be able to judge it!
+%	\end{block}
+
+%	And so on...	
+	
+%\end{frame}
+
+
+%------------------------------
+%       COJ
+%------------------------------
+
+\begin{frame}
+	\frametitle{Caribbean Online Judge}
+	\begin{figure}[t]
+		\href{http://coj.uci.cu/general/faqs.xhtml?lang=es}{\includegraphics[width=3cm,height=2.5cm,keepaspectratio]{images/judges/coj}}
+	\end{figure}
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\column{.45\textwidth} % Left column and width
+		\textbf{Pros}
+		\begin{enumerate}
+			\item Some Spanish descriptions  
+			\item Progressive contest
+			\item Ranks \& Leaderboards
+			\item Code Backup
+			\item Dynamic score problems
+			\item Frozen scoreboard
+		\end{enumerate}
+		\column{.5\textwidth} % Right column and width
+		\textbf{Cons}
+		\begin{enumerate}
+			\item Most recycling problems
+			\item Private contests
+			\item Very strict with I/O
+			\item Access
+			\item Frozen scoreboard
+		\end{enumerate}
+	\end{columns}
+	\begin{block}{Other resources}
+		\begin{itemize}
+			\item \href{https://coj-forum.uci.cu/viewtopic.php?f=35&t=2846}{Caribbean ICPC Information} 
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+%--------------------
+%      UVA OJ
+%--------------------
+
+\begin{frame}
+	\frametitle{Universidad of Valladolid Online Judge}
+	\begin{figure}[t]
+		\href{https://uva.onlinejudge.org/}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/uva}}
+	\end{figure}
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\column{.45\textwidth} % Left column and width
+		\textbf{Pros}
+		\begin{enumerate}
+			\item Vast quantity of problems 
+			\item Many online references 
+			\item ICPC Related contests
+			\item Good Analytic's Tools 
+			\item CP Book is based completely on it
+		\end{enumerate}
+		\column{.5\textwidth} % Right column and width
+		\textbf{Cons}
+		\begin{enumerate}
+			\item Poor Online Connections
+			\item No code backup
+			\item No feedback
+			\item Heavy traffic of users (delays in response)
+		\end{enumerate}
+	\end{columns}
+	\begin{block}{Tools}
+	\center
+	\href{http://uhunt.felix-halim.net/} {\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvahunting}}
+	\href{https://www.udebug.com/}	{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/udebug}}
+	\href{http://uvatoolkit.com/problemssolve.php}{\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvatoolkit}}
+	\end{block}
+
+\end{frame}
+
+%----------------------------
+%     CODECHEF  OJ
+%----------------------------
+
+\begin{frame}
+	\frametitle{Codechef }
+	\begin{figure}[t]
+		\href{https://www.codechef.com/getting-started}{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/judges/codechef}}
+	\end{figure}
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\column{.45\textwidth} % Left column and width
+		\textbf{Pros}
+		\begin{enumerate}
+			\item Active Contests Schedule  
+			\item \href{https://blog.codechef.com/}{Community Blogs, Resources}
+			\item Problems level clasification
+			\item \href{https://www.codechef.com/ide}{Online Compiler}
+			\item Sponsors \& Prizes
+			\item Code Backup
+		\end{enumerate}
+		\column{.5\textwidth} % Right column and width
+		\textbf{Cons}
+		\begin{enumerate}
+			\item Troubleshooting with large audiences
+			\item Math problems tend to be specific
+			\item Not unified rank
+		\end{enumerate}
+	\end{columns}
+	\begin{block}{Contest}
+	\center
+	\href{https://www.codechef.com/JAN16} {\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/contests/long_challenge}}
+	\href{https://www.codechef.com/LTIME32}	{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/contests/lunch_time}}
+	\href{https://www.codechef.com/COOK66}{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/contests/cook_off}}
+	\end{block}
+
+\end{frame}
+
+%------------------------------
+%       HACKERRANK
+%------------------------------
+
+\begin{frame}
+	\frametitle{HackerRank}
+	\begin{figure}[t]
+		\href{https://www.hackerrank.com}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/hackerrank}}
+	\end{figure}
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\column{.45\textwidth} % Left column and width
+		\textbf{Pros}
+		\begin{enumerate}
+			\item Visited by many recruiters
+			\item Frequently contests 
+			\item Code Backup \& OC 
+			\item Editorial if AC
+			\href{https://www.hackerrank.com/domains}{\item More than Algorithmic Challenges}
+		\end{enumerate}
+		\column{.5\textwidth} % Right column and width
+		\textbf{Cons}
+		\begin{enumerate}
+			\item No much resources to learn
+			\item Few sense of community
+		\end{enumerate}
+	\end{columns}
+	\begin{block}{Tools}
+	\center
+	\href{https://www.hackerrank.com/jobs} {\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/jobs}}
+	\end{block}
+
+\end{frame}
+
+
+%------------------------------
+%       TOP CODER
+%------------------------------
+
+\begin{frame}
+	\frametitle{TopCoder}
+	\begin{figure}[t]
+		\href{https://arena.topcoder.com/index.html}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/topcoder}}
+	\end{figure}
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\column{.45\textwidth} % Left column and width
+		\textbf{Pros}
+		\begin{enumerate}
+			\item Profitable 
+			\item Class vs Complete Program 
+			\item Rank \& Prizes \& Achievements
+			\item More than Algorithmic Challenges
+			\item Time to compete \& Hack :)
+			\item Excellence as referemce
+		\end{enumerate}
+		\column{.5\textwidth} % Right column and width
+		\textbf{Cons?}
+		\begin{enumerate}
+			%\item \href{#/u/practiceProblemList}{}
+			\item \href{https://arena.topcoder.com/index.html}{Contest Platform: BETA?}
+			\item Only 3 problems by contest
+			\item Ranking based on contests
+		\end{enumerate}
+	\end{columns}
+	%\begin{block}{Tools}
+	%\center
+	%\href{http://uhunt.felix-halim.net/} {\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvahunting}}
+	%\href{https://www.udebug.com/}	{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/udebug}}
+	%\href{http://uvatoolkit.com/problemssolve.php}{\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvatoolkit}}
+	%\end{block}
+
+\end{frame}
+
+
+%------------------------------
+%       CODEFORCES
+%------------------------------
+
+\begin{frame}
+	\frametitle{Codeforces}
+	\begin{figure}[t]
+		\href{http://codeforces.com/help}{\includegraphics[width=5cm,height=5cm,keepaspectratio]{images/judges/codeforces}}
+	\end{figure}
+	
+	\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+		\column{.45\textwidth} % Left column and width
+		\textbf{Pros}
+		\begin{enumerate}
+			\item Proactive community 
+			\item Real time Hacking exp.
+			\item GYM \& Feedback
+			\item Problem Set \& Others solutions
+			\item Code Backup 
+			\item \href{http://codeforces.com/api/help}{API}
+		\end{enumerate}
+		\column{.5\textwidth} % Right column and width
+		\textbf{Cons}
+		\begin{enumerate}
+			\item Unavailable during large contests
+			\item Rare Div.1 contests
+			\item Ranking based on contests
+			\item Its running over windows
+		\end{enumerate}
+	\end{columns}
+	\begin{block}{Tools}
+	\center
+	\href{https://polygon.codeforces.com/} {\includegraphics[width=2.2cm,height=2.2cm,keepaspectratio]{images/tools/polygon}}
+	%\href{https://www.udebug.com/}	{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/udebug}}
+	%\href{http://uvatoolkit.com/problemssolve.php}{\includegraphics[width=1cm,height=1cm,keepaspectratio]{images/tools/uvatoolkit}}
+	\end{block}
+
+\end{frame}
+
+%------------------------------
+%       OTHERS
+%------------------------------
+
+\begin{frame}
+	\frametitle{Math , Games \& Fight}
+	
+	\begin{figure}
+	\center
+	\href{https://projecteuler.net/archives} {\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/projecteuler}}
+	\href{http://ideone.com/}{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/tools/ideone}}
+	\end{figure}
+	\begin{figure}
+	\center
+	\href{https://codefights.com/}{\includegraphics[width=3cm,height=3cm,keepaspectratio]{images/judges/codefights}}
+	\href{https://www.codingame.com/start}{\includegraphics[width=4cm,height=4cm,keepaspectratio]{images/judges/codingame}}
+	\end{figure}
+
+\end{frame}
+
+%------------------------------
+%       Q & A
+%------------------------------
+
+\begin{frame}
+	\frametitle{Q \& A}
+	\Huge \center \href{https://www.quora.com/Online-Judges/What-is-the-best-online-judge-for-hosting-programming-contests}{\centerline{ Q \& A}}
+\end{frame}
+
+\end{document} 

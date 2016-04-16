@@ -1,0 +1,303 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\documentclass{beamer}
+\mode<presentation> {
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+\usetheme{Madrid}
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+\usecolortheme{seahorse}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{ragged2e} % Jusitfy
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{listings} % C++ code
+\lstset{language=C++,
+                basicstyle=\footnotesize\ttfamily,
+                keywordstyle=\footnotesize\color{blue}\ttfamily,
+}
+\addtobeamertemplate{block begin}{}{\justifying} %Justify
+%\hypersetup{
+%  colorlinks, linkcolor=green, pdfnewwindow=true
+%}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Number Theory I]{Number Theory I} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Ulises M\'endez Mart\'{i}nez} % Your name
+\institute[UTM] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Algorist Weekly Talks \\ % Your institution for the title page
+\medskip
+\textit{ulisesmdzmtz@gmail.com} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%---------------------------------------------------------------------------------------
+
+%------------------------------------------------
+%   Introductory Quote
+%------------------------------------------------
+\begin{frame}
+\frametitle{Mathematics}
+\begin{block}{NUMB3RS}
+We all use math every day; to predict weather, to tell time, to handle money.
+Math is more than formulas or equations; it's logic, it's rationality,
+it's using your mind to solve the biggest mysteries we know.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+%   Number Theory
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{What is number theory?}
+\onslide<1-> Number theory is the study of the set of positive whole numbers: $1$,$2$,$ 3$,$ \dots $ which are often called the set of natural numbers. We will especially want to study the relationships between different sorts of numbers. 
+\onslide<2-> \begin{block} { \href{https://www.math.brown.edu/~jhs/}{\textbf{Source:} https://www.math.brown.edu}} 
+\begin{itemize}
+\item odd $1, 3, 5, 7, 9, 11, \dots$
+\item even $ 2, 4, 6, 8, 10, \dots$
+\item square $ 1, 4, 9, 16, 25, 36, \dots$
+\item cube $ 1, 8, 27, 64, 125, \dots$
+\item prime $ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, \dots$
+\item 1 (modulo 4) $ 1, 5, 9, 13, 17, 21, 25, \dots$
+\item triangular $ 1, 3, 6, 10, 15, 21, \dots$
+\item perfect $ 6, 28, 496, \dots$
+\item Fibonacci $ 1, 1, 2, 3, 5, 8, 13, 21, \dots$
+\end{itemize}
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+%   Divisibility
+%------------------------------------------------
+\begin{frame}
+\frametitle{Divisibility}
+\onslide<1-> \begin{block}{Divisor}
+In mathematics a divisor of an integer $\mathbf{n}$, also called a factor of $\mathbf{n}$, is an integer that can be multiplied by some other integer to produce $\mathbf{n}$. An integer $\mathbf{n}$ is divisible by another integer $\mathbf{m}$ if $\mathbf{m}$ is a factor of $\mathbf{n}$, so that dividing $\mathbf{n}$ by $\mathbf{m}$ leaves no remainder. 
+\end{block}
+\onslide<2-> \begin{block}{Definition}
+A \textbf{prime} number (or a prime) is a natural number greater than $\mathbf{1}$ that has no positive divisors other than $\mathbf{1}$ and itself. A natural number greater than $\mathbf{1}$ that is not a prime number is called a \textbf{composite} number. 
+\end{block}
+\onslide<3-> \begin{block}{Fundamental theorem of arithmetic}
+It states that every integer greater than $\mathbf{1}$ either is prime itself or is the product of prime numbers, and that this product is unique, up to the order of the factors.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+%   Question...
+%------------------------------------------------
+\begin{frame}
+\frametitle{Question?}
+ Which is fastest algorithm to find prime numbers?
+\begin{itemize}
+\onslide <2-> \item \href{https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes}{Sieve of Eratosthenes}
+\onslide <3-> \item \href{https://en.wikipedia.org/wiki/Sieve_of_Atkin}{Sieve of Atkin}
+\onslide <4-> \item \href{http://e-maxx.ru/algo/prime_sieve_linear}{Linear Prime Sieve}
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+%   Gcd Lcm
+%------------------------------------------------
+\begin{frame}
+\frametitle{GCD \& LCM}
+\onslide<1-> \begin{block}{Greatest common divisor}
+In mathematics, the greatest common divisor $(gcd)$ of two or more integers, when at least one of them \textbf{is not zero}, is the largest positive integer that divides the numbers without a remainder.
+\end{block}
+\onslide<2-> \begin{block}{Coprime numbers}
+Two numbers are called relatively prime, or coprime, if their greatest common divisor equals $\mathbf{1}$. For example, $9$ and $28$ are relatively prime.
+\end{block}
+\onslide<3-> \begin{block}{Least common multiple}
+The lowest common multiple of two integers  $\mathbf{a}$ and $\mathbf{b}$, Is the smallest positive integer that is divisible by both $\mathbf{a}$ and $\mathbf{b}$. Since division of integers by zero is undefined, this definition has meaning \textbf{only if a and b are both different from zero}.
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+%   GDC  Calculation
+%------------------------------------------------
+\begin{frame}
+\frametitle{Calculation }
+\onslide <2->  \begin{block}{Prime factorizations}
+Greatest common divisors can in principle be computed by determining the prime factorizations of the two numbers and comparing factors;  $\mathbf{gcd(18, 84)}$, $18 = 2 \times 3^2$ and $84 = 2^2 \times 3 \times 7$, then $gcd(18,84) = 6$ 
+	\end{block}
+\onslide <3->  \begin{block}{Binary method}
+Also known as Stein's algorithm. It uses  simpler arithmetic operations than the conventional Euclidean algorithm; it replaces division with arithmetic shifts, comparisons, and subtraction.
+	\end{block}
+\onslide <4->  \begin{block}{Euclid's algorithm}
+The Euclidean algorithm is based on the principle that the greatest common divisor of two numbers does not change if the larger number is replaced by its difference with the smaller number.
+	\end{block}
+\end{frame}
+
+%------------------------------------------------
+%   Question...
+%------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{Implementation}
+\begin{block}{Recursive version}
+\begin{lstlisting}
+int gcd(int a, int b) {return (b==0)?a:gcd(b,a%b);}
+\end{lstlisting}
+\end{block}
+
+\onslide<2->  How to swap two numbers without using temp variables nor arithmetic operations?
+\onslide<3-> \begin{block}{Iterative version}
+\begin{lstlisting}
+int gcd(int a, int b) {
+   while(b) {
+      a %= b;
+      b ^= a;
+      a ^= b;
+      b ^= a;
+   }
+   return a;
+}
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+%------------------------------------------------
+%   Modular arithmetic
+%------------------------------------------------
+\begin{frame}
+\frametitle{Modular arithmetic}
+\justify In mathematics, modular arithmetic is a system of arithmetic for integers, where numbers ``wrap around'' upon reaching a certain value ( \textbf{the modulus}).
+\begin{figure}[t]
+		\includegraphics[width=5cm,height=5cm,keepaspectratio]{images/clock_group}
+		\caption{Time-keeping on this clock uses arithmetic modulo 12.}
+	\end{figure}
+\end{frame}
+
+%------------------------------------------------
+%   Modulo operator
+%------------------------------------------------
+\begin{frame}
+\frametitle{Modulo operator}
+\begin{theorem}[Euclidean division]
+	Given two integers $a$ and $b$ ($b \neq 0$), there exist \textbf{unique} integers $q$ and $r$ such that:
+$$a = bq + r$$
+$$ 0 \le r < |b|$$
+where $|b|$ denotes the absolute value of $b$.
+\end{theorem}
+Given two positive numbers, $a$ (the dividend) and $n$ (the divisor), $a$ modulo $n$ (abbreviated as $a mod n$) is the remainder of the Euclidean division of $a$ by $n$.
+\end{frame}
+
+%------------------------------------------------
+%   Equivalencies
+%------------------------------------------------
+\begin{frame}
+\frametitle{Equivalencies}
+\onslide<1-> \begin{block}{Identity}
+\begin{itemize}
+\item $(a \mod n) \mod n = a \mod n.$
+\item $n^x \mod n = 0$ for all positive integer values of $x$.
+\item If $p$ is a prime number which is not a divisor of $b$, then\\ $ab^{p-1} \mod p = a \mod p$, due to Fermat's little theorem.
+\end{itemize}
+\end{block}
+\onslide<2-> \begin{block}{Inverse}
+\begin{itemize}
+\item $[(-a \mod n) + (a \mod n)] \mod n = 0.$
+\item $b^{-1} \mod n$ denotes the modular multiplicative inverse, which is defined if and only if $b$ and $n$ are relatively prime, which is the case when the left hand side is defined: $[(b^{-1} \mod n)(b \mod n)] \mod n = 1$.
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Equivalencies (cont)}
+\onslide<1-> \begin{block}{Distributive}
+\begin{itemize}
+\item $(a + b) \mod n = [(a \mod n) + (b \mod n)] \mod n$.
+\item $ab \mod n = [(a \mod n)(b \mod n)] \mod n$.
+\end{itemize}
+\end{block}
+%------------------------------------------------
+%   Big Number modulus int
+%------------------------------------------------
+\onslide<2-> \begin{example}[Big Number Modulus Small One]
+\begin{lstlisting}
+int mod(string s, int m) {
+   int i, res = 0;
+   for(i=0;i<s.length;i++) {
+      res = res*10+(s[i]-'0');
+      res %= m;
+   }
+   return res;
+}
+\end{lstlisting}
+\end{example}
+\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+%   (Extended) Euclidean algorithm
+%------------------------------------------------
+%\begin{frame}
+%\frametitle{}
+%\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+%   Numerical systems
+%------------------------------------------------
+%\begin{frame}
+%\frametitle{}
+%\end{frame}
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\Huge{\centerline{ Q \& A }}
+
+\normalsize
+{
+\begin{block}{References}
+\begin{itemize}
+\item \url{www.codechef.com/wiki/tutorial-number-theory}
+\item \url{www.hackerrank.com/domains/mathematics/number-theory}
+\item \url{oeis.org/A051193}
+\item \url{projecteuler.net/}
+\item \url{codeforces.com/problemset/tags/number_theory}
+\end{itemize}
+\end{block}
+}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
