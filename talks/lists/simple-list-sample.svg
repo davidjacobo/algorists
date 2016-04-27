@@ -1,0 +1,2702 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="simple-list-sample.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path4147"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path4271"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path4150"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-4"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-0"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-9"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-61"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-6"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-94"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-3"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8256"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8258"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-0-9"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8262"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8264"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8266"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8268"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8270"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8272"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8270-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8272-9"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9047"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9049"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-2"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9053"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9055"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-0-7"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9059"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9061"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9063"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9065"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-7"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9495"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9497"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1-4"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-0-4"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9501"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9503"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9505"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9507"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9509"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9511"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-70"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9759"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9761"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-0-45"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9765"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9767"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9769"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9771"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9773"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9775"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-50"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-07"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9905"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9907"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9909"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9911"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9913"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9915"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-66"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker10004"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path10006"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-0-71"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker10010"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path10012"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker10014"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path10016"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker10018"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path10020"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-07"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-48"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11297"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11299"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-0-1"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11303"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11305"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11307"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11309"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11311"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11313"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-87"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-8"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11443"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11445"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1-11"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150-0-455"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11449"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11451"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11453"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11455"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11457"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11459"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="201.34173"
+     inkscape:cy="-757.19741"
+     inkscape:document-units="px"
+     inkscape:current-layer="g8214-8"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="1200"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="lines"
+     style="display:inline" />
+  <g
+     inkscape:label="circles"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3003"
+       transform="translate(-165.71429,120)">
+      <g
+         id="g3251"
+         transform="translate(-256.65997,61.619306)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">L</tspan></text>
+      </g>
+      <g
+         transform="translate(299.82322,58.119421)"
+         id="g3251-2"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-0"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-015"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-3"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">T</tspan></text>
+      </g>
+      <g
+         transform="translate(112.94501,57.109271)"
+         id="g3251-35"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-20"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-3"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-978"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">S</tspan></text>
+      </g>
+      <g
+         id="g3350"
+         transform="translate(-78.873119,-6.0609153)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(188.43085,-140.10538)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-3"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="514.93048"
+           y="10.960939"
+           id="text2987-09"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-6"
+             x="514.93048"
+             y="10.960939"
+             style="fill:#f2f2f2">I</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="M 284.83107,-5.07969 C 416.1509,-6.08984 416.1509,-6.08984 416.1509,-6.08984"
+         id="path6061"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="M 656.15328,-9.1646167 C 787.47311,-10.174767 787.47311,-10.174767 787.47311,-10.174767"
+         id="path6061-3"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 469.25476,-8.174769 c 131.31983,-1.01015 131.31983,-1.01015 131.31983,-1.01015"
+         id="path6061-7"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <rect
+         style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect6834-9"
+         width="21.213203"
+         height="21.213203"
+         x="80.356384"
+         y="-12.635526"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <text
+         xml:space="preserve"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="78.841171"
+         y="-24.252281"
+         id="text8182"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762"><tspan
+           sodipodi:role="line"
+           id="tspan8184"
+           x="78.841171"
+           y="-24.252281">head</tspan></text>
+      <g
+         id="g8214"
+         transform="translate(94.95434,-2.0203049)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <rect
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           y="-21.221825"
+           x="880.86169"
+           height="21.213203"
+           width="21.213203"
+           id="rect6834"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:nodetypes="ccc"
+           transform="translate(165.71429,-120)"
+           inkscape:connector-curvature="0"
+           id="path7616"
+           d="m 736.40121,108.8797 c 38.38579,0 11.11168,-30.304574 11.11168,-30.304574 -20.87051,-1.870872 -18.5328,4.462098 -21.2132,18.182749"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend-1)" />
+        <text
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:linespacing="125%"
+           id="text8186"
+           y="-26.272585"
+           x="870.80078"
+           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           xml:space="preserve"><tspan
+             y="-26.272585"
+             x="870.80078"
+             id="tspan8188"
+             sodipodi:role="line">z</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 100.6506,-2.0935437 c 131.31983,-1.01015 131.31983,-1.01015 131.31983,-1.01015"
+         id="path6061-0"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="M 842.10257,-12.19507 C 973.4224,-13.20522 973.4224,-13.20522 973.4224,-13.20522"
+         id="path6061-3-8"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <g
+         id="g3251-8"
+         transform="translate(-275.49777,377.02841)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-4"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-2"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-4"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">L</tspan></text>
+      </g>
+      <g
+         transform="translate(280.98542,373.52852)"
+         id="g3251-2-4"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-0-7"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-015-0"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-3-0"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">T</tspan></text>
+      </g>
+      <g
+         transform="translate(94.107208,372.51837)"
+         id="g3251-35-8"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-20-4"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-3-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-978-2"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">S</tspan></text>
+      </g>
+      <g
+         id="g3350-3"
+         transform="translate(-97.710919,309.34819)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(188.43085,-140.10538)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-3-7"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="514.93048"
+           y="10.960939"
+           id="text2987-09-5"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-6-6"
+             x="514.93048"
+             y="10.960939"
+             style="fill:#f2f2f2">I</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 265.99327,310.32942 c 131.3198,-1.01015 131.3198,-1.01015 131.3198,-1.01015"
+         id="path6061-9"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 637.31547,306.24449 c 131.3198,-1.01015 131.3198,-1.01015 131.3198,-1.01015"
+         id="path6061-3-3"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <rect
+         style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect6834-9-7"
+         width="21.213203"
+         height="21.213203"
+         x="61.518574"
+         y="302.77359"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <text
+         xml:space="preserve"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="60.003376"
+         y="291.15683"
+         id="text8182-4"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762"><tspan
+           sodipodi:role="line"
+           id="tspan8184-7"
+           x="60.003376"
+           y="291.15683">head</tspan></text>
+      <g
+         id="g8214-3"
+         transform="translate(76.116538,313.38881)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <rect
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           y="-21.221825"
+           x="880.86169"
+           height="21.213203"
+           width="21.213203"
+           id="rect6834-7"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:nodetypes="ccc"
+           transform="translate(165.71429,-120)"
+           inkscape:connector-curvature="0"
+           id="path7616-3"
+           d="m 736.40121,108.8797 c 38.38579,0 11.11168,-30.304574 11.11168,-30.304574 -20.87051,-1.870872 -18.5328,4.462098 -21.2132,18.182749"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend-1)" />
+        <text
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:linespacing="125%"
+           id="text8186-1"
+           y="-26.272585"
+           x="870.80078"
+           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           xml:space="preserve"><tspan
+             y="-26.272585"
+             x="870.80078"
+             id="tspan8188-8"
+             sodipodi:role="line">z</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="M 81.812798,313.31556 C 213.13263,312.30541 213.13263,312.30541 213.13263,312.30541"
+         id="path6061-0-0"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 823.26477,303.21404 c 131.3198,-1.01015 131.3198,-1.01015 131.3198,-1.01015"
+         id="path6061-3-8-4"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <g
+         id="g3350-3-5"
+         transform="translate(-2.0203154,235.36554)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(188.43085,-140.10538)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-3-7-1"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="506.84927"
+           y="11.971092"
+           id="text2987-09-5-3"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-6-6-1"
+             x="506.84927"
+             y="11.971092"
+             style="fill:#f2f2f2">X</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker8270)"
+         d="m 450.82985,307.58283 c 23.28633,-18.91759 20.39421,-31.3001 4.93371,-44.2583 -11.17039,-9.36245 5.91678,-33.16591 34.37943,-30.06239"
+         id="path8419"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csc"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#marker8270)"
+         d="m 380.82751,352.07392 c 103.71665,33.9283 -71.35455,22.45267 35.35533,70.45815"
+         id="path8625"
+         inkscape:connector-curvature="0"
+         transform="translate(165.71429,-120)"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-insertion-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <g
+         id="g3251-8-1"
+         transform="translate(-254.28456,636.78722)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-4-4"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-2-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-4-3"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">L</tspan></text>
+      </g>
+      <g
+         transform="translate(302.19863,633.28733)"
+         id="g3251-2-4-9"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-0-7-5"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-015-0-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-3-0-8"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">T</tspan></text>
+      </g>
+      <g
+         transform="translate(115.32041,632.27718)"
+         id="g3251-35-8-6"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-20-4-3"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-3-1-5"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-978-2-3"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">S</tspan></text>
+      </g>
+      <g
+         id="g3350-3-7"
+         transform="translate(-76.497712,569.107)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(188.43085,-140.10538)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-3-7-3"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="514.93048"
+           y="10.960939"
+           id="text2987-09-5-6"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-6-6-6"
+             x="514.93048"
+             y="10.960939"
+             style="fill:#f2f2f2">I</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="M 287.20648,570.08823 C 418.5263,569.07808 418.5263,569.07808 418.5263,569.07808"
+         id="path6061-9-8"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 658.5287,566.0033 c 131.3198,-1.01015 131.3198,-1.01015 131.3198,-1.01015"
+         id="path6061-3-3-9"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <rect
+         style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect6834-9-7-5"
+         width="21.213203"
+         height="21.213203"
+         x="82.731773"
+         y="562.53241"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <text
+         xml:space="preserve"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="81.216576"
+         y="550.91565"
+         id="text8182-4-8"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762"><tspan
+           sodipodi:role="line"
+           id="tspan8184-7-4"
+           x="81.216576"
+           y="550.91565">head</tspan></text>
+      <g
+         id="g8214-3-0"
+         transform="translate(97.329738,573.14762)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <rect
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           y="-21.221825"
+           x="880.86169"
+           height="21.213203"
+           width="21.213203"
+           id="rect6834-7-1"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:nodetypes="ccc"
+           transform="translate(165.71429,-120)"
+           inkscape:connector-curvature="0"
+           id="path7616-3-9"
+           d="m 736.40121,108.8797 c 38.38579,0 11.11168,-30.304574 11.11168,-30.304574 -20.87051,-1.870872 -18.5328,4.462098 -21.2132,18.182749"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend-1)" />
+        <text
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:linespacing="125%"
+           id="text8186-1-1"
+           y="-26.272585"
+           x="870.80078"
+           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           xml:space="preserve"><tspan
+             y="-26.272585"
+             x="870.80078"
+             id="tspan8188-8-5"
+             sodipodi:role="line">z</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 103.026,573.07437 c 131.31984,-1.01015 131.31984,-1.01015 131.31984,-1.01015"
+         id="path6061-0-0-0"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="M 844.478,562.97285 C 975.7978,561.9627 975.7978,561.9627 975.7978,561.9627"
+         id="path6061-3-8-4-9"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <g
+         id="g3350-3-5-7"
+         transform="translate(15.657354,567.85533)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(188.43085,-140.10538)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-3-7-1-1"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="506.84927"
+           y="11.971092"
+           id="text2987-09-5-3-6"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-6-6-1-0"
+             x="506.84927"
+             y="11.971092"
+             style="fill:#f2f2f2">X</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker9063)"
+         d="m 306.32876,687.3183 c 71.21575,-78.7919 130.94103,-3.91434 130.94103,-3.91434"
+         id="path9202"
+         inkscape:connector-curvature="0"
+         transform="translate(165.71429,-120)"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-delete-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <g
+         id="g3251-5"
+         transform="translate(-251.59141,872.06774)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-1"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-7"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-2"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">L</tspan></text>
+      </g>
+      <g
+         transform="translate(304.89177,868.56785)"
+         id="g3251-2-47"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-0-5"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-015-3"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-3-3"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">T</tspan></text>
+      </g>
+      <g
+         transform="translate(118.01357,867.5577)"
+         id="g3251-35-4"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-20-2"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-3-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-978-4"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">S</tspan></text>
+      </g>
+      <g
+         id="g3350-8"
+         transform="translate(-73.804562,804.38751)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(188.43085,-140.10538)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-3-0"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="514.93048"
+           y="10.960939"
+           id="text2987-09-8"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-6-9"
+             x="514.93048"
+             y="10.960939"
+             style="fill:#f2f2f2">I</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 290.9711,802.5116 c 37.29989,-36.60374 110.20909,-38.71262 155.45528,-39.00626 74.79309,-0.57535 156.93595,37.63896 156.93595,37.63896"
+         id="path6061-4"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 661.22187,801.28382 c 131.3198,-1.01015 131.3198,-1.01015 131.3198,-1.01015"
+         id="path6061-3-39"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 474.50184,799.41652 c 7.89869,-2.46194 16.00357,-1.88297 21.15227,3.02556 8.61774,8.21573 3.92827,30.29965 -11.97092,37.41961 -40.62849,18.19419 -224.82409,11.2947 -260.64106,7.27242 -68.08036,-8.81803 -79.20566,-41.89385 12.95818,-43.01345"
+         id="path6061-7-3"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762"
+         sodipodi:nodetypes="csscc" />
+      <rect
+         style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect6834-9-2"
+         width="21.213203"
+         height="21.213203"
+         x="85.424904"
+         y="797.81293"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <text
+         xml:space="preserve"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="83.909767"
+         y="786.19617"
+         id="text8182-1"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762"><tspan
+           sodipodi:role="line"
+           id="tspan8184-1"
+           x="83.909767"
+           y="786.19617">head</tspan></text>
+      <g
+         id="g8214-38"
+         transform="translate(100.02287,808.42813)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <rect
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           y="-21.221825"
+           x="880.86169"
+           height="21.213203"
+           width="21.213203"
+           id="rect6834-8"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:nodetypes="ccc"
+           transform="translate(165.71429,-120)"
+           inkscape:connector-curvature="0"
+           id="path7616-8"
+           d="m 736.40121,108.8797 c 38.38579,0 11.11168,-30.304574 11.11168,-30.304574 -20.87051,-1.870872 -18.5328,4.462098 -21.2132,18.182749"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend-1)" />
+        <text
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:linespacing="125%"
+           id="text8186-7"
+           y="-26.272585"
+           x="870.80078"
+           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           xml:space="preserve"><tspan
+             y="-26.272585"
+             x="870.80078"
+             id="tspan8188-3"
+             sodipodi:role="line">z</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 105.71917,808.35489 c 30.59842,28.35254 139.69239,35.65149 157.13334,34.8325 55.97218,-2.62836 156.68646,-38.34265 156.68646,-38.34265"
+         id="path6061-0-2"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762"
+         sodipodi:nodetypes="csc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 847.17117,798.25336 c 131.3198,-1.01015 131.3198,-1.01015 131.3198,-1.01015"
+         id="path6061-3-8-46"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-reorder-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <g
+         id="g3251-20"
+         transform="translate(-81.548486,1234.6479)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-8"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="499.88904"
+           y="-55.239704"
+           id="text2987-37"
+           sodipodi:linespacing="125%"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762"><tspan
+             sodipodi:role="line"
+             id="tspan2989-8"
+             x="499.88904"
+             y="-55.239704"
+             style="fill:#f2f2f2">O</tspan></text>
+        <path
+           transform="translate(184.95173,-114.53654)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-8-9"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 a 27.142857,27.142857 0 1 1 -54.28571,0 27.142857,27.142857 0 1 1 54.28571,0 z"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="502.35995"
+           y="37.539948"
+           id="text2987-37-2"
+           sodipodi:linespacing="125%"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762"><tspan
+             sodipodi:role="line"
+             id="tspan2989-8-1"
+             x="502.35995"
+             y="37.539948"
+             style="fill:#f2f2f2">T</tspan></text>
+        <g
+           transform="translate(375.10638,94.330553)"
+           id="g3251-2-3-2"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762">
+          <path
+             transform="translate(182.48078,-207.31618)"
+             sodipodi:type="arc"
+             style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+             id="path2985-0-58-6"
+             sodipodi:cx="332.85715"
+             sodipodi:cy="138.07646"
+             sodipodi:rx="27.142857"
+             sodipodi:ry="27.142857"
+             d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+          <text
+             xml:space="preserve"
+             style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             x="499.88904"
+             y="-55.239704"
+             id="text2987-015-7-1"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan2989-3-09-5"
+               x="499.88904"
+               y="-55.239704"
+               style="fill:#f2f2f2">O</tspan></text>
+        </g>
+        <g
+           transform="translate(188.22817,93.320353)"
+           id="g3251-35-2-9"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762">
+          <path
+             transform="translate(182.48078,-207.31618)"
+             sodipodi:type="arc"
+             style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+             id="path2985-20-42-9"
+             sodipodi:cx="332.85715"
+             sodipodi:cy="138.07646"
+             sodipodi:rx="27.142857"
+             sodipodi:ry="27.142857"
+             d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+          <text
+             xml:space="preserve"
+             style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             x="496.85858"
+             y="-54.229553"
+             id="text2987-3-4-5"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan2989-978-7-6"
+               x="496.85858"
+               y="-54.229553"
+               style="fill:#f2f2f2">W</tspan></text>
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+           d="m 731.4364,27.046453 c 131.3199,-1.0101 131.3199,-1.0101 131.3199,-1.0101"
+           id="path6061-3-1-9"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+           d="m 544.53792,28.036353 c 131.31978,-1.0102 131.31978,-1.0102 131.31978,-1.0102"
+           id="path6061-7-0-2"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <rect
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect6834-9-4-0"
+           width="21.213203"
+           height="21.213203"
+           x="339.48734"
+           y="18.524811"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="337.97208"
+           y="6.908112"
+           id="text8182-49-2"
+           sodipodi:linespacing="125%"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762"><tspan
+             sodipodi:role="line"
+             id="tspan8184-0-8"
+             x="337.97208"
+             y="6.908112">head2</tspan></text>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+           d="m 359.78152,29.066753 c 131.31983,-1.0101 131.31983,-1.0101 131.31983,-1.0101"
+           id="path6061-0-00-6"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+           d="m 917.3857,24.016053 c 159.4985,-0.01973 169.4567,-43.757409 142.4315,-84.852862"
+           id="path6061-3-8-0-3"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762"
+           sodipodi:nodetypes="cc" />
+        <g
+           id="g3251-0"
+           transform="translate(-167.68531,-1047.5282)"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762">
+          <path
+             transform="translate(182.48078,-207.31618)"
+             sodipodi:type="arc"
+             style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+             id="path2985-00"
+             sodipodi:cx="332.85715"
+             sodipodi:cy="138.07646"
+             sodipodi:rx="27.142857"
+             sodipodi:ry="27.142857"
+             d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+          <text
+             xml:space="preserve"
+             style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             x="501.90933"
+             y="-55.239704"
+             id="text2987-9"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan2989-1"
+               x="501.90933"
+               y="-55.239704"
+               style="fill:#f2f2f2">L</tspan></text>
+        </g>
+        <g
+           transform="translate(388.79788,-1051.0281)"
+           id="g3251-2-7"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762">
+          <path
+             transform="translate(182.48078,-207.31618)"
+             sodipodi:type="arc"
+             style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+             id="path2985-0-8"
+             sodipodi:cx="332.85715"
+             sodipodi:cy="138.07646"
+             sodipodi:rx="27.142857"
+             sodipodi:ry="27.142857"
+             d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+          <text
+             xml:space="preserve"
+             style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             x="501.90933"
+             y="-55.239704"
+             id="text2987-015-6"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan2989-3-7"
+               x="501.90933"
+               y="-55.239704"
+               style="fill:#f2f2f2">T</tspan></text>
+        </g>
+        <g
+           transform="translate(201.91966,-1052.0383)"
+           id="g3251-35-83"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762">
+          <path
+             transform="translate(182.48078,-207.31618)"
+             sodipodi:type="arc"
+             style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+             id="path2985-20-7"
+             sodipodi:cx="332.85715"
+             sodipodi:cy="138.07646"
+             sodipodi:rx="27.142857"
+             sodipodi:ry="27.142857"
+             d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+          <text
+             xml:space="preserve"
+             style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             x="501.90933"
+             y="-55.239704"
+             id="text2987-3-3"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan2989-978-48"
+               x="501.90933"
+               y="-55.239704"
+               style="fill:#f2f2f2">S</tspan></text>
+        </g>
+        <g
+           id="g3350-82"
+           transform="translate(10.101538,-1115.2084)"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762">
+          <path
+             transform="translate(188.43085,-140.10538)"
+             sodipodi:type="arc"
+             style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+             id="path2985-3-3"
+             sodipodi:cx="332.85715"
+             sodipodi:cy="138.07646"
+             sodipodi:rx="27.142857"
+             sodipodi:ry="27.142857"
+             d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+          <text
+             xml:space="preserve"
+             style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             x="514.93048"
+             y="10.960939"
+             id="text2987-09-2"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan2989-6-62"
+               x="514.93048"
+               y="10.960939"
+               style="fill:#f2f2f2">I</tspan></text>
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#marker10018)"
+           d="m 373.80573,-1114.2272 c 131.31983,-1.0102 131.31983,-1.0102 131.31983,-1.0102"
+           id="path6061-98"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#marker10018)"
+           d="m 745.12794,-1118.3121 c 131.31983,-1.0102 131.31983,-1.0102 131.31983,-1.0102"
+           id="path6061-3-2"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#marker10018)"
+           d="m 558.22942,-1117.3223 c 131.31983,-1.0101 131.31983,-1.0101 131.31983,-1.0101"
+           id="path6061-7-5"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <rect
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+           id="rect6834-9-6"
+           width="21.213203"
+           height="21.213203"
+           x="169.33104"
+           y="-1121.7831"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="167.81583"
+           y="-1133.3998"
+           id="text8182-8"
+           sodipodi:linespacing="125%"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762"><tspan
+             sodipodi:role="line"
+             id="tspan8184-4"
+             x="167.81583"
+             y="-1133.3998">head</tspan></text>
+        <g
+           id="g8214-8"
+           transform="translate(183.92899,-1111.1678)"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762">
+          <rect
+             inkscape:export-ydpi="73.67762"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+             y="-21.221825"
+             x="880.86169"
+             height="21.213203"
+             width="21.213203"
+             id="rect6834-75"
+             style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+          <path
+             inkscape:export-ydpi="73.67762"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+             sodipodi:nodetypes="ccc"
+             transform="translate(165.71429,-120)"
+             inkscape:connector-curvature="0"
+             id="path7616-0"
+             d="m 736.40121,108.8797 c 38.38579,0 11.11168,-30.304574 11.11168,-30.304574 -20.87051,-1.870872 -18.5328,4.462098 -21.2132,18.182749"
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#marker10018)" />
+          <text
+             inkscape:export-ydpi="73.67762"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+             sodipodi:linespacing="125%"
+             id="text8186-77"
+             y="-26.272585"
+             x="870.80078"
+             style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+             xml:space="preserve"><tspan
+               y="-26.272585"
+               x="870.80078"
+               id="tspan8188-1"
+               sodipodi:role="line">z</tspan></text>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker10018)"
+             d="m -77.781746,241.20969 c -14.406558,-6.67777 -24.858404,12.12872 -21.52416,18.60197 13.659912,26.51994 27.077356,14.79722 32.3833,-6.2276"
+             id="path11017"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="csc"
+             transform="translate(63.333786,-243.4801)"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <g
+             id="g3251-3"
+             transform="translate(-559.09296,1543.3818)"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-5.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(182.48078,-207.31618)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-7"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="501.90933"
+               y="-55.239704"
+               id="text2987-1"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-29"
+                 x="501.90933"
+                 y="-55.239704"
+                 style="fill:#f2f2f2">1</tspan></text>
+          </g>
+          <g
+             transform="translate(243.48779,1624.7225)"
+             id="g3251-2-6"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-7.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(182.48078,-207.31618)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-0-6"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="501.90933"
+               y="-55.239704"
+               id="text2987-015-5"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-3-06"
+                 x="501.90933"
+                 y="-55.239704"
+                 style="fill:#f2f2f2">4</tspan></text>
+          </g>
+          <g
+             transform="translate(-103.88245,1424.5596)"
+             id="g3251-35-3"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-4.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(182.48078,-207.31618)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-20-23"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="501.90933"
+               y="-55.239704"
+               id="text2987-3-2"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-978-27"
+                 x="501.90933"
+                 y="-55.239704"
+                 style="fill:#f2f2f2">3</tspan></text>
+          </g>
+          <g
+             id="g3350-2"
+             transform="translate(-312.39529,1481.083)"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-9.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(188.43085,-140.10538)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-3-1"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="509.21619"
+               y="11.675225"
+               id="text2987-09-4"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-6-5"
+                 x="509.21619"
+                 y="11.675225"
+                 style="fill:#f2f2f2">2</tspan></text>
+          </g>
+          <g
+             id="g3251-3-3"
+             transform="translate(190.72802,1596.1775)"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(182.48078,-207.31618)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-7-0"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="501.90933"
+               y="-55.239704"
+               id="text2987-1-6"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-29-0"
+                 x="501.90933"
+                 y="-55.239704"
+                 style="fill:#f2f2f2">5</tspan></text>
+          </g>
+          <g
+             transform="translate(-210.52849,1651.7411)"
+             id="g3251-2-6-5"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-9.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(182.48078,-207.31618)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-0-6-7"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="501.90933"
+               y="-55.239704"
+               id="text2987-015-5-4"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-3-06-1"
+                 x="501.90933"
+                 y="-55.239704"
+                 style="fill:#f2f2f2">8</tspan></text>
+          </g>
+          <g
+             transform="translate(145.14374,1932.6494)"
+             id="g3251-35-3-9"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-1.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(182.48078,-207.31618)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-20-23-3"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="501.90933"
+               y="-55.239704"
+               id="text2987-3-2-0"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-978-27-1"
+                 x="501.90933"
+                 y="-55.239704"
+                 style="fill:#f2f2f2">7</tspan></text>
+          </g>
+          <g
+             id="g3350-2-8"
+             transform="translate(-62.59472,1467.559)"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-3.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(188.43085,-140.10538)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-3-1-8"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="507.07333"
+               y="11.675225"
+               id="text2987-09-4-5"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-6-5-6"
+                 x="507.07333"
+                 y="11.675225"
+                 style="fill:#f2f2f2">6</tspan></text>
+          </g>
+          <g
+             transform="translate(-488.22096,1752.0014)"
+             id="g3251-2-6-5-8"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-6.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762">
+            <path
+               transform="translate(182.48078,-207.31618)"
+               sodipodi:type="arc"
+               style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+               id="path2985-0-6-7-3"
+               sodipodi:cx="332.85715"
+               sodipodi:cy="138.07646"
+               sodipodi:rx="27.142857"
+               sodipodi:ry="27.142857"
+               d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+            <text
+               xml:space="preserve"
+               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               x="501.90933"
+               y="-55.239704"
+               id="text2987-015-5-4-9"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 id="tspan2989-3-06-1-8"
+                 x="501.90933"
+                 y="-55.239704"
+                 style="fill:#f2f2f2">9</tspan></text>
+          </g>
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m -46.046239,1448.1591 c 69.285713,-77.1428 69.285713,-77.1428 69.285713,-77.1428"
+             id="path11604"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cc"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-5.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.03748238px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 716.93416,1323.9885 c 18.42208,144.2223 18.8714,146.9724 18.8714,146.9724"
+             id="path12474"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cc"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-1.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 715.25407,1550.2512 c -20.71429,70.7143 -20.71429,70.7143 -20.71429,70.7143"
+             id="path12764"
+             inkscape:connector-curvature="0"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1.5917083px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 792.55433,1771.9806 c -96.89943,82.7069 -98.0716,83.5339 -98.0716,83.5339"
+             id="path13054"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cc"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-1.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 654.32951,1894.8133 c -109.28572,0.7142 -109.28572,0.7142 -109.28572,0.7142"
+             id="path13344"
+             inkscape:connector-curvature="0"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-1.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 277.97814,1353.8688 c 82.83251,-11.1117 86.76108,-12.1218 86.76108,-12.1218"
+             id="path15372"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cc"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-4.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 236.35853,1472.92 c 79.6813,5.3955 70.86476,82.8343 70.86476,82.8343"
+             id="path15662"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cc"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-9.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 580.49705,1515.3848 c -26.26397,65.6599 -27.39667,69.2313 -27.39667,69.2313"
+             id="path15952"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cc"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-7.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 507.1428,1468.7775 c -1.65806,75.3654 -37.93915,107.0844 -49.06675,112.0098"
+             id="path16242"
+             inkscape:connector-curvature="0"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-3.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762"
+             sodipodi:nodetypes="cc" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 219.3572,1842.3697 c -112.68023,0.3694 -95.59865,-102.549 -95.59865,-102.549"
+             id="path16532"
+             inkscape:connector-curvature="0"
+             transform="translate(63.333786,-243.4801)"
+             sodipodi:nodetypes="cc"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-9.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762" />
+          <path
+             style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker11457)"
+             d="m 49.399805,1613.3225 c -34.74619,-74.2104 30.968093,-106.7104 30.968093,-106.7104"
+             id="path16822"
+             inkscape:connector-curvature="0"
+             inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/circle-list-sample-6.png"
+             inkscape:export-xdpi="73.67762"
+             inkscape:export-ydpi="73.67762"
+             sodipodi:nodetypes="cc" />
+        </g>
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#marker10018)"
+           d="m 189.62525,-1111.2411 c 131.31984,-1.0101 131.31984,-1.0101 131.31984,-1.0101"
+           id="path6061-0-1"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#marker10018)"
+           d="m 931.07726,-1121.3426 c 131.31984,-1.0101 131.31984,-1.0101 131.31984,-1.0101"
+           id="path6061-3-8-5"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/double-list-sample.png"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-ydpi="73.67762" />
+      </g>
+      <g
+         transform="translate(291.08694,1236.1988)"
+         id="g3251-2-3"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-0-58"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-015-7"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-3-09"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">E</tspan></text>
+      </g>
+      <g
+         transform="translate(104.20873,1235.1886)"
+         id="g3251-35-2"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <path
+           transform="translate(182.48078,-207.31618)"
+           sodipodi:type="arc"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path2985-20-42"
+           sodipodi:cx="332.85715"
+           sodipodi:cy="138.07646"
+           sodipodi:rx="27.142857"
+           sodipodi:ry="27.142857"
+           d="m 360,138.07646 c 0,14.99059 -12.15227,27.14286 -27.14285,27.14286 -14.99059,0 -27.14286,-12.15227 -27.14286,-27.14286 0,-14.99058 12.15227,-27.14285 27.14286,-27.14285 14.99058,0 27.14285,12.15227 27.14285,27.14285 z" />
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="501.90933"
+           y="-55.239704"
+           id="text2987-3-4"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan2989-978-7"
+             x="501.90933"
+             y="-55.239704"
+             style="fill:#f2f2f2">N</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 647.417,1168.9147 c 131.31983,-1.0101 131.31983,-1.0101 131.31983,-1.0101"
+         id="path6061-3-1"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 460.51848,1169.9046 c 131.31983,-1.0102 131.31983,-1.0102 131.31983,-1.0102"
+         id="path6061-7-0"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <rect
+         style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect6834-9-4"
+         width="21.213203"
+         height="21.213203"
+         x="255.46788"
+         y="1160.3931"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <text
+         xml:space="preserve"
+         style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="253.95267"
+         y="1148.7764"
+         id="text8182-49"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762"><tspan
+           sodipodi:role="line"
+           id="tspan8184-0"
+           x="253.95267"
+           y="1148.7764">head1</tspan></text>
+      <g
+         id="g8214-1"
+         transform="translate(86.218059,1176.0591)"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762">
+        <rect
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           y="-21.221825"
+           x="880.86169"
+           height="21.213203"
+           width="21.213203"
+           id="rect6834-4"
+           style="fill:#ff7f2a;fill-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+        <path
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:nodetypes="ccc"
+           transform="translate(165.71429,-120)"
+           inkscape:connector-curvature="0"
+           id="path7616-1"
+           d="m 736.40121,108.8797 c 38.38579,0 11.11168,-30.304574 11.11168,-30.304574 -20.87051,-1.870872 -18.5328,4.462098 -21.2132,18.182749"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend-1)" />
+        <text
+           inkscape:export-ydpi="73.67762"
+           inkscape:export-xdpi="73.67762"
+           inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-nodes-sample.png"
+           sodipodi:linespacing="125%"
+           id="text8186-9"
+           y="-26.272585"
+           x="870.80078"
+           style="font-size:20px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           xml:space="preserve"><tspan
+             y="-26.272585"
+             x="870.80078"
+             id="tspan8188-7"
+             sodipodi:role="line">z</tspan></text>
+      </g>
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 275.76208,1170.935 c 131.31983,-1.0101 131.31983,-1.0101 131.31983,-1.0101"
+         id="path6061-0-00"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Lend)"
+         d="m 833.36629,1165.8843 c 131.31982,-1.0102 131.31982,-1.0102 131.31982,-1.0102"
+         id="path6061-3-8-0"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="/home/ulises/Documents/algorists/talks/lists/simple-list-sharedmem-sample.png"
+         inkscape:export-xdpi="73.67762"
+         inkscape:export-ydpi="73.67762" />
+    </g>
+  </g>
+</svg>
