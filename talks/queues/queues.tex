@@ -253,31 +253,29 @@ He repeats this procedure until all the cookies in his collection have a sweetne
 \begin{frame}[fragile]
 \frametitle{ Hacking Time! }
 \begin{block}{Rules}
+	\begin{multicols}{2}
 	\begin{itemize}
 		\item 10 minutes to solve the problem.
-		\item Must use priority\_queue to solve the problem 
+		\item Must use priority\_queue to solve the problem.
+		\item Cannot use previous solutions/implementations
+		\item All test cases should pass 
 	\end{itemize}
+	\end{multicols}
+	\textbf{short link: https://goo.gl/VyIX8N}
 \end{block}
-\begin{example}[ Link:  ]
+\begin{example}[ Template ]
 \begin{lstlisting}
 #include <queue>     // priority_queue
 #include <utility>   // pair<int,int>
-#include <iostream>  // cin , cout 
 
 using namespace std; // to not use std::
+typedef pair<int,int> ii; //not waste time tipping
 
-int main() {
-   
-}
+int main() { return 0; } 
 \end{lstlisting}
 \end{example}
+
 \end{frame}
-%--------------------------------------------------------
-%--------------------------------------------------------
-%--------------------------------------------------------
-%--------------------------------------------------------
-%--------------------------------------------------------
-%--------------------------------------------------------
 %--------------------------------------------------------
 \section{Double Ended Queues} 
 \subsection{Introduction}
@@ -297,7 +295,7 @@ int main() {
 \begin{frame}
 \frametitle{C++ STL Deque}
 
-\begin{block}{std::priority\_queue}
+\begin{block}{std::dueque}
 template $<$ class T, class Alloc = allocator$<$T$>$ $>$ class deque;
 \end{block}
 
@@ -309,6 +307,25 @@ Specific libraries may implement deques in different ways, generally as some for
 
 Therefore, they provide a functionality similar to vectors, but with efficient insertion and deletion of elements also at the beginning of the sequence, and not only at its end. 
 
+\end{frame}
+%--------------------------------------------------------
+\subsection{A problem solvable with Deque}
+\begin{frame}
+\frametitle{A problem solvable with Deque}
+
+\begin{block}{Palindrome-Checker}
+An interesting problem that can be easily solved using the deque data structure is the classic palindrome problem. A palindrome is a string that reads the same forward and backward, for example, radar, toot, and madam. We would like to construct an algorithm to input a string of characters and check whether it is a palindrome.
+\newline\\
+Read more in: http://goo.gl/3QVha6
+\end{block}
+\end{frame}
+%--------------------------------------------------------
+\begin{frame}
+\frametitle{Palindrome-Checker}
+\begin{figure}
+	\includegraphics[width=0.85\linewidth]{palindrome.png}
+	\caption{Procedure to check if a word is palindrome}
+\end{figure}
 \end{frame}
 %--------------------------------------------------------
 \subsection{Challenge (Difficult)}
@@ -326,23 +343,23 @@ north-east, Northwest, south-east, south-west. The boat cannot leave the boundar
 
 \end{frame}
 %--------------------------------------------------------
-%\subsection{Simulation \& Solution}
-%\begin{frame}
-%\frametitle{ Simulation: $N=6, K=7$ }
-%\begin{figure}
-%	\includegraphics[width=0.5\linewidth]{cookie.png}
-%	\caption{Output: 2}
-%\end{figure}
-%\end{frame}
-%--------------------------------------------------------
 \begin{frame}[fragile]
-\frametitle{ Solution using priority queue: C++ }
-\begin{example}[ C++ Implementation ]
-\begin{lstlisting}
-   TBW http://interactivepython.org/runestone/static/pythonds/BasicDS/PalindromeChecker.html
-\end{lstlisting}
-\end{example}
+\frametitle{ TO BE CONTINUE }
+I left you the complete code of all previous challenges
+\begin{itemize}
+	\item Queue http://ideone.com/Rk7nwf
+	\item Priority Q. http://ideone.com/LxR1Po
+	\item Deque http://ideone.com/PvCked
+	\item Session Challenge http://ideone.com/7Ldee2
+\end{itemize}
 \end{frame}
 %--------------------------------------------------------
+\begin{frame}
+\frametitle{ References }
+\begin{itemize}
+	\item http://www.cplusplus.com/reference/queue/
+	\item https://en.wikipedia.org/
+\end{itemize}
+\end{frame}
 
 \end{document} 
