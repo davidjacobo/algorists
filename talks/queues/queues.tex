@@ -28,6 +28,7 @@
 }
 
 \usepackage{graphicx} % Allows including images
+\usepackage{ragged2e} % Jusitfy
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{lmodern}
 \usepackage{amsfonts}
@@ -39,6 +40,7 @@
                 basicstyle=\footnotesize\ttfamily,
                 keywordstyle=\footnotesize\color{blue}\ttfamily,
 }
+\addtobeamertemplate{block begin}{}{\justifying} %Justify
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -59,23 +61,22 @@ Algorist Weekly Talks \\ % Your institution for the title page
 \begin{frame}
 \titlepage % Print the title page as the first slide
 \end{frame}
-%---------------------------------------------
-%\begin{frame}
-%\frametitle{Overview} % Table of contents slide, comment this block out to remove it
-%\onslide<2->
-%\begin{figure}
-%\includegraphics[width=0.45\linewidth]{z_image.png}
-%\end{figure}
-%\end{frame}
-%--------------------------------------------------------
 
+
+%--------------------------------------------------------
+%-- OVERVIEW SECTION
+%--------------------------------------------------------
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use 
+\end{frame}
 %--------------------------------------------------------
 %	PRESENTATION SLIDES
 %--------------------------------------------------------
 
 %--------------------------------------------------------
-\section{Queues Introduction} 
-
+\section{Queues} 
+\subsection{Introduction}
 \begin{frame}
 \frametitle{ FIFO or LILO?}
 \begin{figure}
@@ -90,7 +91,7 @@ In a FIFO data structure, the first element added to the queue will be the first
 \end{frame} 
 %--------------------------------------------------------
 
-\section{C++ STL Queue implementation} 
+\subsection{C++ STL Queue} 
 
 \begin{frame}
 \frametitle{C++ STL Queue}
@@ -117,7 +118,229 @@ The standard container classes deque and list fulfill these requirements. By def
 
 \end{frame}
 %--------------------------------------------------------
+\subsection{Challenge (Easy)}
+\begin{frame}
+\frametitle{Throwing cards away I (Easy)}
+
+\begin{block}{Description}
+Given is an ordered deck of $n$ cards numbered $1$ to $n$ with card $1$ at the top and card $n$ at the bottom. The following operation is performed as long as there are at least two cards in the deck:\\
+Throw away the top card and move the card that is now on the top of the deck to the bottom of the deck.\\
+\textbf{Your task is to  find the sequence of discarded
+cards and the last, remaining card.}
+\end{block}
+
+\end{frame}
 %--------------------------------------------------------
+\subsection{Simulation \& Solution}
+\begin{frame}
+\frametitle{ Simulation: $n = 6$ }
+\begin{figure}
+	\includegraphics[width=0.9\linewidth]{throwing.png}
+	\caption{Discarded cards: 1, 3, 5, 2, 6}
+	\caption{Remaining card: 4}
+\end{figure}
+\end{frame}
+%--------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{ Solution using queue: C++ }
+\begin{example}[ C++ Implementation ]
+\begin{lstlisting}
+while(scanf("%d",&n), n) {
+   queue <int> Q;
+   for(card=1,cnt=0; card<=n; card++)
+      Q.push(card);
+   printf("Discarded cards:");
+   while(Q.size() > 1) {
+      card = Q.front(); Q.pop();
+      printf("%s%d",(cnt++?", ":" "),card);
+      card = Q.front(); Q.pop();
+      Q.push(card);
+   }
+   printf("\nRemaining card: %d\n",Q.front());
+}
+\end{lstlisting}
+\end{example}
+\end{frame}
+%--------------------------------------------------------
+\section{Priority Queues} 
+\subsection{Introduction}
+\begin{frame}
+\frametitle{Priority Queue}
+\begin{block}{Wikipedia}
+\begin{itemize}
+\item In computer science, a priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a "priority" associated with it. In a priority queue, an element with high  priority is served before an element with low priority. 
+\\
+\item While priority queues are often implemented with heaps, they are conceptually distinct from heaps. A priority queue is an abstract concept like "a list" or "a map";
+\end{itemize}
+\end{block}
+\end{frame}
+%--------------------------------------------------------
+\subsection{C++ STL Priority Queue} 
+
+\begin{frame}
+\frametitle{C++ STL Priority Queue}
+
+\begin{block}{std::priority\_queue}
+\small template $<$class T, class Container = vector$<$T$>$,\\
+  class Compare = less$<$typename Container::value\_type$>>$ class priority\_queue;
+\end{block}
+
+\textbf{Priority queue}\\
+Priority queues are a type of container adaptors, specifically designed such that its first element is always the greatest of the elements it contains.
+\newline
+\\
+The container shall be accessible through random access iterators and support the following operations:
+
+\begin{multicols}{3}
+\begin{itemize}
+	\item empty
+	\item size
+	\item front
+	\item push\_back
+	\item pop\_front
+\end{itemize}
+\end{multicols}
+
+The standard container classes vector and deque fulfill these requirements. By default, if no container class is specified for a particular priority\_queue class instantiation, the standard container vector is used.
+
+\end{frame}
+%--------------------------------------------------------
+\subsection{Challenge (Medium)}
+\begin{frame}
+\frametitle{Jesse and Cookies (Medium)}
+
+\begin{block}{Description}
+Jesse loves cookies. He wants the sweetness of all his cookies to be greater than value $K$. To do this, Jesse repeatedly mixes two cookies with the least sweetness. He creates a special combined cookie with:\\
+\center sweetness  $=$ ($1x$Least sweet cookie $+$  $2x$ 2nd least sweet cookie).\justify
+He repeats this procedure until all the cookies in his collection have a sweetness $\ge K$.\\
+\textbf{You are given Jesse's cookies. Print the number of operations required to give the cookies a sweetness $\mathbf{\ge K}$. Print $\mathbf{-1}$ if this isn't possible.} 
+\end{block}
+
+\end{frame}
+%--------------------------------------------------------
+\subsection{Simulation \& Solution}
+\begin{frame}
+\frametitle{ Simulation: $N=6, K=7$ }
+\begin{figure}
+	\includegraphics[width=0.5\linewidth]{cookie.png}
+	\caption{Output: 2}
+\end{figure}
+\end{frame}
+%--------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{ Solution using priority queue: C++ }
+\begin{example}[ C++ Implementation ]
+\begin{lstlisting}
+   priority_queue<i64, vector<i64>, greater<i64> > PQ;
+   scanf("%d %lld",&n,&k);
+   for(int i=0; i<n; i++) {
+      scanf("%lld",&cookie);
+      PQ.push(cookie);
+   }
+   while(PQ.size() > 1) {
+      if(PQ.top() >= k) break;
+      first = PQ.top(); PQ.pop();
+      second = PQ.top(); PQ.pop();
+      cookie = first + second * 2LL;
+      PQ.push(cookie); cnt++;
+   }
+   printf("%d\n",(PQ.top()<k)?-1:cnt);
+\end{lstlisting}
+\end{example}
+\end{frame}
+%--------------------------------------------------------
+%--------------------------------------------------------
+%--------------------------------------------------------
+%--------------------------------------------------------
+%--------------------------------------------------------
+%--------------------------------------------------------
+%--------------------------------------------------------
+\section{Double Ended Queues} 
+\subsection{Introduction}
+\begin{frame}
+\frametitle{Priority Queue}
+\begin{block}{Wikipedia}
+\begin{itemize}
+\item In computer science, a priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a "priority" associated with it. In a priority queue, an element with high  priority is served before an element with low priority. 
+\\
+\item While priority queues are often implemented with heaps, they are conceptually distinct from heaps. A priority queue is an abstract concept like "a list" or "a map";
+\end{itemize}
+\end{block}
+\end{frame}
+%--------------------------------------------------------
+\subsection{C++ STL Priority Queue} 
+
+\begin{frame}
+\frametitle{C++ STL Priority Queue}
+
+\begin{block}{std::priority\_queue}
+\small template $<$class T, class Container = vector$<$T$>$,\\
+  class Compare = less$<$typename Container::value\_type$>>$ class priority\_queue;
+\end{block}
+
+\textbf{Priority queue}\\
+Priority queues are a type of container adaptors, specifically designed such that its first element is always the greatest of the elements it contains.
+\newline
+\\
+The container shall be accessible through random access iterators and support the following operations:
+
+\begin{multicols}{3}
+\begin{itemize}
+	\item empty
+	\item size
+	\item front
+	\item push\_back
+	\item pop\_front
+\end{itemize}
+\end{multicols}
+
+The standard container classes vector and deque fulfill these requirements. By default, if no container class is specified for a particular priority\_queue class instantiation, the standard container vector is used.
+
+\end{frame}
+%--------------------------------------------------------
+\subsection{Challenge (Medium)}
+\begin{frame}
+\frametitle{Jesse and Cookies (Medium)}
+
+\begin{block}{Description}
+Jesse loves cookies. He wants the sweetness of all his cookies to be greater than value $K$. To do this, Jesse repeatedly mixes two cookies with the least sweetness. He creates a special combined cookie with:\\
+\center sweetness  $=$ ($1x$Least sweet cookie $+$  $2x$ 2nd least sweet cookie).\justify
+He repeats this procedure until all the cookies in his collection have a sweetness $\ge K$.\\
+\textbf{You are given Jesse's cookies. Print the number of operations required to give the cookies a sweetness $\mathbf{\ge K}$. Print $\mathbf{-1}$ if this isn't possible.} 
+\end{block}
+
+\end{frame}
+%--------------------------------------------------------
+\subsection{Simulation \& Solution}
+\begin{frame}
+\frametitle{ Simulation: $N=6, K=7$ }
+\begin{figure}
+	\includegraphics[width=0.5\linewidth]{cookie.png}
+	\caption{Output: 2}
+\end{figure}
+\end{frame}
+%--------------------------------------------------------
+\begin{frame}[fragile]
+\frametitle{ Solution using priority queue: C++ }
+\begin{example}[ C++ Implementation ]
+\begin{lstlisting}
+   priority_queue<i64, vector<i64>, greater<i64> > PQ;
+   scanf("%d %lld",&n,&k);
+   for(int i=0; i<n; i++) {
+      scanf("%lld",&cookie);
+      PQ.push(cookie);
+   }
+   while(PQ.size() > 1) {
+      if(PQ.top() >= k) break;
+      first = PQ.top(); PQ.pop();
+      second = PQ.top(); PQ.pop();
+      cookie = first + second * 2LL;
+      PQ.push(cookie); cnt++;
+   }
+   printf("%d\n",(PQ.top()<k)?-1:cnt);
+\end{lstlisting}
+\end{example}
+\end{frame}
 %--------------------------------------------------------
 
 \end{document} 
