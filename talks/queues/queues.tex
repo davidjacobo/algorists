@@ -249,6 +249,30 @@ He repeats this procedure until all the cookies in his collection have a sweetne
 \end{example}
 \end{frame}
 %--------------------------------------------------------
+\subsection{Hacking Time!}
+\begin{frame}[fragile]
+\frametitle{ Hacking Time! }
+\begin{block}{Rules}
+	\begin{itemize}
+		\item 10 minutes to solve the problem.
+		\item Must use priority\_queue to solve the problem 
+	\end{itemize}
+\end{block}
+\begin{example}[ Link:  ]
+\begin{lstlisting}
+#include <queue>     // priority_queue
+#include <utility>   // pair<int,int>
+#include <iostream>  // cin , cout 
+
+using namespace std; // to not use std::
+
+int main() {
+   
+}
+\end{lstlisting}
+\end{example}
+\end{frame}
+%--------------------------------------------------------
 %--------------------------------------------------------
 %--------------------------------------------------------
 %--------------------------------------------------------
@@ -258,86 +282,64 @@ He repeats this procedure until all the cookies in his collection have a sweetne
 \section{Double Ended Queues} 
 \subsection{Introduction}
 \begin{frame}
-\frametitle{Priority Queue}
+\frametitle{Double Ended Queue}
 \begin{block}{Wikipedia}
 \begin{itemize}
-\item In computer science, a priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a "priority" associated with it. In a priority queue, an element with high  priority is served before an element with low priority. 
+\item In computer science, a double-ended queue (dequeue, often abbreviated to deque, pronounced deck) is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail). 
 \\
 \item While priority queues are often implemented with heaps, they are conceptually distinct from heaps. A priority queue is an abstract concept like "a list" or "a map";
 \end{itemize}
 \end{block}
 \end{frame}
 %--------------------------------------------------------
-\subsection{C++ STL Priority Queue} 
+\subsection{C++ STL Deque} 
 
 \begin{frame}
-\frametitle{C++ STL Priority Queue}
+\frametitle{C++ STL Deque}
 
 \begin{block}{std::priority\_queue}
-\small template $<$class T, class Container = vector$<$T$>$,\\
-  class Compare = less$<$typename Container::value\_type$>>$ class priority\_queue;
+template $<$ class T, class Alloc = allocator$<$T$>$ $>$ class deque;
 \end{block}
 
-\textbf{Priority queue}\\
-Priority queues are a type of container adaptors, specifically designed such that its first element is always the greatest of the elements it contains.
-\newline
-\\
-The container shall be accessible through random access iterators and support the following operations:
+\textbf{Double ended queue}\\
 
-\begin{multicols}{3}
-\begin{itemize}
-	\item empty
-	\item size
-	\item front
-	\item push\_back
-	\item pop\_front
-\end{itemize}
-\end{multicols}
+\textbf{deque} (usually pronounced like "deck") is an irregular acronym of double-ended queue. Double-ended queues are sequence containers with dynamic sizes that can be expanded or contracted on both ends (either its front or its back).
 
-The standard container classes vector and deque fulfill these requirements. By default, if no container class is specified for a particular priority\_queue class instantiation, the standard container vector is used.
+Specific libraries may implement deques in different ways, generally as some form of dynamic array. But in any case, they allow for the individual elements to be accessed directly through random access iterators, with storage handled automatically by expanding and contracting the container as needed.
+
+Therefore, they provide a functionality similar to vectors, but with efficient insertion and deletion of elements also at the beginning of the sequence, and not only at its end. 
 
 \end{frame}
 %--------------------------------------------------------
-\subsection{Challenge (Medium)}
+\subsection{Challenge (Difficult)}
 \begin{frame}
-\frametitle{Jesse and Cookies (Medium)}
+\frametitle{Ocean Currents (Difficult)}
 
 \begin{block}{Description}
-Jesse loves cookies. He wants the sweetness of all his cookies to be greater than value $K$. To do this, Jesse repeatedly mixes two cookies with the least sweetness. He creates a special combined cookie with:\\
-\center sweetness  $=$ ($1x$Least sweet cookie $+$  $2x$ 2nd least sweet cookie).\justify
-He repeats this procedure until all the cookies in his collection have a sweetness $\ge K$.\\
-\textbf{You are given Jesse's cookies. Print the number of operations required to give the cookies a sweetness $\mathbf{\ge K}$. Print $\mathbf{-1}$ if this isn't possible.} 
+At each location, the current  owes in some direction. The captain can choose to either go with the
+ ow of the current, using no energy, or to move one square in any other direction, at the cost of one
+energy unit. The boat always moves in one of the following eight directions: north, south, east, west,
+north-east, Northwest, south-east, south-west. The boat cannot leave the boundary of the lake.\\
+
+\textbf{You are to help him devise a strategy to reach the destination with the minimum energy consumption.}
 \end{block}
 
 \end{frame}
 %--------------------------------------------------------
-\subsection{Simulation \& Solution}
-\begin{frame}
-\frametitle{ Simulation: $N=6, K=7$ }
-\begin{figure}
-	\includegraphics[width=0.5\linewidth]{cookie.png}
-	\caption{Output: 2}
-\end{figure}
-\end{frame}
+%\subsection{Simulation \& Solution}
+%\begin{frame}
+%\frametitle{ Simulation: $N=6, K=7$ }
+%\begin{figure}
+%	\includegraphics[width=0.5\linewidth]{cookie.png}
+%	\caption{Output: 2}
+%\end{figure}
+%\end{frame}
 %--------------------------------------------------------
 \begin{frame}[fragile]
 \frametitle{ Solution using priority queue: C++ }
 \begin{example}[ C++ Implementation ]
 \begin{lstlisting}
-   priority_queue<i64, vector<i64>, greater<i64> > PQ;
-   scanf("%d %lld",&n,&k);
-   for(int i=0; i<n; i++) {
-      scanf("%lld",&cookie);
-      PQ.push(cookie);
-   }
-   while(PQ.size() > 1) {
-      if(PQ.top() >= k) break;
-      first = PQ.top(); PQ.pop();
-      second = PQ.top(); PQ.pop();
-      cookie = first + second * 2LL;
-      PQ.push(cookie); cnt++;
-   }
-   printf("%d\n",(PQ.top()<k)?-1:cnt);
+   TBW http://interactivepython.org/runestone/static/pythonds/BasicDS/PalindromeChecker.html
 \end{lstlisting}
 \end{example}
 \end{frame}
