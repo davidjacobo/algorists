@@ -11,7 +11,7 @@ Currently those topics were covered:
 
 ## Data Structures
 * [Tries](https://github.com/Gansito144/algorists/tree/master/talks/tries)
-* [Trees](hhttps://github.com/Gansito144/algorists/tree/master/talks/trees)
+* [Trees](https://github.com/Gansito144/algorists/tree/master/talks/trees)
 * [Priority Queue, Heaps, Segment Tree](https://github.com/Gansito144/algorists/tree/master/talks/data_structures_3)
 * [Fenwick Trees](https://github.com/Gansito144/algorists/tree/master/talks/fenwick-trees)
 
