@@ -12,6 +12,8 @@ Currently those topics were covered:
 ## Data Structures
 * [Tries](https://github.com/Gansito144/algorists/tree/master/talks/tries)
 * [Trees](https://github.com/Gansito144/algorists/tree/master/talks/trees)
+* [Deques Applications](https://github.com/Gansito144/algorists/tree/master/talks/deques_applications)
+* [Disjoint-Set Union-Find](https://github.com/Gansito144/algorists/tree/master/talks/disjoint-set)
 * [Red-Black Trees](https://github.com/Gansito144/algorists/tree/master/talks/trees/red-black)
 * [Priority Queue, Heaps, Segment Tree](https://github.com/Gansito144/algorists/tree/master/talks/data_structures_3)
 * [Fenwick Trees](https://github.com/Gansito144/algorists/tree/master/talks/fenwick-trees)
@@ -26,6 +28,7 @@ Currently those topics were covered:
 
 ## String Procesing
 * [Z Algorithm](https://github.com/Gansito144/algorists/tree/master/talks/z_algorithm)
+* [Suffix / LCP Arrays](https://github.com/Gansito144/algorists/tree/master/talks/suffix-array)
 
 ## Graph Theory
 * [Introduction](https://github.com/Gansito144/algorists/tree/master/talks/graph_theory_introduction)
